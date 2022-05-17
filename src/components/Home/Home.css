@@ -1,0 +1,66 @@
+.bg1 {
+  background-image: url("../../icons/BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg2 {
+  background-image: url("../../icons/BG2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperCenter {
+  padding: 0;
+  margin: 0;
+  height: 75%;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gameName {
+  background-image: url("../../icons/GameName.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 35vh;
+}
+
+.arrow {
+  background-image: url("../../icons/arrow.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 72px;
+}
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background-color: #000000;
+    height: 80px;
+    display: flex;  
+    justify-content: space-between;
+    stroke: green;
+    stroke-width: 20;
+}
+
+.headerMid {
+    display: flex;  
+    justify-content: center;    
+}
+
+.logo {
+    padding: 1.5%;
+    align-items: center;
+    display: flex;  
+    justify-content: center;
+}
+.burgerMenu {
+    padding: 1.5%;
+    display: flex;  
+    align-items: center;
+}
+
+
+.headerItem{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    margin: 10%;
+    white-space: nowrap;
+}
+
+a {
+    color: #FFFFFF;
+    opacity: 50%;
+}
