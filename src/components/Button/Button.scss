@@ -1,0 +1,39 @@
+$btnColor: #ffbb84;
+
+.btn {
+  // background-color: Transparent;
+  border: none;
+  color: #ffbb84;
+  // padding: 15px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  // text-align:left;
+  opacity: 50%;
+}
+
+.btn:hover {
+  opacity: 100%;
+}
+
+.btn--primary {
+  background-color: Transparent;
+  border: none;
+  text-align: left;
+}
+
+.btn--secondary {
+  background-color: Transparent;
+  padding: 3% 15% 3% 15%;
+  border-radius: 50px;
+  color: $btnColor;
+  font-size: 15px;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  opacity: 50%;
+  border: 1px solid $btnColor;
+}
+
+//   .btn--callToAction {
+
+//   }

@@ -1,4 +1,75 @@
-.About {
-  background-color: lightblue;
+.About h1 {
+  font-family: "Podkova", serif;
+  margin-bottom: 7%;
+}
+
+.About h2 {
+  font-family: "Podkova", serif;
+  opacity: 50%;
+  margin-bottom: 7%;
+}
+
+.About p {
+  margin-bottom: 7%;
+  font-size: 16px;
+}
+
+.About .wrapper-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 10%;
+}
+
+.About .games-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.About .left-container {
+  background: linear-gradient(73.05deg, rgba(5, 5, 5, 0.2) 0%, rgba(5, 5, 5, 0) 53.53%);
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
+  border-radius: 10px 10px 10px 64px;
+  padding: 40px;
+  width: 60%;
+}
+
+.About .wrapper-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15%;
+}
+
+.About .wrapper-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.About .characters {
+  background-color: red;
+  width: 500px;
+  height: 500px;
+}
+
+.About h3 {
+  color: #93a0c0;
+  padding-left: 7%;
 }
 /*# sourceMappingURL=About.css.map */

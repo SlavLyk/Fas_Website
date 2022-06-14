@@ -1,3 +1,69 @@
+// $blue: #93a0c0;
+
 .About {
-    background-color: lightblue;
+  h1 {
+    font-family: "Podkova", serif;
+    margin-bottom: 7%;
+  }
+
+  h2 {
+    font-family: "Podkova", serif;
+    opacity: 50%;
+    margin-bottom: 7%;
+  }
+
+  p {
+    margin-bottom: 7%;
+    font-size: 16px;
+  }
+
+  .wrapper-left {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10%;
+  }
+
+  .games-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+
+  .left-container {
+    // margin-left: 65%;
+    // padding-right: 15%;
+    background: linear-gradient(
+      73.05deg,
+      rgba(5, 5, 5, 0.2) 0%,
+      rgba(5, 5, 5, 0) 53.53%
+    );
+    backdrop-filter: blur(55px);
+    border-radius: 10px 10px 10px 64px;
+    padding: 40px;
+    width: 60%;
+  }
+
+  .wrapper-left {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    margin-top: 15%;
+  }
+
+  .wrapper-right {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .characters {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+  }
+
+  h3 {
+    color: $blue;
+    padding-left: 7%;
+  }
 }

@@ -4,39 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100vw;
+  color: white;
 }
 
-.bg2 {
-  background-image: url("../../icons/BG2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperCenter {
-  padding: 0;
-  margin: 0;
-  height: 75%;
-  width: 75%;
+.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +19,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10%;
+}
+
+.wrapperCenter {
+  padding: 0;
+  margin: 0;
+  height: 75%;
+  width: 75%;
 }
 
 .gameName {
@@ -58,9 +41,41 @@
 }
 
 .arrow {
+  padding-top: 25%;
   background-image: url("../../icons/arrow.png");
   background-position: bottom;
   background-repeat: no-repeat;
   height: 72px;
+}
+
+.container {
+  padding: 10px;
+  width: 30%;
+  margin-left: 5%;
+  background: linear-gradient(73.05deg, rgba(5, 5, 5, 0.2) 0%, rgba(5, 5, 5, 0) 53.53%);
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 200px;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px 10px 10px 64px;
+}
+
+p {
+  color: white;
+  font-size: 22px;
+  font-family: 'Podkova', serif;
+  opacity: 50%;
+  margin-bottom: 5%;
+}
+
+.bg2-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px;
+      grid-template-columns: 200px;
 }
 /*# sourceMappingURL=Home.css.map */

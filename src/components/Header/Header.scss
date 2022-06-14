@@ -1,11 +1,11 @@
 .header {
-    width: 100%;
+    width: 100vw;
     background-color: #000000;
     height: 80px;
     display: flex;  
     justify-content: space-between;
     stroke: green;
-    stroke-width: 20;
+    stroke-width: 200px;
 }
 
 .headerMid {
@@ -37,4 +37,8 @@
 a {
     color: #FFFFFF;
     opacity: 50%;
+}
+
+a:hover {
+    opacity: 100%;
 }

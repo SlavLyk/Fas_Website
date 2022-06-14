@@ -1,26 +1,33 @@
+import { Link } from 'react-router-dom'
 import './Header.css'   
 import Logo from '../../icons/Logo.svg'
-import BurgerMenu from '../../icons/BurgerMenu.svg'
+// import BurgerMenu from '../../icons/BurgerMenu.svg'
 
 function Header() {
-    return (
+    return (    
         <div className ='header'>
-            <div className ='logo'>
+             <Link to='/' className="logo">
                 <img height={40} src={Logo} alt='Logo'/>
-            </div>
+            </Link>
             <div className ='headerMid'>
                 <div className ='headerItem'>
-                    <a href="#">Games</a>
+                    <Link to='/games'>
+                        Games
+                    </Link>
                 </div>
                 <div className ='headerItem'>
-                    <a href="#">About us</a>
+                    <Link to='/about'>
+                        About
+                    </Link>
                 </div>
                 <div className ='headerItem'>
-                    <a href="#">Contact</a>
+                    <Link to='/contact'>
+                        Contact
+                    </Link>
                 </div>  
             </div>
             <div className = 'burgerMenu'>
-                <img height={20} width={34} src={BurgerMenu} alt='Logo'/>
+                {/* <img height={20} width={34} src={BurgerMenu} alt='Logo'/> */}
             </div>
         </div>
     )
