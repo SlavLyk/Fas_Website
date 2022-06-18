@@ -14,52 +14,107 @@
   font-size: 16px;
 }
 
-.About .wrapper-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-top: 10%;
+.About .spaceship {
+  height: 55%;
+  padding: 1%;
 }
 
-.About .games-container {
+.About .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   height: 100vh;
 }
 
-.About .left-container {
+.About .grid-container-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  height: 100vh;
+}
+
+.About .wrapper-left-bg1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: steelblue;
+  height: 100vh;
+}
+
+.About .wrapper-right-bg1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightcoral;
+  height: 100vh;
+}
+
+.About .wrapper-left-bg2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: steelblue;
+  height: 100vh;
+}
+
+.About .wrapper-right-bg2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: lightcoral;
+  height: 100vh;
+}
+
+.About .blur-container-1 {
   background: linear-gradient(73.05deg, rgba(5, 5, 5, 0.2) 0%, rgba(5, 5, 5, 0) 53.53%);
   -webkit-backdrop-filter: blur(55px);
           backdrop-filter: blur(55px);
   border-radius: 10px 10px 10px 64px;
-  padding: 40px;
+  padding: 30px;
   width: 60%;
-}
-
-.About .wrapper-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 15%;
-}
-
-.About .wrapper-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  margin: 3%;
+  margin-bottom: 10%;
 }
 
 .About .characters {
@@ -71,5 +126,23 @@
 .About h3 {
   color: #93a0c0;
   padding-left: 7%;
+}
+
+.About .bg2 {
+  background-image: url("../../icons/BG2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.About .img1 {
+  height: 300px;
+  width: 640px;
+  background-color: blue;
+  margin: 3%;
+  padding: 5%;
+  margin-bottom: 10%;
 }
 /*# sourceMappingURL=About.css.map */

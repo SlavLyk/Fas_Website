@@ -67,31 +67,6 @@ $blue: #93a0c0;
     padding-left: 7%;
   }
 
-  .bg2 {
-    background-image: url("../../icons/BG2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color: white; // effects h1 in that background
-  }
-
-  .video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .bg3 {
-    background-image: url("../../icons/BG3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color: white; // effects h1 in that background
-  }
-
   .generals {
     height: 100vh;
     display: flex;
@@ -125,5 +100,38 @@ $blue: #93a0c0;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .bg2 {
+    background-image: url("../../icons/BG2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: white; // effects h1 in that background
+    // display:flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .bg3 {
+    background-image: url("../../icons/BG3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: white; // effects h1 in that background
+    // display:flex;
+    // justify-content: center;
+    // align-items: center;
   }
 }

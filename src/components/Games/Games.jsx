@@ -17,7 +17,7 @@ import Footer from "../Footer/Footer";
 
 //Swiper.js carousel
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination, Navigation, EffectCards } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -80,7 +80,7 @@ function Games() {
             <iframe
               width="80%"
               height="80%"
-              src="https://www.youtube.com/embed/FPEP4waYQEU"
+              src="https://www.youtube.com/embed/k3UevKvP9RU"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -95,21 +95,19 @@ function Games() {
         </div>
         <div className="generals">
           <Swiper
-            // effect={"coverflow"}
-            spaceBetween={50}
+            effect={"coverflow"}
+            spaceBetween={0}
             grabCursor={true}
-            centeredSlides={true}
             slidesPerView={3}
             navigation={true}
-            scrollbar={{ draggable: true }}
             coverflowEffect={{
               rotate: 0,
-              stretch: 0,
+              stretch: 100,
               depth: 100,
               modifier: 0,
               // slideShadows: true,
             }}
-            modules={[Navigation]}
+            modules={[Navigation, EffectCoverflow]}
             className="mySwiper"
           >
             <SwiperSlide>
