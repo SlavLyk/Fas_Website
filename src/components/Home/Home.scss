@@ -77,18 +77,12 @@ p {
   grid-template-columns: 200px;
 }
 
-// .button1 {
-//     background-color: Transparent;
-//     border: none;
-//     width: 400px;
-//     color: #FFBB84;
-//     padding: 15px 0px;
-//     font-size: 20px;
-//     font-weight: 600;
-//     text-align:left;
-//     opacity: 50%;
-// }
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 40%;
+  }
+  // it's not a class
+}
 
-// button:hover {
-//     opacity: 100%;
-//   }
+@media screen and (max-width: 768px) {
+}

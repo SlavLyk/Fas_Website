@@ -44,6 +44,11 @@
           align-items: center;
 }
 
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+}
+
 .headerItem {
   text-decoration: none;
   display: -webkit-box;
@@ -52,16 +57,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10%;
   white-space: nowrap;
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 50%;
 }
 
 a:hover {
   opacity: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .headerItem {
+    opacity: 0;
+  }
+  .burgerIcon {
+    display: block;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

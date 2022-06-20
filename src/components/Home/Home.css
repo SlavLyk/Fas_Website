@@ -78,4 +78,10 @@ p {
   -ms-grid-columns: 200px;
       grid-template-columns: 200px;
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=Home.css.map */
