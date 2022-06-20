@@ -41,6 +41,7 @@ $blue: #93a0c0;
     border-radius: 10px 10px 10px 64px;
     padding: 40px;
     width: 60%;
+    height: 400px;
   }
 
   .wrapper-left {
@@ -56,10 +57,15 @@ $blue: #93a0c0;
     align-self: center;
   }
 
-  .characters {
-    background-color: red;
-    width: 500px;
-    height: 500px;
+  // .characters {
+  //   width: 400px;
+  //   height: 400px;
+  // }
+
+  .Michael {
+    width: 120%;
+    margin-right: 40%;
+    margin-top: 10%;
   }
 
   h3 {

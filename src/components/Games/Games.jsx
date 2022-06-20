@@ -11,6 +11,7 @@ import {
 } from "@react-three/drei";
 import General from "../ThreeComponents/General";
 import "./Games.css";
+import Michael from "../../icons/Michael.png";
 import Header from "../Header/Header.jsx";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
@@ -67,7 +68,7 @@ function Games() {
             </div>
           </div>
           <div className="wrapper-right">
-            <div className="characters"></div>
+            <img src={Michael} alt="" className="Michael" />
           </div>
         </div>
       </div>
@@ -80,7 +81,7 @@ function Games() {
             <iframe
               width="80%"
               height="80%"
-              src="https://www.youtube.com/embed/k3UevKvP9RU"
+              src="https://www.youtube.com/embed/okmhsQy3ovI"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
