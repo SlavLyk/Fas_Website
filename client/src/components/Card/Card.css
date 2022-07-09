@@ -1,0 +1,49 @@
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 233px;
+  background: #0a0a09;
+  margin-left: 130px;
+}
+
+.Card h1 {
+  font-size: 20px;
+}
+
+.Card h2 {
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(127, 105, 48, 0.125);
+  padding: 10px 30px 10px 10px;
+  border-radius: 7px 7px 0px 0px;
+  font-family: "Jura", sans-serif;
+  opacity: 50%;
+}
+
+.Card h3 {
+  font-size: 20px;
+}
+
+.Card img {
+  height: 200px;
+  width: 233px;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=Card.css.map */

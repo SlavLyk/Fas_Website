@@ -1,0 +1,43 @@
+.btn {
+  border: none;
+  color: #ffd361;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.btn:hover {
+  opacity: 100%;
+}
+
+.btn--primary {
+  background-color: Transparent;
+  border: none;
+  text-align: left;
+}
+
+.btn--secondary {
+  background-color: Transparent;
+  padding: 30px 70px;
+  color: #ffd361;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  opacity: 50%;
+  letter-spacing: 0.1px;
+  border: 1px solid rgba(127, 105, 48, 0);
+}
+
+.btn--secondary:hover {
+  background: rgba(127, 105, 48, 0.25);
+  border: 1px solid rgba(127, 105, 48, 0.25);
+  opacity: 50%;
+}
+
+.btn--secondary:focus {
+  background: rgba(127, 105, 48, 0.5);
+}
+/*# sourceMappingURL=Button.css.map */
