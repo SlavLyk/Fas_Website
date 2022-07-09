@@ -1,0 +1,163 @@
+$blue: #93a0c0;
+
+.Contact {
+  h1 {
+    font-family: "Iceland", serif;
+    font-size: 50px;
+    background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3%;
+    font-size: 56px;
+    font-weight: 400;
+
+    // background-clip: text;
+    // text-fill-color: transparent;
+  }
+
+  h2 {
+    font-family: "Jura", sans-serif;
+    opacity: 100%;
+    // margin-bottom: 7%;
+    color: white;
+  }
+
+  p {
+    margin-bottom: 7%;
+  }
+
+  .contactUs {
+    background-image: url("../../icons/ContactUs.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .flex-container-text {
+    display: flex;
+    // background-color: green;
+    // flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-main {
+    margin-top: 5%;
+    margin-bottom: 90px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  //Should work on most modern browsers
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+  }
+
+  .form-container form p {
+    margin: 0;
+  }
+
+  .form-container .full {
+    grid-column: 1 / 3;
+  }
+
+  .form-container form button,
+  .form-container form input,
+  .form-container form textarea {
+    width: 100%;
+    padding: 1.5em;
+    background: #0a0a09;
+    border: 1px solid rgba(255, 210, 90, 0.1);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .form-container form textarea {
+    border-radius: 8px 8px 0px 0px;
+    resize: none;
+  }
+
+  .form-container form button {
+    margin: 0;
+    margin-top: -15px;
+    border-radius: 0px 0px 20px 20px;
+    color: #ffd361;
+    background: #000000;
+    font-weight: 600;
+  }
+  //HOVER
+  .form-container form input:hover,
+  .form-container form textarea:hover {
+    border: 1px solid rgba(255, 210, 90, 0.25);
+  }
+
+  .form-container form button:hover {
+    background: #ffd361;
+    border: 1px solid rgba(255, 210, 90, 0.2);
+    color: black;
+    font-weight: 700;
+  }
+  // FOCUS
+  .form-container form input:focus,
+  .form-container form textarea:focus {
+    border: 1px solid rgba(255, 210, 90, 0.5);
+    outline-width: 0;
+  }
+
+  .form-container form button:focus {
+    background: #b29444;
+    font-weight: 700;
+  }
+
+  .form-container p {
+    opacity: 100%;
+  }
+
+  @media screen and (max-width: 852px) {
+    h1 {
+      margin-left: 0px;
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 658px) {
+    .container-main {
+    }
+    h1 {
+      margin-left: 25px;
+      width: 75%;
+    }
+
+    h2 {
+      margin-left: 25px;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .contactUs {
+      height: 850px;
+    }
+  }
+}
