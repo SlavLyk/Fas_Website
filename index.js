@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:3001",
-  "https://shrouded-journey-38552.heroku...",
+  "https://floating-axe-website.herokuapp.com/",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
