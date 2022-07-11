@@ -136,6 +136,9 @@
   "scripts": {
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
+  "engines": {
+    "node": "17.9.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
