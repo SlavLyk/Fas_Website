@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === "production") {
   // Serve any static files
   app.use(express.static(path.join(__dirname, "client/build")));
   // Handle React routing, return all requests to React app
-  app.get("*", function (req, res) {
+  app.get("/", function (_, res) {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
@@ -35,6 +35,7 @@ const whitelist = [
   "http://localhost:3001",
   "https://floating-axe-website.herokuapp.com/",
 ];
+
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
@@ -47,6 +48,7 @@ const corsOptions = {
     }
   },
 };
+
 app.use(cors(corsOptions));
 
 transporter.verify((err, success) => {

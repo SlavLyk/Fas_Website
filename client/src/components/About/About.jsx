@@ -106,12 +106,38 @@ function About() {
             company objectives.
           </p>
         </div>
-        <Card
-          title="Founder & CEO"
-          img={Avatar}
-          name="Gabrial Li"
-          experience="4 years"
-        />
+        <div className="card-container">
+          <Card
+            title="Founder & CEO"
+            img={Avatar}
+            name="Gabrial Li"
+            experience="Since 2018"
+          />
+          <Card
+            title="Founder & CEO"
+            img={Avatar}
+            name="Gabrial Li"
+            experience="Since 2018"
+          />
+          <Card
+            title="Founder & CEO"
+            img={Avatar}
+            name="Gabrial Li"
+            experience="Since 2018"
+          />
+          <Card
+            title="Founder & CEO"
+            img={Avatar}
+            name="Gabrial Li"
+            experience="Since 2018"
+          />
+          <Card
+            title="Founder & CEO"
+            img={Avatar}
+            name="Gabrial Li"
+            experience="Since 2018"
+          />
+        </div>
       </div>
       <Footer />
     </div>
