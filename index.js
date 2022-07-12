@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === "production") {
 
 const whitelist = [
   "http://localhost:3000",
-  "http://localhost:3001",
+  "http://localhost:5000",
   "https://floating-axe-website.herokuapp.com/",
 ];
 
@@ -89,7 +89,7 @@ app.post("/send", function (req, res) {
   });
 });
 
-const port = process.env.port || 3001;
+const port = process.env.port || 5000;
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
