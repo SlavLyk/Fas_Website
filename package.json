@@ -133,6 +133,7 @@
     "yargs-parser": "^21.0.1"
   },
   "scripts": {
+    "start": "node index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "engines": {
