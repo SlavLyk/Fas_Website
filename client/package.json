@@ -24,7 +24,6 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "start": "react-scripts start; npm install -g serve; serve -s build;",
-    "heroku-postbuild": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
