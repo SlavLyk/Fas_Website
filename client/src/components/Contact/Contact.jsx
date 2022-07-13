@@ -113,7 +113,9 @@ function Contact(props) {
               ></textarea>
             </p>
             <p className="full">
-              <button type="submit">Send</button>
+              <button type="submit" onClick={submitEmail}>
+                Send
+              </button>
             </p>
           </form>
         </div>
