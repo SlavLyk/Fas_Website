@@ -114,27 +114,27 @@ function About() {
             experience="Since 2018"
           />
           <Card
-            title="Founder & CEO"
+            title="Lead Desginer/ Web Designer"
             img={Avatar}
-            name="Gabrial Li"
+            name="Svyatoslav Lykhosherstov"
             experience="Since 2018"
           />
           <Card
-            title="Founder & CEO"
+            title="Programmer"
             img={Avatar}
-            name="Gabrial Li"
+            name="Stas Bakalo"
             experience="Since 2018"
           />
           <Card
-            title="Founder & CEO"
+            title="Lead Programmer"
             img={Avatar}
-            name="Gabrial Li"
-            experience="Since 2018"
+            name="Navneeth"
+            experience="Since 2020"
           />
           <Card
-            title="Founder & CEO"
+            title="3d Animator"
             img={Avatar}
-            name="Gabrial Li"
+            name="Max Shepelenko"
             experience="Since 2018"
           />
         </div>
