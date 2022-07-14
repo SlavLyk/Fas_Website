@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:5000",
-  "https://floating-axe-website.herokuapp.com",
+  "https://floating-axe-website.herokuapp.com/contact",
 ];
 
 const corsOptions = {
