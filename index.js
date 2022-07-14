@@ -9,14 +9,14 @@ app.use(express.json());
 app.use(cors());
 
 let transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: "hotmail",
   auth: {
-    type: "OAuth2",
+    // type: "OAuth2",
     user: process.env.EMAIL,
     pass: process.env.WORD,
-    clientId: process.env.OAUTH_CLIENTID,
-    clientSecret: process.env.OAUTH_CLIENT_SECRET,
-    refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+    // clientId: process.env.OAUTH_CLIENTID,
+    // clientSecret: process.env.OAUTH_CLIENT_SECRET,
+    // refreshToken: process.env.OAUTH_REFRESH_TOKEN,
   },
 });
 
@@ -59,11 +59,12 @@ transporter.verify((err, success) => {
 
 app.post("/send", function (req, res) {
   let mailOptions = {
-    from: `${req.body.mailerState.email}`,
+    from: process.env.EMAIL,
     to: process.env.EMAIL,
     subject: `Message from: ${req.body.mailerState.email}`,
     text: `New Message`,
-    html: `<p>You have a new contact request</p>
+    html: `
+    <p>You have a new contact request</p>
 <h3>Contact Details</h3>
 <ul>
 <li>Name: ${req.body.mailerState.name} ${req.body.mailerState.lastname}</li>
