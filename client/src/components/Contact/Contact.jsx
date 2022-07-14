@@ -22,16 +22,13 @@ function Contact(props) {
   const submitEmail = async (e) => {
     e.preventDefault();
     console.log({ mailerState });
-    const response = await fetch(
-      "https://floating-axe-website.herokuapp.com/contact",
-      {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({ mailerState }),
-      }
-    )
+    const response = await fetch("http://localhost:5000/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ mailerState }),
+    })
       .then((res) => res.json())
       .then(async (res) => {
         const resData = await res;
