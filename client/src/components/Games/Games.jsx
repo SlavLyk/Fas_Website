@@ -17,13 +17,13 @@ import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
 
 //Swiper.js carousel
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation, EffectCards } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { EffectCoverflow, Pagination, Navigation, EffectCards } from "swiper";
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "./swiper.css";
+// import "swiper/css";
+// import "swiper/css/effect-coverflow";
+// import "swiper/css/pagination";
+// import "./swiper.css";
 
 function GeneralText(props) {
   return (

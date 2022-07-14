@@ -8,6 +8,14 @@ import PlaceHolder2 from "../../icons/placeholder2.png";
 import Card from "../Card/Card.jsx";
 import Avatar from "../../icons/avatar.png";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation, EffectCards } from "swiper";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "./swiper.css";
+
 function About() {
   return (
     <div className="About">
@@ -116,7 +124,7 @@ function About() {
           <Card
             title="Lead Desginer/ Web Designer"
             img={Avatar}
-            name="Svyatoslav Lykhosherstov"
+            name="Slav Lykhosherstov"
             experience="Since 2018"
           />
           <Card
