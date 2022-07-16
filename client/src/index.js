@@ -7,8 +7,9 @@ import reportWebVitals from "./reportWebVitals";
 import { history } from "./history";
 import ThreeRouter from "./ThreeRouter";
 import { Router, Route, BrowserRouter, Routes } from "react-router-dom";
-// import "swiper/css/bundle";
-// import "./components/Games/swiper.css";
+
+import "swiper/css/bundle";
+import "./components/About/swiper.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

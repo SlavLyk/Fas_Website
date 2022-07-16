@@ -9,12 +9,15 @@ import Card from "../Card/Card.jsx";
 import Avatar from "../../icons/avatar.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation, EffectCards } from "swiper";
 
 import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 import "./swiper.css";
+
+import { Scrollbar } from "swiper";
+import { Navigation } from "swiper";
+import { FreeMode } from "swiper";
 
 function About() {
   return (
@@ -114,38 +117,85 @@ function About() {
             company objectives.
           </p>
         </div>
-        <div className="card-container">
-          <Card
-            title="Founder & CEO"
-            img={Avatar}
-            name="Gabrial Li"
-            experience="Since 2018"
-          />
-          <Card
-            title="Lead Desginer/ Web Designer"
-            img={Avatar}
-            name="Slav Lykhosherstov"
-            experience="Since 2018"
-          />
-          <Card
-            title="Programmer"
-            img={Avatar}
-            name="Stas Bakalo"
-            experience="Since 2018"
-          />
-          <Card
-            title="Lead Programmer"
-            img={Avatar}
-            name="Navneeth"
-            experience="Since 2020"
-          />
-          <Card
-            title="3d Animator"
-            img={Avatar}
-            name="Max Shepelenko"
-            experience="Since 2018"
-          />
-        </div>
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={5}
+          // freeMode={true}
+          navigation={true}
+          scrollbar={{
+            hide: false,
+            dragSize: 50,
+          }}
+          modules={[Navigation, Scrollbar, FreeMode]}
+          className="mySwiper"
+        >
+          <div className="card-container">
+            <SwiperSlide>
+              <Card
+                title="Founder & CEO"
+                img={Avatar}
+                name="Gabrial Li"
+                experience="Since 2018"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="Lead Desginer/ Web Designer"
+                img={Avatar}
+                name="Slav Lykhosherstov"
+                experience="Since 2018"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="Programmer"
+                img={Avatar}
+                name="Stas Bakalo"
+                experience="Since 2018"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="Lead Programmer"
+                img={Avatar}
+                name="Navneeth"
+                experience="Since 2020"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="3d Animator"
+                img={Avatar}
+                name="Max Shepelenko"
+                experience="Since 2019"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="3d Animator"
+                img={Avatar}
+                name="Dima"
+                experience="Since 2019"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="3d Animator"
+                img={Avatar}
+                name="Dima"
+                experience="Since 2019"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="3d Animator"
+                img={Avatar}
+                name="Dima"
+                experience="Since 2019"
+              />
+            </SwiperSlide>
+          </div>
+        </Swiper>
       </div>
       <Footer />
     </div>
