@@ -122,12 +122,13 @@ $blue: #93a0c0;
 
   .blackBg {
     background-color: black;
+    width: 100%;
   }
 
   .team {
     background-color: black;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
   .bg1v2 {
     background-image: url("../../icons/BG1v2.png");
@@ -135,7 +136,7 @@ $blue: #93a0c0;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
 
   .bg2 {
@@ -144,7 +145,7 @@ $blue: #93a0c0;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
 
   .bg3v2 {
@@ -153,7 +154,7 @@ $blue: #93a0c0;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
 
   .img1 {

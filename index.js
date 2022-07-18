@@ -35,7 +35,7 @@ const whitelist = [
   "http://localhost:5000",
   "https://floating-axe-website.herokuapp.com",
 ];
-
+  
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
