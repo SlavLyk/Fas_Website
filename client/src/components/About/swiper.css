@@ -22,10 +22,11 @@ body {
 }
 
 .swiper-slide {
-  /* background-position: center; */
   background-size: 100%;
   width: 300px;
   height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .swiper-slide img {
@@ -70,4 +71,13 @@ body {
 
 .swiper-scrollbar-drag {
   background: rgba(141, 172, 250, 1) !important;
+}
+
+.swiper
+  swiper-initialized
+  swiper-horizontal
+  swiper-pointer-events
+  mySwiper
+  swiper-backface-hidden {
+  color: red;
 }

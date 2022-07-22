@@ -8,10 +8,7 @@ $blue: #93a0c0;
     -webkit-text-fill-color: transparent;
     margin-bottom: 3%;
     font-size: 60px;
-    // font-size: 85px;
-
     font-weight: 400;
-    // white-space: nowrap;
   }
 
   h2 {
@@ -81,7 +78,7 @@ $blue: #93a0c0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
   }
 
   .flex-container {
@@ -92,7 +89,7 @@ $blue: #93a0c0;
   .container-1 {
     margin-left: 100px;
     padding: 30px;
-    width: 50%;
+    max-width: 50%;
   }
 
   .container-2 {
@@ -135,7 +132,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 763px;
     width: 100%;
   }
 
@@ -144,7 +141,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 763px;
     width: 100%;
   }
 
@@ -153,7 +150,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 763px;
     width: 100%;
   }
 
@@ -170,6 +167,8 @@ $blue: #93a0c0;
   .flex-heading {
     display: flex;
     align-items: center;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 212, 100, 0.1);
   }
 
   .flex-heading h1 {
@@ -186,12 +185,73 @@ $blue: #93a0c0;
   }
 
   .team {
-    // margin-left: 130px;
+    background-image: url(../../icons/BG_TEAM.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 763px;
+    width: 100%;
   }
 
   .card-container {
     display: flex;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .card-spacing {
+    margin-left: 100px;
+  }
+  .prev {
+    background-image: url(../../icons/SwipperButton.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 72px;
+    height: 72px;
+    background-color: black;
+    border: none;
+    margin: 130px 10px;
+    opacity: 75%;
+  }
+
+  .prev:hover {
+    opacity: 100%;
+  }
+
+  .next {
+    background-image: url(../../icons/SwipperButton.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 72px;
+    height: 72px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin: 130px 10px;
+    background-color: black;
+    border: none;
+    opacity: 75%;
+  }
+
+  .next:hover {
+    opacity: 100%;
+  }
+
+  @media screen and (max-width: 852px) {
+    .flex-container-main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-1 {
+      order: 2;
+    }
+    .spaceship {
+      margin-top: 30px;
+      order: 1;
+      margin-bottom: 0;
+    }
   }
 }

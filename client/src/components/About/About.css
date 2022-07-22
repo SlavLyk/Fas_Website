@@ -78,7 +78,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .About .flex-container {
@@ -93,7 +93,7 @@
 .About .container-1 {
   margin-left: 100px;
   padding: 30px;
-  width: 50%;
+  max-width: 50%;
 }
 
 .About .container-2 {
@@ -141,7 +141,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 763px;
   width: 100%;
 }
 
@@ -150,7 +150,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 763px;
   width: 100%;
 }
 
@@ -159,7 +159,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 763px;
   width: 100%;
 }
 
@@ -177,6 +177,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 212, 100, 0.1);
 }
 
 .About .flex-heading h1 {
@@ -192,6 +194,15 @@
   border-radius: 0px 50px 50px 00px;
 }
 
+.About .team {
+  background-image: url(../../icons/BG_TEAM.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 763px;
+  width: 100%;
+}
+
 .About .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,6 +210,71 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.About .card-spacing {
+  margin-left: 100px;
+}
+
+.About .prev {
+  background-image: url(../../icons/SwipperButton.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 72px;
+  height: 72px;
+  background-color: black;
+  border: none;
+  margin: 130px 10px;
+  opacity: 75%;
+}
+
+.About .prev:hover {
+  opacity: 100%;
+}
+
+.About .next {
+  background-image: url(../../icons/SwipperButton.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 72px;
+  height: 72px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 130px 10px;
+  background-color: black;
+  border: none;
+  opacity: 75%;
+}
+
+.About .next:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 852px) {
+  .About .flex-container-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .About .container-1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .About .spaceship {
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=About.css.map */

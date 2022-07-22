@@ -121,7 +121,7 @@ function Home() {
       <div className="bg2">
         <div className="Experience1">
           <Suspense fallback={null}>
-            <div style={{ width: "100vw", height: "100vh" }}>
+            <div style={{ width: "100%", height: "100vh" }}>
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
                 <FightScene />
               </Canvas>

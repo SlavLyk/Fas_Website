@@ -1,15 +1,13 @@
 .Card {
   display: flex;
   flex-direction: column;
-  width: 233px;
+  width: 220px;
+  // height: 210px;
   background: #0a0a09;
-  margin: 10px 30px;
+  // margin: 10px 30px;
   border-radius: 7px;
   border: 1px solid rgba(127, 105, 48, 0.125);
   margin-bottom: 70px;
-
-  //   justify-content: center;
-  //   align-items: center;
 
   h1 {
     font-size: 18px;
@@ -46,8 +44,8 @@
   }
 
   img {
-    height: 200px;
-    width: 231px;
+    height: 190px;
+    width: 220px;
     padding: 0;
     margin: 0;
   }
