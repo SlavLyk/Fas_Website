@@ -29,8 +29,8 @@ function About() {
               Floating Axe Studios is a game development studio founded in 2018.
               Our team is scattered all around the world in countries like:
               Canada, Columbia, Mexico, Ukraine, the United States.
-            </p>
-            <p>
+              <br />
+              <br />
               Our first and current project is a narrative driven, real time
               strategy and third-person hack-and slash game made using the
               Unreal Engine 4.
@@ -59,7 +59,7 @@ function About() {
       </div>
       <div className="bg1v2">
         <div className="flex-container">
-          <div className="container-3">
+          <div className="container-5">
             <h1>Epic Scale</h1>
             <p>
               We aim to deliver our best game yet. Space opera filled with
@@ -120,7 +120,7 @@ function About() {
           <button className="prev"></button>
           <Swiper
             spaceBetween={0}
-            slidesPerView={5}
+            slidesPerView={1}
             modules={[Scrollbar, Navigation]}
             navigation={{
               clickable: true,
@@ -131,6 +131,31 @@ function About() {
               hide: false,
               dragSize: 50,
               draggable: true,
+            }}
+            breakpoints={{
+              // when window width is >= 640px
+              670: {
+                // width: 640,
+                slidesPerView: 2,
+              },
+              // when window width is >= 768px
+              900: {
+                // width: 768,
+                slidesPerView: 3,
+              },
+              1150: {
+                // width: 768,
+                slidesPerView: 4,
+              },
+              1350: {
+                slidesPerView: 5,
+              },
+              1650: {
+                slidesPerView: 6,
+              },
+              1750: {
+                slidesPerView: 7,
+              },
             }}
           >
             <div className="card-spacing">

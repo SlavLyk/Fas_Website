@@ -52,8 +52,9 @@ $blue: #93a0c0;
   }
 
   .spaceship {
-    height: 450px;
-    width: 650px;
+    // height: 60%;
+    width: 90%;
+    max-width: 650px;
     // width: 880px;
     // height: 640px;
     padding: 1%;
@@ -89,7 +90,8 @@ $blue: #93a0c0;
   .container-1 {
     margin-left: 100px;
     padding: 30px;
-    max-width: 50%;
+    width: 50%;
+    min-width: 30%;
   }
 
   .container-2 {
@@ -105,6 +107,18 @@ $blue: #93a0c0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: 20%;
+  }
+
+  .container-5 {
+    width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 100px;
     margin-right: 50%;
     margin-top: 20%;
@@ -113,7 +127,6 @@ $blue: #93a0c0;
   .container-4 {
     padding: 30px;
     width: 70%;
-
     margin-left: 100px;
   }
 
@@ -239,7 +252,7 @@ $blue: #93a0c0;
     opacity: 100%;
   }
 
-  @media screen and (max-width: 852px) {
+  @media screen and (max-width: 1110px) {
     .flex-container-main {
       display: flex;
       flex-direction: column;
@@ -247,11 +260,121 @@ $blue: #93a0c0;
 
     .container-1 {
       order: 2;
+      width: 90%;
+      margin-right: 100px;
     }
+
+    .container-2 {
+      min-width: 30%;
+      margin-left: 0px;
+      // margin-right: 50px;
+    }
+
+    .container-3 {
+      man-width: 600px;
+      margin-right: 0%;
+
+      margin-top: 30%;
+    }
+
+    .container-5 {
+      man-width: 600px;
+      margin-right: 0%;
+    }
+
     .spaceship {
       margin-top: 30px;
       order: 1;
       margin-bottom: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 3%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .spaceship {
+      margin: 0;
+      // height: 30%;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-2 {
+      order: 2;
+      min-width: 90%;
+      margin-left: 0px;
+      // margin-right: 50px;
+    }
+
+    .placeHolder1 {
+      width: 90%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .placeHolder2 {
+      width: 90%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .container-5 {
+      margin-top: 70%;
+      width: 80%;
+      margin-left: 0px;
+    }
+
+    .container-3 {
+      margin-top: 60%;
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .container-4 {
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 0px;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 4%;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 4%;
+    }
+    .flex-heading {
+      height: 10%;
+    }
+
+    .flex-heading h1 {
+      margin: 0;
+      margin-left: 15px;
+    }
+
+    .banner {
+      width: 4px;
+      height: 70px;
     }
   }
 }
