@@ -278,8 +278,7 @@ $blue: #93a0c0;
     }
 
     .container-4 {
-      width: 100%;
-      margin-left: 0px;
+      width: 80%;
     }
 
     .container-5 {
@@ -311,7 +310,7 @@ $blue: #93a0c0;
       margin-bottom: 100px;
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 730px) {
     .spaceship {
       margin: 0;
       // height: 30%;
@@ -358,6 +357,7 @@ $blue: #93a0c0;
       margin-left: 10px;
       margin-right: 0px;
       padding: 10px;
+      width: 95%;
     }
 
     p {
@@ -398,7 +398,7 @@ $blue: #93a0c0;
       margin-right: 10px;
     }
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 450px) {
       .card-container {
         display: flex;
         justify-content: center;
@@ -412,6 +412,20 @@ $blue: #93a0c0;
 
       .next {
         margin: 130px 0px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 4%;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 4%;
       }
     }
   }
