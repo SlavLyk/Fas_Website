@@ -126,7 +126,7 @@ $blue: #93a0c0;
 
   .container-4 {
     padding: 30px;
-    width: 70%;
+    width: 75%;
     margin-left: 100px;
   }
 
@@ -277,9 +277,15 @@ $blue: #93a0c0;
       margin-top: 30%;
     }
 
+    .container-4 {
+      width: 100%;
+      margin-left: 0px;
+    }
+
     .container-5 {
       man-width: 600px;
       margin-right: 0%;
+      margin-top: 35%;
     }
 
     .spaceship {
@@ -299,6 +305,10 @@ $blue: #93a0c0;
     h2 {
       font-size: 28px;
       margin-bottom: 3%;
+    }
+
+    .card-container {
+      margin-bottom: 100px;
     }
   }
   @media screen and (max-width: 500px) {
@@ -375,6 +385,34 @@ $blue: #93a0c0;
     .banner {
       width: 4px;
       height: 70px;
+    }
+
+    .prev {
+      margin: 130px 10px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 390px) {
+      .card-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+
+      .prev {
+        margin: 130px 0px;
+      }
+
+      .next {
+        margin: 130px 0px;
+      }
     }
   }
 }
