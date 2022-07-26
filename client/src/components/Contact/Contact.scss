@@ -21,9 +21,9 @@ $blue: #93a0c0;
     // margin-bottom: 7%;
     color: white;
   }
-  
+
   p {
-    margin-bottom: 7%;  
+    margin-bottom: 7%;
   }
 
   .contactUs {
@@ -129,6 +129,14 @@ $blue: #93a0c0;
 
   .form-container p {
     opacity: 100%;
+  }
+  @media screen and (min-width: 1600px) {
+    .contactUs {
+      height: 1080px;
+    }
+    .form-container form {
+      margin-top: 100px;
+    }
   }
 
   @media screen and (max-width: 852px) {

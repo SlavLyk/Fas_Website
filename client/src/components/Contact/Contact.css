@@ -155,6 +155,15 @@
   opacity: 100%;
 }
 
+@media screen and (min-width: 1600px) {
+  .Contact .contactUs {
+    height: 1080px;
+  }
+  .Contact .form-container form {
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 852px) {
   .Contact h1 {
     margin-left: 0px;
