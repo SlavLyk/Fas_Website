@@ -15,6 +15,9 @@ import Michael from "../../icons/Michael.png";
 import Header from "../Header/Header.jsx";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
+import Nebula from "../../icons/Nebula.png";
+import Title from "../../icons/Title.png";
+import Download from "../../icons/Download.svg";
 
 //Swiper.js carousel
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,18 +56,28 @@ function Games() {
   return (
     <div className="Games">
       <Header active="Games" />
-      <div className="bg1">
+      <div className="bg1v3">
         <div className="games-container">
           <div className="wrapper-left">
+            <div className="heading">
+              <h3>Latest Media</h3>
+            </div>
             <div className="left-container">
-              <h1>GATE OF GOLGOTHA</h1>
-              <h2>
-                “Now war arose in heaven, Michael and his angels fighting
-                against the dragon. And the dragon and his angels fought
-                back...”
-              </h2>
-              <p>-The Apocalypse of John, 12th Chapter, 7th verse</p>
-              <Button buttonStyle="btn--secondary">Download Demo</Button>
+              <div className="nebula">
+                <img src={Title} alt="" className="Title" />
+              </div>
+              <h3>
+                The Apocalypse of John, 12th
+                <br /> Chapter - 7th verse
+              </h3>
+              <p>
+                Now war arose in heaven, Michael and his angels fighting against
+                the dragon. And the dragon and his angels fought back...
+              </p>
+              <button className="download-btn">
+                Download Demo
+                <img src={Download} alt="" className="Download" />
+              </button>
             </div>
           </div>
           <div className="wrapper-right">
@@ -79,8 +92,8 @@ function Games() {
         <div className="video-container">
           <div className="video">
             <iframe
-              width="80%"
-              height="80%"
+              width="1600px"
+              height="900px"
               src="https://www.youtube.com/embed/okmhsQy3ovI"
               title="YouTube video player"
               frameborder="0"
@@ -90,9 +103,19 @@ function Games() {
           </div>
         </div>
       </div>
-      <div className="bg3">
-        <div className="heading">
-          <h3>Generals</h3>
+      <div className="general-bg">
+        <div className="flex-heading">
+          <div className="banner"></div>
+          <h1>Generals</h1>
+        </div>
+        <div className="container-4">
+          <h2>War Generals from Gate of Golgotha</h2>
+          <p>
+            Our team combines people from a diverse set of backgrounds and
+            expertise. By interacting in a respectful and honest manner we build
+            goodwill among our team members and stakeholders and achieve our
+            company objectives.
+          </p>
         </div>
         <div className="generals">
           <GeneralCard

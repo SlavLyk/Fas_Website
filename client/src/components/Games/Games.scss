@@ -1,25 +1,51 @@
-$blue: #93a0c0;
+$blue: #b8c0c8;
 
 .Games {
   h1 {
     font-family: "Podkova", serif;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   h2 {
-    font-family: "Podkova", serif;
-    opacity: 50%;
-    margin-bottom: 7%;
-  }
-  p {
-    margin-bottom: 7%;
-    font-size: 16px;
+    font-family: "Iceland", serif;
+    color: #b8c0c8;
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 20px;
   }
 
-  .wrapper-left {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 10%;
+  p {
+    font-family: "Jura", serif;
+    opacity: 50%;
+    margin-bottom: 7%;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: $blue;
+    // background-color: #343746;
+    padding-left: 160px;
+  }
+
+  .wrapper-left h3 {
+    padding: 0%;
+  }
+
+  .left-container h3 {
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    background: rgba(52, 55, 70, 0.4);
+    padding: 20px 20px 20px 20px;
+  }
+
+  .left-container p {
+    padding: 20px;
+    opacity: 100%;
+    background-color: black;
+    height: 200px;
+    margin: 0px;
   }
 
   .games-container {
@@ -37,17 +63,19 @@ $blue: #93a0c0;
       rgba(5, 5, 5, 0) 53.53%
     );
     backdrop-filter: blur(55px);
-    border-radius: 10px 10px 10px 64px;
-    padding: 40px;
-    width: 60%;
+    border-radius: 10px 10px 10px 10px;
+    // padding: 40px;
+    width: 640px;
     height: 400px;
+    margin-top: 50px;
   }
 
   .wrapper-left {
     display: flex;
-    justify-content: center;
-    // align-items: center;
-    margin-top: 15%;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-left: 160px;
   }
 
   .wrapper-right {
@@ -56,29 +84,34 @@ $blue: #93a0c0;
     align-self: center;
   }
 
-  // .characters {
-  //   width: 400px;
-  //   height: 400px;
-  // }
-
-  .Michael {
-    width: 120%;
-    margin-right: 40%;
-    margin-top: 10%;
+  .nebula {
+    background-image: url("../../icons/Nebula.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  h3 {
-    color: $blue;
-    padding-left: 7%;
+  .Michael {
+    width: 1063px;
+    margin: 0px;
+    margin-top: 5%;
+    mix-blend-mode: lighten;
   }
 
   .generals {
-    height: 100vh;
+    height: 800px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     // flex-direction: column;
     // margin-top: 3%;
+    margin: 0px 160px;
   }
 
   .general {
@@ -90,7 +123,7 @@ $blue: #93a0c0;
 
   .general-card {
     height: 550px;
-    width: 350px;
+    width: 505px;
   }
 
   #card_canvas {
@@ -107,11 +140,32 @@ $blue: #93a0c0;
     text-align: center;
   }
 
+  .general-text p {
+    font-size: 16px;
+  }
+
+  .general-text h1 {
+    font-size: 20px;
+    opacity: 50%;
+    color: white;
+  }
+
   .video {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    margin-top: 40px;
     height: 100vh;
+  }
+
+  .bg1v3 {
+    background-image: url("../../icons/BG1v3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+    width: 100%;
+    color: white;
   }
 
   .bg2 {
@@ -119,7 +173,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 1080px;
     width: 100%;
     color: white; // effects h1 in that background
     // display:flex;
@@ -132,12 +186,89 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 1080px;
     width: 100%;
     color: white; // effects h1 in that background
     // display:flex;
     // justify-content: center;
     // align-items: center;
+  }
+
+  .download-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em;
+    background: #0a0a09;
+    border: 1px solid rgba(255, 210, 90, 0.1);
+    margin: 0;
+    margin-top: -15px;
+    border-radius: 0px 0px 20px 20px;
+    color: #ffd361;
+    background: #000000;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .Download {
+    // filter: invert(94%) sepia(50%) saturate(3539%) hue-rotate(312deg)
+    //   brightness(105%) contrast(104%);
+  }
+
+  .Download:hover {
+    filter: brightness(0) saturate(100%);
+  }
+
+  .flex-heading {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 212, 100, 0.1);
+  }
+
+  .flex-heading h1 {
+    font-family: "Iceland", serif;
+    background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    margin-left: 160px;
+    font-size: 85px;
+    font-weight: 400;
+  }
+
+  .banner {
+    width: 4px;
+    height: 110px;
+    background: linear-gradient(180deg, #8dacfa 0%, #ffe174 100%);
+    border-radius: 0px 50px 50px 00px;
+    // margin-right: 5%;
+  }
+
+  .container-4 {
+    // padding: 30px;
+    width: 83%;
+    padding: 40px 0px;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
+  .container-4 p {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(161, 168, 175, 0.5);
+  }
+
+  .general-bg {
+    background-image: url(../../icons/BG_TEAM.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 1080px;
+    width: 100%;
   }
 
   @media screen and (max-width: 852px) {
@@ -152,7 +283,7 @@ $blue: #93a0c0;
       background-position: left;
     }
 
-    .bg1 {
+    .bg1v3 {
       height: 1200px;
     }
 
