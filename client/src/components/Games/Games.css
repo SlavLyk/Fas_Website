@@ -158,7 +158,7 @@
 
 .Games #card_canvas {
   border-radius: 10px 10px 0px 0px;
-  border: 1px solid #85703b;
+  border: 1px solid rgba(127, 105, 48, 0.1);
 }
 
 .Games .general-text {
@@ -177,7 +177,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  border: 1px solid #85703b;
+  border: 1px solid rgba(127, 105, 48, 0.1);
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -322,10 +322,14 @@
   margin-bottom: 0px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(161, 168, 175, 0.5);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), rgba(32, 36, 50, 0.25);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), rgba(32, 36, 50, 0.25);
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
 }
 
 .Games .general-bg {
-  background-image: url(../../icons/BG_TEAM.png);
+  background-image: url(../../icons/Nebula1.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
