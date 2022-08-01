@@ -48,6 +48,10 @@ $blue: #b8c0c8;
     margin: 0px;
   }
 
+  .nebula-text {
+    background: black;
+  }
+
   .games-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -123,21 +127,24 @@ $blue: #b8c0c8;
 
   .general-card {
     height: 550px;
-    width: 505px;
+    width: 90%;
   }
 
   #card_canvas {
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     border: 1px solid #85703b;
   }
 
   .general-text {
-    margin-top: 2%;
+    // padding-top: 2%
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 1px solid #85703b;
+    border-radius: 0px 0px 10px 10px;
   }
 
   .general-text p {
@@ -145,9 +152,12 @@ $blue: #b8c0c8;
   }
 
   .general-text h1 {
+    padding: 10px 0px;
     font-size: 20px;
     opacity: 50%;
     color: white;
+    background-color: red;
+    width: 100%;
   }
 
   .video {
@@ -211,13 +221,22 @@ $blue: #b8c0c8;
     font-size: 20px;
   }
 
-  .Download {
-    // filter: invert(94%) sepia(50%) saturate(3539%) hue-rotate(312deg)
-    //   brightness(105%) contrast(104%);
+  .download-btn:hover {
+    color: black;
+    background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
+
+    img {
+      filter: brightness(0) saturate(100%);
+    }
   }
 
-  .Download:hover {
-    filter: brightness(0) saturate(100%);
+  .download-btn:focus {
+    color: black;
+    background: linear-gradient(270deg, #b29444 0%, #ffd361 100%);
+
+    img {
+      filter: brightness(0) saturate(100%);
+    }
   }
 
   .flex-heading {
@@ -229,7 +248,8 @@ $blue: #b8c0c8;
 
   .flex-heading h1 {
     font-family: "Iceland", serif;
-    background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
+    background: #c2d4ff;
+    // background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0px;
@@ -271,6 +291,11 @@ $blue: #b8c0c8;
     width: 100%;
   }
 
+  @media screen and (max-width: 1600px) {
+    .bg1v3 {
+      height: 763px;
+    }
+  }
   @media screen and (max-width: 852px) {
     .generals {
       margin-top: 800px;

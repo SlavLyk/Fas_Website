@@ -66,14 +66,17 @@ function Games() {
               <div className="nebula">
                 <img src={Title} alt="" className="Title" />
               </div>
-              <h3>
-                The Apocalypse of John, 12th
-                <br /> Chapter - 7th verse
-              </h3>
-              <p>
-                Now war arose in heaven, Michael and his angels fighting against
-                the dragon. And the dragon and his angels fought back...
-              </p>
+              <div className="nebula-text">
+                <h3>
+                  The Apocalypse of John, 12th
+                  <br /> Chapter - 7th verse
+                </h3>
+                <p>
+                  Now war arose in heaven, Michael and his angels fighting
+                  against the dragon. And the dragon and his angels fought
+                  back...
+                </p>
+              </div>
               <button className="download-btn">
                 Download Demo
                 <img src={Download} alt="" className="Download" />
@@ -119,17 +122,17 @@ function Games() {
         </div>
         <div className="generals">
           <GeneralCard
-            title="RedShield"
-            text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
-            modelPath="models/RedShield/RedShield.glb"
-          />
-          <GeneralCard
-            title="Qaliel"
+            title="QALIEL"
             text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
             modelPath="models/Qaliel/Qaliel.glb"
           />
           <GeneralCard
-            title="Gabriel"
+            title="RED SHIELD"
+            text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+            modelPath="models/RedShield/RedShield.glb"
+          />
+          <GeneralCard
+            title="GABRIEL"
             text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
             modelPath="models/Gabriel/Gabriel.glb"
           />
