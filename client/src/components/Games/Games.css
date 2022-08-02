@@ -176,22 +176,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align: start;
   border: 1px solid rgba(127, 105, 48, 0.1);
   border-radius: 0px 0px 10px 10px;
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
 }
 
 .Games .general-text p {
   font-size: 16px;
+  padding-left: 20px;
 }
 
 .Games .general-text h1 {
+  font-family: "Iceland", serif;
   padding: 10px 0px;
-  font-size: 20px;
+  font-size: 36px;
+  font-weight: 400;
   opacity: 50%;
   color: white;
-  background-color: red;
+  background: #15161c;
   width: 100%;
+  padding-left: 20px;
 }
 
 .Games .video {
@@ -322,10 +329,6 @@
   margin-bottom: 0px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(161, 168, 175, 0.5);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), rgba(32, 36, 50, 0.25);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), rgba(32, 36, 50, 0.25);
-  -webkit-backdrop-filter: blur(55px);
-          backdrop-filter: blur(55px);
 }
 
 .Games .general-bg {
