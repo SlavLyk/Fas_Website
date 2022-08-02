@@ -3,8 +3,8 @@
   height: auto;
   background: black;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   justify-content: center;
 
   p {
@@ -15,7 +15,9 @@
   .fasContainer {
     display: flex;
     justify-content: start;
-    margin-left: 20px;
+    margin-left: 160px;
+    order: -1;
+    grid-column: 1/2;
   }
 
   .fas {
@@ -52,16 +54,68 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: start;
+    grid-column: 1/1;
+    margin-left: 170px;
+    padding: 25px 20px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.5);
     white-space: nowrap;
     font-size: 10px;
   }
 
   .newsletter {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // margin-right: 1  60px;
+    order: -1;
+  }
+
+  form {
     display: flex;
-    justify-content: end;
     align-items: center;
+  }
+
+  form p {
+    width: 100%;
+
+    margin: 0px;
+  }
+
+  form input {
+    width: 100%;
+    font-family: "Jura", sans-serif;
+
+    padding: 1.5em;
+    background: #0a0a09;
+    border: 1px solid rgba(255, 210, 90, 0.1);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  form button {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 12px;
+    // width: 100%;
+    height: 60px;
+    background: #1b160a;
+    border: 1px solid rgba(255, 210, 90, 0.25);
+    border-radius: 0px 8px 8px 0px;
+    margin-right: 160px;
+  }
+  form input:hover {
+    border: 1px solid rgba(255, 210, 90, 0.5);
+  }
+
+  form input:focus {
+    border: 1px solid rgba(255, 210, 90, 1);
+    outline-width: 0;
   }
 }
 
@@ -77,12 +131,13 @@
 
       justify-content: start;
       order: -1;
-      grid-column: 1/3;
+      grid-column: 1/2;
       // margin-left: 25px;
     }
 
     .newsletter {
       order: -1;
+      grid-column: 1/2;
     }
 
     .footerItem {

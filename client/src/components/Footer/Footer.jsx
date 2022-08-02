@@ -31,7 +31,16 @@ function Footer() {
         </Link>
       </div>
       <div className="newsletter">
-        <Button buttonStyle="btn--secondary">Newsletter</Button>
+        <form autoComplete="off">
+          <p>
+            <input
+              type="text"
+              placeholder="Enter email to Join our Newsletter"
+              name="name"
+            />
+          </p>
+          <Button>Subscribe</Button>
+        </form>
       </div>
     </div>
   );
