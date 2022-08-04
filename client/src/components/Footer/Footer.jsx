@@ -4,7 +4,50 @@ import Logo from "../../icons/Logo.svg";
 import Button from "../Button/Button";
 import "./Footer.css";
 
+import { useState } from "react";
+
 function Footer() {
+  // const [newsletterState, setNewsletterState] = useState({
+  //   email: "",
+  // });
+
+  // function handleStateChange(e) {
+  //   newsletterState((prevState) => ({
+  //     ...prevState,
+  //     [e.target.name]: e.target.value,
+  //   }));
+  // }
+
+  // const submitEmail = async (e) => {
+  //   e.preventDefault();
+  //   console.log({ newsletterState });
+  //   const response = await fetch(
+  //     "https://floating-axe-website.herokuapp.com/signup",
+  //     {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-type": "application/json",
+  //       },
+  //       body: JSON.stringify({ newsletterState }),
+  //     }
+  //   )
+  //     .then((res) => res.json())
+  //     .then(async (res) => {
+  //       const resData = await res;
+  //       console.log(resData);
+  //       if (resData.status === "success") {
+  //         alert("Message Sent");
+  //       } else if (resData.status === "fail") {
+  //         alert("Message failed to send");
+  //       }
+  //     })
+  //     .then(() => {
+  //       newsletterState({
+  //         email: "",
+  //       });
+  //     });
+  // };
+
   return (
     <div className="footer">
       <div className="fasContainer">
@@ -31,15 +74,18 @@ function Footer() {
         </Link>
       </div>
       <div className="newsletter">
-        <form autoComplete="off">
+        <form autoComplete="off" method="POST" action="/signup">
           <p>
             <input
               type="text"
               placeholder="Enter email to Join our Newsletter"
-              name="name"
+              // onChange={handleStateChange}
+              name="email"
+              id="email"
+              // value={newsletterState.name}
             />
           </p>
-          <Button>Subscribe</Button>
+          <button type="submit">Subscribe</button>
         </form>
       </div>
     </div>

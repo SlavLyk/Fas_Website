@@ -114,16 +114,21 @@
 }
 
 .footer form input {
+  height: 60px;
   width: 100%;
   font-family: "Jura", sans-serif;
+  font-size: 16px;
   padding: 1.5em;
   background: #0a0a09;
   border: 1px solid rgba(255, 210, 90, 0.1);
-  border-radius: 8px;
+  border-radius: 8px 0px 0px 8px;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .footer form button {
+  margin: 10px 0px;
+  color: #ffd25a;
+  font-family: "Jura", sans-serif;
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,13 +143,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 10px 60px;
   gap: 12px;
+  font-size: 20px;
   height: 60px;
   background: #1b160a;
   border: 1px solid rgba(255, 210, 90, 0.25);
   border-radius: 0px 8px 8px 0px;
   margin-right: 160px;
+  opacity: 50%;
+}
+
+.footer form button:hover {
+  opacity: 100%;
 }
 
 .footer form input:hover {
@@ -154,6 +165,8 @@
 .footer form input:focus {
   border: 1px solid #ffd25a;
   outline-width: 0;
+  opacity: 100%;
+  color: white;
 }
 
 @media screen and (max-width: 852px) {

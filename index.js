@@ -2,11 +2,16 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
 const cors = require("cors");
+const bodyParser = require("body-parser");
+const path = require("path");
+const fetch = require("node-fetch");
+
 require("dotenv").config();
 
 // middleware
 app.use(express.json());
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 let transporter = nodemailer.createTransport({
   service: "hotmail",
@@ -20,7 +25,6 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-const path = require("path");
 if (process.env.NODE_ENV === "production") {
   // Serve any static files
   app.use(express.static(path.join(__dirname, "client/build")));
@@ -35,7 +39,7 @@ const whitelist = [
   "http://localhost:5000",
   "https://floating-axe-website.herokuapp.com",
 ];
-  
+
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
@@ -90,7 +94,62 @@ app.post("/send", function (req, res) {
   });
 });
 
+//Sign up Route
+app.post("/signup", (req, res) => {
+  const { email } = req.body;
+
+  //Make sure fields are filled in
+  if (!email) {
+    res.redirect("back");
+    return;
+  }
+
+  //Construct req Data
+  const data = {
+    members: [
+      {
+        email_address: email,
+        status: "subscribed",
+      },
+    ],
+  };
+
+  const postData = JSON.stringify(data);
+
+  fetch("https://us13.api.mailchimp.com/3.0/lists/191d372e7e", {
+    method: "POST",
+    headers: {
+      Authorization: "auth 27877a6c7d744f40ae78a2e2184b1ce1-us13",
+    },
+    body: postData,
+  })
+    .then(res.statusCode === 200 ? res.redirect("back") : res.redirect("back"))
+    .catch((err) => console.log(err));
+
+  // const options = {
+  //   url: "https://us13.api.mailchimp.com/3.0/lists/191d372e7e",
+  //   method: "POST",
+  //   headers: {
+  //     Authorization: "auth 27877a6c7d744f40ae78a2e2184b1ce1-us13",
+  //   },
+  //   body: postData,
+  // };
+
+  // request(options, (err, response, body) => {
+  //   if (err) {
+  //     alert("fail");
+  //   } else {
+  //     if (response.statusCode === 200) {
+  //       alert("sucess");
+  //     } else {
+  //       alert("fail");
+  //     }
+  //   }
+  // });
+});
+
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
 });

@@ -65,7 +65,7 @@
     "ipaddr.js": "^1.9.1",
     "is-binary-path": "^2.1.0",
     "is-extglob": "^2.1.1",
-    "is-fullwidth-code-point": "^3.0.0", 
+    "is-fullwidth-code-point": "^3.0.0",
     "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
     "lodash": "^4.17.21",
@@ -80,6 +80,7 @@
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
     "neo-async": "^2.6.2",
+    "node-fetch": "^2.6.0",
     "nodemailer": "^6.7.7",
     "nodemon": "^2.0.19",
     "nopt": "^1.0.10",
@@ -134,6 +135,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "engines": {
