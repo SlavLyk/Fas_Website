@@ -96,18 +96,20 @@ app.post("/send", function (req, res) {
 
 //Sign up Route
 app.post("/signup", (req, res) => {
-  const { email } = req.body;
+  const email = req.body.newsletterState.email;
+  console.log(email);
 
   //Make sure fields are filled in
-  if (!email) {
-    res.redirect("back");
-    return;
-  }
+  // if (!email) {
+  //   res.redirect("back");
+  //   return;
+  // }
 
   //Construct req Data
   const data = {
     members: [
       {
+        // : email was before I changed it just now
         email_address: email,
         status: "subscribed",
       },
@@ -123,7 +125,9 @@ app.post("/signup", (req, res) => {
     },
     body: postData,
   })
-    .then(res.statusCode === 200 ? res.redirect("back") : res.redirect("back"))
+    .then(
+      res.statusCode === 200 ? console.log("worked") : console.log("failed")
+    )
     .catch((err) => console.log(err));
 
   // const options = {

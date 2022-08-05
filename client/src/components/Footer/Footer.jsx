@@ -6,47 +6,46 @@ import "./Footer.css";
 
 import { useState } from "react";
 
-function Footer() {
-  // const [newsletterState, setNewsletterState] = useState({
-  //   email: "",
-  // });
+function Footer(props) {
+  const [newsletterState, setNewsletterState] = useState({
+    email: "",
+  });
 
-  // function handleStateChange(e) {
-  //   newsletterState((prevState) => ({
-  //     ...prevState,
-  //     [e.target.name]: e.target.value,
-  //   }));
-  // }
+  function handleStateChange(e) {
+    setNewsletterState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
 
-  // const submitEmail = async (e) => {
-  //   e.preventDefault();
-  //   console.log({ newsletterState });
-  //   const response = await fetch(
-  //     "https://floating-axe-website.herokuapp.com/signup",
-  //     {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-type": "application/json",
-  //       },
-  //       body: JSON.stringify({ newsletterState }),
-  //     }
-  //   )
-  //     .then((res) => res.json())
-  //     .then(async (res) => {
-  //       const resData = await res;
-  //       console.log(resData);
-  //       if (resData.status === "success") {
-  //         alert("Message Sent");
-  //       } else if (resData.status === "fail") {
-  //         alert("Message failed to send");
-  //       }
-  //     })
-  //     .then(() => {
-  //       newsletterState({
-  //         email: "",
-  //       });
-  //     });
-  // };
+  const handleSubmit = (e) => {
+    alert("Thank you for subscribing to our newsletter!");
+    setNewsletterState({
+      email: "",
+    });
+    e.preventDefault();
+
+    const response = fetch("http://localhost:5000/signup", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ newsletterState }),
+    }).then(() => {
+      alert("yes");
+    });
+  };
+
+  const resetFields = () => {
+    document.getElementById("newsLetterForm").reset();
+  };
+
+  const handleSubmit2 = (e) => {
+    e.preventDefault();
+    console.log({ newsletterState });
+    alert("Thank you for subscribing to our newsletter!");
+    document.getElementById("newsLetterForm").reset();
+  };
 
   return (
     <div className="footer">
@@ -74,15 +73,21 @@ function Footer() {
         </Link>
       </div>
       <div className="newsletter">
-        <form autoComplete="off" method="POST" action="/signup">
+        <form
+          autoComplete="off"
+          method="POST"
+          action="/signup"
+          id="newsLetterForm"
+          onSubmit={handleSubmit}
+        >
           <p>
             <input
               type="text"
               placeholder="Enter email to Join our Newsletter"
-              // onChange={handleStateChange}
+              onChange={handleStateChange}
               name="email"
               id="email"
-              // value={newsletterState.name}
+              value={newsletterState.email}
             />
           </p>
           <button type="submit">Subscribe</button>
