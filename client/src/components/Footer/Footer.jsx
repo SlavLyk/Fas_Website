@@ -18,20 +18,22 @@ function Footer(props) {
     }));
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     alert("Thank you for subscribing to our newsletter!");
     setNewsletterState({
       email: "",
     });
     e.preventDefault();
-
-    const response = fetch("http://localhost:5000/signup", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({ newsletterState }),
-    }).then(() => {
+    const response = await fetch(
+      "https://floating-axe-website.herokuapp.com/signup",
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ newsletterState }),
+      }
+    ).then(() => {
       alert("yes");
     });
   };
