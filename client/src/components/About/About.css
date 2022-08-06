@@ -4,16 +4,16 @@
   background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 3%;
-  font-size: 60px;
+  margin-bottom: 4%;
+  font-size: 85px;
   font-weight: 400;
 }
 
 .About h2 {
   font-family: "Iceland", serif;
-  font-size: 40px;
+  font-size: 48px;
   color: #b8c0c8;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   font-weight: 400;
 }
 
@@ -23,7 +23,7 @@
 
 .About p {
   font-family: "Jura", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .About .bg2 p {
@@ -49,11 +49,11 @@
 }
 
 .About .spaceship {
-  width: 90%;
-  max-width: 650px;
   padding: 1%;
-  margin-bottom: 250px;
-  margin-right: 50px;
+  max-width: 880px;
+  margin-right: 80px;
+  margin-bottom: 350px;
+  max-height: 640px;
 }
 
 .About .placeHolder1 {
@@ -91,16 +91,23 @@
 }
 
 .About .container-1 {
-  margin-left: 100px;
   padding: 30px;
   width: 50%;
   min-width: 30%;
+  margin-left: 150px;
+  margin-right: 100px;
 }
 
-.About .container-2 {
+.About .text-img-1 {
   padding: 30px;
   width: 50%;
-  margin-left: 100px;
+  margin-left: 150px;
+}
+
+.About .text-img-2 {
+  padding: 30px;
+  width: 50%;
+  margin-left: 150px;
 }
 
 .About .container-3 {
@@ -115,14 +122,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 600px;
-  margin-left: 100px;
+  width: 50%;
+  margin-left: 150px;
   margin-right: 0px;
   margin-top: 20%;
 }
 
 .About .container-5 {
-  width: 600px;
+  width: 40%;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +141,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 100px;
+  margin-left: 150px;
   margin-right: 50%;
   margin-top: 20%;
 }
@@ -142,7 +149,8 @@
 .About .container-4 {
   padding: 30px;
   width: 75%;
-  margin-left: 100px;
+  margin-left: 125px;
+  margin-bottom: 60px;
 }
 
 .About .blackBg {
@@ -152,8 +160,12 @@
 
 .About .team {
   background-color: black;
-  height: 100vh;
+  height: 1080px;
   width: 100%;
+  background-image: url(../../icons/BG_TEAM.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 .About .bg1v2 {
@@ -161,7 +173,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 763px;
+  height: 1080px;
   width: 100%;
 }
 
@@ -170,7 +182,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 763px;
+  height: 1080px;
   width: 100%;
 }
 
@@ -179,7 +191,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 763px;
+  height: 1080px;
   width: 100%;
 }
 
@@ -199,11 +211,13 @@
           align-items: center;
   background-color: black;
   border-bottom: 1px solid rgba(255, 212, 100, 0.1);
+  margin: 0;
+  margin-left: 0px;
 }
 
 .About .flex-heading h1 {
   margin: 0;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 .About .banner {
@@ -211,16 +225,7 @@
   height: 110px;
   background: -webkit-gradient(linear, left top, left bottom, from(#8dacfa), to(#ffe174));
   background: linear-gradient(180deg, #8dacfa 0%, #ffe174 100%);
-  border-radius: 0px 50px 50px 00px;
-}
-
-.About .team {
-  background-image: url(../../icons/BG_TEAM.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  height: 763px;
-  width: 100%;
+  border-radius: 0px 50px 50px 0px;
 }
 
 .About .card-container {
@@ -274,7 +279,65 @@
   opacity: 100%;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1600px) {
+  .About h1 {
+    font-size: 60px;
+    margin-bottom: 3%;
+  }
+  .About h2 {
+    font-size: 48px;
+    margin-bottom: 4%;
+  }
+  .About p {
+    font-size: 20px;
+  }
+  .About .spaceship {
+    margin-bottom: 250px;
+    margin-right: 50px;
+    max-width: 708px;
+    max-height: 468px;
+  }
+  .About .container-1 {
+    margin-left: 100px;
+    margin-right: 0%;
+  }
+  .About .text-img-1 {
+    margin-left: 100px;
+  }
+  .About .text-img-2 {
+    margin-left: 100px;
+  }
+  .About .container-3 {
+    width: 600px;
+    margin-left: 100px;
+  }
+  .About .container-5 {
+    width: 600px;
+    margin-left: 100px;
+  }
+  .About .container-4 {
+    margin-left: 100px;
+    margin-bottom: 0px;
+  }
+  .About .team {
+    height: 900px;
+  }
+  .About .bg1v2 {
+    height: 763px;
+  }
+  .About .bg2 {
+    height: 763px;
+  }
+  .About .bg3v2 {
+    height: 763px;
+  }
+  .About .flex-heading h1 {
+    margin: 0;
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
   .About .flex-container-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -289,11 +352,21 @@
         -ms-flex-order: 2;
             order: 2;
     width: 90%;
-    margin-right: 100px;
+    margin-left: 7%;
+    padding: 0%;
   }
-  .About .container-2 {
+  .About .container-1 h1 {
+    font-size: 54px;
+  }
+  .About .text-img-1 {
     min-width: 30%;
-    margin-left: 0px;
+    margin-left: 7%;
+    padding: 0px;
+  }
+  .About .text-img-2 {
+    min-width: 30%;
+    margin-left: 7%;
+    padding: 0px;
   }
   .About .container-3 {
     man-width: 600px;
@@ -306,20 +379,25 @@
   .About .container-5 {
     man-width: 600px;
     margin-right: 0%;
-    margin-top: 35%;
+    margin-top: 25%;
+    margin-left: 7%;
+    padding: 0%;
+    width: 50%;
   }
   .About .spaceship {
+    width: 90%;
     margin-top: 30px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     margin-bottom: 0;
+    margin-right: 0px;
   }
   .About p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .About h1 {
-    font-size: 55px;
+    font-size: 44px;
   }
   .About h2 {
     font-size: 28px;
@@ -328,65 +406,8 @@
   .About .card-container {
     margin-bottom: 100px;
   }
-}
-
-@media screen and (min-width: 1600px) {
-  .About .team p {
-    width: 60%;
-  }
-  .About p {
-    font-size: 24px;
-  }
-  .About h1 {
-    font-size: 85px;
-    margin-bottom: 4%;
-  }
-  .About .flex-heading h1 {
-    margin: 0;
-    margin-left: 150px;
-  }
-  .About h2 {
-    font-size: 48px;
-    margin-bottom: 4%;
-  }
-  .About .container-4 {
-    margin-bottom: 60px;
-  }
-  .About .bg1v2 {
-    height: 1080px;
-  }
-  .About .bg2 {
-    height: 1080px;
-  }
-  .About .bg3v2 {
-    height: 1080px;
-  }
-  .About .team {
-    height: 1080px;
-  }
-  .About .spaceship {
-    max-width: 880px;
-    margin-right: 80px;
-    margin-bottom: 350px;
-    height: 600px;
-  }
-  .About .container-1 {
-    margin-left: 150px;
-    margin-right: 100px;
-  }
-  .About .container-2 {
-    margin-left: 150px;
-  }
-  .About .container-5 {
-    margin-left: 150px;
-    width: 40%;
-  }
-  .About .container-3 {
-    margin-left: 150px;
-    width: 50%;
-  }
-  .About .container-4 {
-    margin-left: 125px;
+  .About .placeHolder1 {
+    margin: 12px;
   }
 }
 
@@ -403,7 +424,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .About .container-2 {
+  .About .text-img-1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    min-width: 90%;
+    margin-left: 0px;
+  }
+  .About .text-img-2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

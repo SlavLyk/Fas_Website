@@ -6,16 +6,16 @@ $blue: #93a0c0;
     background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 3%;
-    font-size: 60px;
+    margin-bottom: 4%;
+    font-size: 85px;
     font-weight: 400;
   }
 
   h2 {
     font-family: "Iceland", serif;
-    font-size: 40px;
+    font-size: 48px;
     color: #b8c0c8;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-weight: 400;
   }
 
@@ -26,7 +26,7 @@ $blue: #93a0c0;
 
   p {
     font-family: "Jura", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .bg2 p {
@@ -52,14 +52,15 @@ $blue: #93a0c0;
   }
 
   .spaceship {
-    // height: 60%;
-    width: 90%;
-    max-width: 650px;
-    // width: 880px;
-    // height: 640px;
+    // max-width: 650px;
     padding: 1%;
-    margin-bottom: 250px;
-    margin-right: 50px;
+    // margin-bottom: 250px;
+    // margin-right: 50px;
+
+    max-width: 880px;
+    margin-right: 80px;
+    margin-bottom: 350px;
+    max-height: 640px;
   }
 
   .placeHolder1 {
@@ -88,17 +89,24 @@ $blue: #93a0c0;
   }
 
   .container-1 {
-    margin-left: 100px;
     padding: 30px;
     width: 50%;
     min-width: 30%;
+
+    margin-left: 150px; //100
+    margin-right: 100px; //0
   }
 
-  .container-2 {
+  .text-img-1 {
     padding: 30px;
     width: 50%;
-    // margin: 3%;
-    margin-left: 100px;
+    margin-left: 150px; // 100
+  }
+
+  .text-img-2 {
+    padding: 30px;
+    width: 50%;
+    margin-left: 150px; // 100
   }
 
   .container-3 {
@@ -107,19 +115,19 @@ $blue: #93a0c0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 600px;
-    margin-left: 100px;
+    width: 50%; //600
+    margin-left: 150px; //100
     margin-right: 0px;
     margin-top: 20%;
   }
 
   .container-5 {
-    width: 600px;
+    width: 40%; //600px
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 150px; //100
     margin-right: 50%;
     margin-top: 20%;
   }
@@ -127,7 +135,8 @@ $blue: #93a0c0;
   .container-4 {
     padding: 30px;
     width: 75%;
-    margin-left: 100px;
+    margin-left: 125px; //100
+    margin-bottom: 60px; // 0px
   }
 
   .blackBg {
@@ -137,15 +146,19 @@ $blue: #93a0c0;
 
   .team {
     background-color: black;
-    height: 100vh;
+    height: 1080px; //763px
     width: 100%;
+    background-image: url(../../icons/BG_TEAM.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
   }
   .bg1v2 {
     background-image: url("../../icons/BG1v2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 763px;
+    height: 1080px; // 763px
     width: 100%;
   }
 
@@ -154,7 +167,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 763px;
+    height: 1080px;
     width: 100%;
   }
 
@@ -163,7 +176,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 763px;
+    height: 1080px;
     width: 100%;
   }
 
@@ -182,28 +195,20 @@ $blue: #93a0c0;
     align-items: center;
     background-color: black;
     border-bottom: 1px solid rgba(255, 212, 100, 0.1);
+    margin: 0; // 0
+    margin-left: 0px; //0
   }
 
   .flex-heading h1 {
     margin: 0;
-    margin-left: 120px;
+    margin-left: 150px;
   }
 
   .banner {
     width: 4px;
     height: 110px;
     background: linear-gradient(180deg, #8dacfa 0%, #ffe174 100%);
-    border-radius: 0px 50px 50px 00px;
-    // margin-right: 5%;
-  }
-
-  .team {
-    background-image: url(../../icons/BG_TEAM.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    height: 763px;
-    width: 100%;
+    border-radius: 0px 50px 50px 0px;
   }
 
   .card-container {
@@ -252,7 +257,79 @@ $blue: #93a0c0;
     opacity: 100%;
   }
 
-  @media screen and (max-width: 1110px) {
+  // MACBOOK
+  @media screen and (max-width: 1600px) {
+    h1 {
+      font-size: 60px;
+      margin-bottom: 3%;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin-bottom: 4%;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .spaceship {
+      margin-bottom: 250px;
+      margin-right: 50px;
+      max-width: 708px;
+      max-height: 468px;
+    }
+
+    .container-1 {
+      margin-left: 100px;
+      margin-right: 0%;
+    }
+
+    .text-img-1 {
+      margin-left: 100px;
+    }
+
+    .text-img-2 {
+      margin-left: 100px;
+    }
+
+    .container-3 {
+      width: 600px;
+      margin-left: 100px;
+    }
+
+    .container-5 {
+      width: 600px;
+      margin-left: 100px;
+    }
+
+    .container-4 {
+      margin-left: 100px;
+      margin-bottom: 0px;
+    }
+
+    .team {
+      height: 900px;
+    }
+    .bg1v2 {
+      height: 763px;
+    }
+
+    .bg2 {
+      height: 763px;
+    }
+
+    .bg3v2 {
+      height: 763px;
+    }
+
+    .flex-heading h1 {
+      margin: 0;
+      margin-left: 120px;
+    }
+  }
+  // Tablet start here
+  @media screen and (max-width: 1150px) {
     .flex-container-main {
       display: flex;
       flex-direction: column;
@@ -261,12 +338,24 @@ $blue: #93a0c0;
     .container-1 {
       order: 2;
       width: 90%;
-      margin-right: 100px;
+      margin-left: 7%;
+      padding: 0%;
     }
 
-    .container-2 {
+    .container-1 h1 {
+      font-size: 54px;
+    }
+    .text-img-1 {
       min-width: 30%;
-      margin-left: 0px;
+      margin-left: 7%;
+      padding: 0px;
+      // margin-right: 50px;
+    }
+
+    .text-img-2 {
+      min-width: 30%;
+      margin-left: 7%;
+      padding: 0px;
       // margin-right: 50px;
     }
 
@@ -284,21 +373,28 @@ $blue: #93a0c0;
     .container-5 {
       man-width: 600px;
       margin-right: 0%;
-      margin-top: 35%;
+      margin-top: 25%;
+      margin-left: 7%;
+      padding: 0%;
+      width: 50%;
     }
 
     .spaceship {
+      width: 90%;
       margin-top: 30px;
       order: 1;
       margin-bottom: 0;
+      margin-right: 0px;
+      // max-width: 708px;
+      // max-height: 468px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     h1 {
-      font-size: 55px;
+      font-size: 44px;
     }
 
     h2 {
@@ -309,82 +405,13 @@ $blue: #93a0c0;
     .card-container {
       margin-bottom: 100px;
     }
+
+    .placeHolder1 {
+      margin: 12px;
+    }
   }
 
-  @media screen and (min-width: 1600px) {
-    .team p {
-      width: 60%;
-    }
-
-    p {
-      font-size: 24px;
-    }
-
-    h1 {
-      font-size: 85px;
-      margin-bottom: 4%;
-    }
-
-    .flex-heading h1 {
-      margin: 0;
-      margin-left: 150px;
-    }
-
-    h2 {
-      font-size: 48px;
-      margin-bottom: 4%;
-    }
-
-    .container-4 {
-      margin-bottom: 60px;
-    }
-
-    .bg1v2 {
-      height: 1080px;
-    }
-
-    .bg2 {
-      height: 1080px;
-    }
-
-    .bg3v2 {
-      height: 1080px;
-    }
-
-    .team {
-      height: 1080px;
-    }
-    .spaceship {
-      max-width: 880px;
-      margin-right: 80px;
-      margin-bottom: 350px;
-      height: 600px;
-    }
-
-    .container-1 {
-      margin-left: 150px;
-      margin-right: 100px;
-      // width: 30%;
-    }
-
-    .container-2 {
-      margin-left: 150px;
-    }
-
-    .container-5 {
-      margin-left: 150px;
-      width: 40%;
-    }
-
-    .container-3 {
-      margin-left: 150px;
-      width: 50%;
-    }
-
-    .container-4 {
-      margin-left: 125px;
-    }
-  }
+  //phone large
   @media screen and (max-width: 730px) {
     .spaceship {
       margin: 0;
@@ -396,7 +423,14 @@ $blue: #93a0c0;
       flex-direction: column;
     }
 
-    .container-2 {
+    .text-img-1 {
+      order: 2;
+      min-width: 90%;
+      margin-left: 0px;
+      // margin-right: 50px;
+    }
+
+    .text-img-2 {
       order: 2;
       min-width: 90%;
       margin-left: 0px;
@@ -472,7 +506,7 @@ $blue: #93a0c0;
       margin-left: 10px;
       margin-right: 10px;
     }
-
+    //phones small
     @media screen and (max-width: 450px) {
       .card-container {
         display: flex;

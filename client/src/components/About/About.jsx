@@ -41,7 +41,7 @@ function About() {
       </div>
       <div className="blackBg">
         <div className="flex-container">
-          <div className="container-2">
+          <div className="text-img-1">
             <h1>Historical Aethetic</h1>
             <p>
               We aim to deliver our best game yet. Space opera filled with
@@ -77,7 +77,7 @@ function About() {
             className="placeHolder2"
             alt="placeholder_image2"
           />
-          <div className="container-2">
+          <div className="text-img-2">
             <h1>Immersive AI</h1>
             <p>
               We aim to deliver our best game yet. Space opera filled with
@@ -133,18 +133,14 @@ function About() {
               draggable: true,
             }}
             breakpoints={{
-              // when window width is >= 640px
+              // when window width is >= 670px
               670: {
-                // width: 640,
                 slidesPerView: 2,
               },
-              // when window width is >= 768px
               900: {
-                // width: 768,
                 slidesPerView: 3,
               },
               1150: {
-                // width: 768,
                 slidesPerView: 4,
               },
               1350: {

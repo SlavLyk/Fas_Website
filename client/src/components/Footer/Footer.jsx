@@ -33,9 +33,7 @@ function Footer(props) {
         },
         body: JSON.stringify({ newsletterState }),
       }
-    ).then(() => {
-      alert("yes");
-    });
+    );
   };
 
   const resetFields = () => {
