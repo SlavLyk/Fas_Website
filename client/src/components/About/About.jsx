@@ -24,7 +24,7 @@ function About() {
       <div className="bg2">
         <div className="flex-container-main">
           <div className="container-1">
-            <h1>OUR STORY</h1>
+            <h1>Our Story</h1>
             <p>
               Floating Axe Studios is a game development studio founded in 2018.
               Our team is scattered all around the world in countries like:
@@ -147,9 +147,12 @@ function About() {
                 slidesPerView: 5,
               },
               1650: {
-                slidesPerView: 6,
+                slidesPerView: 5,
               },
               1750: {
+                slidesPerView: 6,
+              },
+              2000: {
                 slidesPerView: 7,
               },
             }}

@@ -5,15 +5,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 4%;
-  font-size: 85px;
+  font-size: 4.5vw;
   font-weight: 400;
 }
 
 .About h2 {
   font-family: "Iceland", serif;
-  font-size: 48px;
+  font-size: 2.5vw;
   color: #b8c0c8;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   font-weight: 400;
 }
 
@@ -23,7 +23,7 @@
 
 .About p {
   font-family: "Jura", sans-serif;
-  font-size: 24px;
+  font-size: 1.25vw;
 }
 
 .About .bg2 p {
@@ -91,27 +91,25 @@
 }
 
 .About .container-1 {
-  padding: 30px;
   width: 50%;
   min-width: 30%;
-  margin-left: 150px;
-  margin-right: 100px;
+  margin-left: 8%;
+  margin-right: 7%;
 }
 
 .About .text-img-1 {
-  padding: 30px;
   width: 50%;
-  margin-left: 150px;
+  margin-left: 8%;
+  margin-right: 6%;
 }
 
 .About .text-img-2 {
-  padding: 30px;
   width: 50%;
-  margin-left: 150px;
+  margin-right: 6%;
+  margin-left: 8%;
 }
 
 .About .container-3 {
-  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,15 +120,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
-  margin-left: 150px;
+  width: 48%;
+  margin-left: 160px;
   margin-right: 0px;
   margin-top: 20%;
 }
 
 .About .container-5 {
   width: 40%;
-  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,16 +138,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 150px;
+  margin-left: 160px;
   margin-right: 50%;
   margin-top: 20%;
 }
 
 .About .container-4 {
-  padding: 30px;
   width: 75%;
-  margin-left: 125px;
+  margin-left: 160px;
   margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.About .container-4 p {
+  width: 65%;
 }
 
 .About .blackBg {
@@ -160,7 +161,7 @@
 
 .About .team {
   background-color: black;
-  height: 1080px;
+  height: 920px;
   width: 100%;
   background-image: url(../../icons/BG_TEAM.png);
   background-repeat: no-repeat;
@@ -285,11 +286,11 @@
     margin-bottom: 3%;
   }
   .About h2 {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 4%;
   }
   .About p {
-    font-size: 20px;
+    font-size: 1.25vw;
   }
   .About .spaceship {
     margin-bottom: 250px;
@@ -333,11 +334,11 @@
   }
   .About .flex-heading h1 {
     margin: 0;
-    margin-left: 120px;
+    margin-left: 90px;
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1162px) {
   .About .flex-container-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -355,12 +356,16 @@
     margin-left: 7%;
     padding: 0%;
   }
+  .About .container-1 p {
+    margin-right: 10%;
+  }
   .About .container-1 h1 {
     font-size: 54px;
   }
   .About .text-img-1 {
     min-width: 30%;
     margin-left: 7%;
+    margin-right: 2%;
     padding: 0px;
   }
   .About .text-img-2 {
@@ -371,7 +376,9 @@
   .About .container-3 {
     man-width: 600px;
     margin-right: 0%;
+    margin-left: 7%;
     margin-top: 30%;
+    width: 55%;
   }
   .About .container-4 {
     width: 80%;
@@ -394,14 +401,13 @@
     margin-right: 0px;
   }
   .About p {
-    font-size: 16px;
+    font-size: 1.5vw;
   }
   .About h1 {
     font-size: 44px;
   }
   .About h2 {
-    font-size: 28px;
-    margin-bottom: 3%;
+    font-size: 22px;
   }
   .About .card-container {
     margin-bottom: 100px;
@@ -409,11 +415,22 @@
   .About .placeHolder1 {
     margin: 12px;
   }
+  .About .placeHolder2 {
+    margin: 12px;
+  }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 736px) {
   .About .spaceship {
     margin: 0;
+  }
+  .About .container-1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 90%;
+    margin-left: 0%;
+    padding: 0%;
   }
   .About .flex-container {
     display: -webkit-box;
@@ -429,59 +446,74 @@
         -ms-flex-order: 2;
             order: 2;
     min-width: 90%;
-    margin-left: 0px;
+    margin: 0px;
   }
   .About .text-img-2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     min-width: 90%;
-    margin-left: 0px;
+    margin: 0px;
   }
   .About .placeHolder1 {
     width: 90%;
+    margin: 0px;
     margin-bottom: 20px;
     margin-top: 20px;
   }
   .About .placeHolder2 {
     width: 90%;
+    margin: 0px;
     margin-bottom: 20px;
     margin-top: 20px;
   }
   .About .container-5 {
+    margin: 0;
     margin-top: 70%;
-    width: 80%;
-    margin-left: 0px;
+    width: 90%;
   }
   .About .container-3 {
     margin-top: 60%;
-    width: 100%;
+    width: 90%;
     margin-left: 0px;
   }
   .About .container-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .About .container-4 p {
     width: 100%;
-    margin-left: 10px;
-    margin-right: 0px;
-    padding: 10px;
-    width: 95%;
   }
   .About p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .About h1 {
-    font-size: 50px;
-    margin-bottom: 4%;
+    font-size: 44px;
+    margin-bottom: 2.2%;
+  }
+  .About .container-1 h1 {
+    font-size: 48px;
   }
   .About h2 {
-    font-size: 22px;
-    margin-bottom: 4%;
+    font-size: 24px;
+    margin-bottom: 3%;
   }
   .About .flex-heading {
     height: 10%;
   }
   .About .flex-heading h1 {
     margin: 0;
-    margin-left: 15px;
+    margin-left: 4%;
   }
   .About .banner {
     width: 4px;
@@ -502,7 +534,7 @@
   }
 }
 
-@media screen and (max-width: 730px) and (max-width: 450px) {
+@media screen and (max-width: 736px) and (max-width: 450px) {
   .About .card-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,6 +561,11 @@
   .About h2 {
     font-size: 22px;
     margin-bottom: 4%;
+  }
+  .About .flex-heading h1 {
+    margin: 0;
+    margin-left: 15px;
+    font-size: 44px;
   }
 }
 /*# sourceMappingURL=About.css.map */
