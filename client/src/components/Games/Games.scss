@@ -2,8 +2,17 @@ $blue: #b8c0c8;
 
 .Games {
   h1 {
-    font-family: "Podkova", serif;
-    margin-bottom: 10px;
+    font-family: "Iceland", serif;
+    background: #c2d4ff;
+    // background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    margin-left: 160px;
+    font-size: 85px;
+    font-weight: 400;
   }
 
   h2 {
@@ -18,14 +27,33 @@ $blue: #b8c0c8;
     font-family: "Jura", serif;
     opacity: 50%;
     margin-bottom: 7%;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h3 {
     font-size: 20px;
     color: $blue;
     // background-color: #343746;
-    padding-left: 160px;
+    // padding-left: 160px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
+    margin-right: 160px;
+    margin-left: 160px;
+    white-space: nowrap;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+
+    background: rgba(23, 10, 32, 0.2);
+    border: 1px solid rgba(80, 80, 80, 0.5);
+    margin-left: 10px;
   }
 
   .wrapper-left h3 {
@@ -34,17 +62,18 @@ $blue: #b8c0c8;
 
   .left-container h3 {
     font-weight: 300;
-    font-size: 18px;
-    color: white;
+    font-size: 20px;
+    color: #b8c0c8;
     background: rgba(52, 55, 70, 0.4);
     padding: 20px 20px 20px 20px;
   }
 
   .left-container p {
     padding: 20px;
+    padding-bottom: 40px;
     opacity: 100%;
     background-color: black;
-    height: 200px;
+    // height: 200px;
     margin: 0px;
   }
 
@@ -69,22 +98,23 @@ $blue: #b8c0c8;
     backdrop-filter: blur(55px);
     border-radius: 10px 10px 10px 10px;
     // padding: 40px;
-    width: 640px;
-    height: 400px;
+    width: 507px;
+    height: 320px;
     margin-top: 50px;
+    position: absolute;
   }
 
   .wrapper-left {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    margin-top: 5%;
+    // margin-top: 1%;
     padding-left: 160px;
   }
 
   .wrapper-right {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-self: center;
   }
 
@@ -101,11 +131,16 @@ $blue: #b8c0c8;
     justify-content: center;
   }
 
+  .Title {
+    width: 80%;
+  }
+
   .Michael {
-    width: 1063px;
+    max-width: 970px;
+    max-height: 950px;
     margin: 0px;
-    margin-top: 5%;
-    mix-blend-mode: lighten;
+    margin-top: 3%;
+    // mix-blend-mode: lighten;
   }
 
   .generals {
@@ -171,7 +206,16 @@ $blue: #b8c0c8;
     justify-content: center;
     // align-items: center;
     margin-top: 40px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 4%;
     height: 100vh;
+  }
+
+  .iframe {
+    width: 100%;
+    height: 90%;
+    // padding-bottom: 4%;
   }
 
   .bg1v3 {
@@ -208,6 +252,9 @@ $blue: #b8c0c8;
     // display:flex;
     // justify-content: center;
     // align-items: center;
+  }
+  .download-btn img {
+    width: 7%;
   }
 
   .download-btn {
@@ -252,20 +299,6 @@ $blue: #b8c0c8;
     border-bottom: 1px solid rgba(255, 212, 100, 0.1);
   }
 
-  .flex-heading h1 {
-    font-family: "Iceland", serif;
-    background: #c2d4ff;
-    // background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-    margin-left: 160px;
-    font-size: 85px;
-    font-weight: 400;
-  }
-
   .banner {
     width: 4px;
     height: 110px;
@@ -297,9 +330,55 @@ $blue: #b8c0c8;
     width: 100%;
   }
 
+  // MACBOOK
   @media screen and (max-width: 1600px) {
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: $blue;
+      // background-color: #343746;
+      // padding-left: 160px;
+    }
     .bg1v3 {
       height: 763px;
+    }
+    .bg2 {
+      height: 763px;
+    }
+
+    // .Michael {
+    //   // max-width: 970px;
+    //   max-height: 700px;
+    //   margin: 0;
+    //   margin-bottom: 30%;
+    // }
+
+    .heading {
+      padding-top: 2%;
+    }
+
+    .iframe {
+      // width: 100%;
+      height: 70%;
+      // padding-bottom: 4%;
+    }
+    .container-4 {
+      // padding: 30px;
+      padding: 40px 0px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
   }
   @media screen and (max-width: 852px) {

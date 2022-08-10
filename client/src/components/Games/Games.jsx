@@ -57,11 +57,12 @@ function Games() {
     <div className="Games">
       <Header active="Games" />
       <div className="bg1v3">
+        <div className="heading">
+          <h3>Gate of Golgotha</h3>
+          <div className="line"></div>
+        </div>
         <div className="games-container">
           <div className="wrapper-left">
-            <div className="heading">
-              <h3>Latest Media</h3>
-            </div>
             <div className="left-container">
               <div className="nebula">
                 <img src={Title} alt="" className="Title" />
@@ -90,13 +91,12 @@ function Games() {
       </div>
       <div className="bg2">
         <div className="heading">
-          <h3>Latest Media</h3>
+          <h3>Featured Video</h3>
         </div>
         <div className="video-container">
           <div className="video">
             <iframe
-              width="1600px"
-              height="900px"
+              className="iframe"
               src="https://www.youtube.com/embed/okmhsQy3ovI"
               title="YouTube video player"
               frameborder="0"
