@@ -98,7 +98,7 @@ $blue: #b8c0c8;
     backdrop-filter: blur(55px);
     border-radius: 10px 10px 10px 10px;
     // padding: 40px;
-    width: 507px;
+    max-width: 507px;
     height: 320px;
     margin-top: 50px;
     position: absolute;
@@ -120,6 +120,9 @@ $blue: #b8c0c8;
 
   .nebula {
     background-image: url("../../icons/Nebula.png");
+    border: 1px solid #242631;
+    backdrop-filter: blur(55px);
+    border-radius: 10px 10px 0px 0px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,13 +147,13 @@ $blue: #b8c0c8;
   }
 
   .generals {
-    height: 800px;
+    // height: 800px;
     display: flex;
     justify-content: center;
     align-items: start;
     // flex-direction: column;
     // margin-top: 3%;
-    margin: 0px 160px;
+    margin: 0px 150px;
   }
 
   .general {
@@ -158,11 +161,13 @@ $blue: #b8c0c8;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 27vw;
+    margin: 0px 10px;
   }
 
   .general-card {
-    height: 550px;
-    width: 90%;
+    height: 623px;
+    width: 100%;
   }
 
   #card_canvas {
@@ -172,7 +177,7 @@ $blue: #b8c0c8;
 
   .general-text {
     // padding-top: 2%
-    width: 90%;
+    // width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,6 +190,7 @@ $blue: #b8c0c8;
   }
 
   .general-text p {
+    position: relative;
     font-size: 16px;
     padding-left: 20px;
   }
@@ -196,9 +202,11 @@ $blue: #b8c0c8;
     font-weight: 400;
     opacity: 50%;
     color: white;
-    background: #15161c;
-    width: 100%;
+    // background: #15161c;
+    // width: 100%;
+    // height: 100%;
     padding-left: 20px;
+    margin-left: 0px;
   }
 
   .video {
@@ -209,7 +217,7 @@ $blue: #b8c0c8;
     margin-left: 160px;
     margin-right: 160px;
     margin-bottom: 4%;
-    height: 100vh;
+    height: 950px;
   }
 
   .iframe {
@@ -236,6 +244,8 @@ $blue: #b8c0c8;
     height: 1080px;
     width: 100%;
     color: white; // effects h1 in that background
+    // opacity: 10%;
+    background-color: black;
     // display:flex;
     // justify-content: center;
     // align-items: center;
@@ -313,6 +323,8 @@ $blue: #b8c0c8;
     padding: 40px 0px;
     margin-left: 160px;
     margin-right: 160px;
+    margin-bottom: 3%;
+    margin-top: 2%;
   }
 
   .container-4 p {
@@ -324,9 +336,9 @@ $blue: #b8c0c8;
   .general-bg {
     background-image: url(../../icons/Nebula1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    height: 1080px;
+    height: 1360px;
     width: 100%;
   }
 
@@ -342,28 +354,36 @@ $blue: #b8c0c8;
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 18px;
       color: $blue;
       // background-color: #343746;
       // padding-left: 160px;
     }
+
+    .left-container h3 {
+      font-size: 14px;
+    }
+
+    .left-container p {
+      font-size: 16px;
+    }
     .bg1v3 {
-      height: 763px;
+      height: 700px;
     }
     .bg2 {
       height: 763px;
     }
 
-    // .Michael {
-    //   // max-width: 970px;
-    //   max-height: 700px;
-    //   margin: 0;
-    //   margin-bottom: 30%;
-    // }
+    .Michael {
+      // max-width: 970px;
+      max-height: 700px;
+      margin: 0;
+      margin-bottom: 30%;
+    }
 
     .heading {
       padding-top: 2%;
@@ -371,14 +391,52 @@ $blue: #b8c0c8;
 
     .iframe {
       // width: 100%;
-      height: 70%;
+      height: 650px;
       // padding-bottom: 4%;
     }
     .container-4 {
       // padding: 30px;
       padding: 40px 0px;
-      margin-left: 100px;
-      margin-right: 100px;
+      padding-top: 0%;
+      margin-left: 160px;
+      margin-right: 160px;
+    }
+
+    .left-container {
+      max-width: 400px;
+      height: 230px;
+      margin-top: 50px;
+      position: absolute;
+    }
+
+    .download-btn {
+      font-size: 16px;
+    }
+
+    .video {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      margin-top: 40px;
+      margin-left: 160px;
+      margin-right: 160px;
+      margin-bottom: 0%;
+      height: 700px;
+    }
+
+    .generals {
+      // height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      // flex-direction: column;
+      // margin-top: 3%;
+      margin: 0px 150px;
+    }
+
+    .general-card {
+      height: 403px;
+      width: 300px;
     }
   }
   @media screen and (max-width: 852px) {

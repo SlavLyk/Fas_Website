@@ -89,7 +89,7 @@
   -webkit-backdrop-filter: blur(55px);
           backdrop-filter: blur(55px);
   border-radius: 10px 10px 10px 10px;
-  width: 507px;
+  max-width: 507px;
   height: 320px;
   margin-top: 50px;
   position: absolute;
@@ -122,6 +122,10 @@
 
 .Games .nebula {
   background-image: url("../../icons/Nebula.png");
+  border: 1px solid #242631;
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
+  border-radius: 10px 10px 0px 0px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +158,6 @@
 }
 
 .Games .generals {
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,7 +167,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin: 0px 160px;
+  margin: 0px 150px;
 }
 
 .Games .general {
@@ -181,11 +184,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 27vw;
+  margin: 0px 10px;
 }
 
 .Games .general-card {
-  height: 550px;
-  width: 90%;
+  height: 623px;
+  width: 100%;
 }
 
 .Games #card_canvas {
@@ -194,7 +199,6 @@
 }
 
 .Games .general-text {
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,6 +221,7 @@
 }
 
 .Games .general-text p {
+  position: relative;
   font-size: 16px;
   padding-left: 20px;
 }
@@ -228,9 +233,8 @@
   font-weight: 400;
   opacity: 50%;
   color: white;
-  background: #15161c;
-  width: 100%;
   padding-left: 20px;
+  margin-left: 0px;
 }
 
 .Games .video {
@@ -244,7 +248,7 @@
   margin-left: 160px;
   margin-right: 160px;
   margin-bottom: 4%;
-  height: 100vh;
+  height: 950px;
 }
 
 .Games .iframe {
@@ -270,6 +274,7 @@
   height: 1080px;
   width: 100%;
   color: white;
+  background-color: black;
 }
 
 .Games .bg3 {
@@ -355,6 +360,8 @@
   padding: 40px 0px;
   margin-left: 160px;
   margin-right: 160px;
+  margin-bottom: 3%;
+  margin-top: 2%;
 }
 
 .Games .container-4 p {
@@ -366,9 +373,9 @@
 .Games .general-bg {
   background-image: url(../../icons/Nebula1.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
-  height: 1080px;
+  height: 1360px;
   width: 100%;
 }
 
@@ -381,28 +388,78 @@
     margin-bottom: 15px;
   }
   .Games p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .Games h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: #b8c0c8;
   }
+  .Games .left-container h3 {
+    font-size: 14px;
+  }
+  .Games .left-container p {
+    font-size: 16px;
+  }
   .Games .bg1v3 {
-    height: 763px;
+    height: 700px;
   }
   .Games .bg2 {
     height: 763px;
+  }
+  .Games .Michael {
+    max-height: 700px;
+    margin: 0;
+    margin-bottom: 30%;
   }
   .Games .heading {
     padding-top: 2%;
   }
   .Games .iframe {
-    height: 70%;
+    height: 650px;
   }
   .Games .container-4 {
     padding: 40px 0px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-top: 0%;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+  .Games .left-container {
+    max-width: 400px;
+    height: 230px;
+    margin-top: 50px;
+    position: absolute;
+  }
+  .Games .download-btn {
+    font-size: 16px;
+  }
+  .Games .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 0%;
+    height: 700px;
+  }
+  .Games .generals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin: 0px 150px;
+  }
+  .Games .general-card {
+    height: 403px;
+    width: 300px;
   }
 }
 

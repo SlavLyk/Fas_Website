@@ -112,7 +112,6 @@ function Games() {
           <h1>Generals</h1>
         </div>
         <div className="container-4">
-          <h2>War Generals from Gate of Golgotha</h2>
           <p>
             Our team combines people from a diverse set of backgrounds and
             expertise. By interacting in a respectful and honest manner we build
