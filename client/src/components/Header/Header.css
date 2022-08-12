@@ -178,6 +178,9 @@ a:hover {
 }
 
 @media screen and (max-width: 852px) {
+  .header {
+    height: 72px;
+  }
   .headerMid {
     position: absolute;
     left: -100%;
@@ -235,6 +238,12 @@ a:hover {
   }
   .headerItemActive a {
     padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 852px) and (max-width: 450px) {
+  .header {
+    height: 60px;
   }
 }
 /*# sourceMappingURL=Header.css.map */

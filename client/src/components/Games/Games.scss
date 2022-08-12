@@ -84,7 +84,7 @@ $blue: #b8c0c8;
   .games-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    // height: 100vh;
   }
 
   .left-container {
@@ -319,7 +319,7 @@ $blue: #b8c0c8;
 
   .container-4 {
     // padding: 30px;
-    width: 83%;
+    // width: 100%;
     padding: 40px 0px;
     margin-left: 160px;
     margin-right: 160px;
@@ -382,7 +382,9 @@ $blue: #b8c0c8;
       // max-width: 970px;
       max-height: 700px;
       margin: 0;
-      margin-bottom: 30%;
+      margin-top: 3%;
+
+      // margin-bottom: 30%;
     }
 
     .heading {
@@ -391,7 +393,7 @@ $blue: #b8c0c8;
 
     .iframe {
       // width: 100%;
-      height: 650px;
+      height: 90%;
       // padding-bottom: 4%;
     }
     .container-4 {
@@ -431,15 +433,162 @@ $blue: #b8c0c8;
       align-items: start;
       // flex-direction: column;
       // margin-top: 3%;
-      margin: 0px 150px;
+      margin: 0px 160px;
+    }
+
+    .general {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      min-width: 26vw;
+      margin: 0px 5px;
     }
 
     .general-card {
-      height: 403px;
-      width: 300px;
+      height: 400px;
+      // width: 100%;
+    }
+
+    .general-text {
+      // padding-top: 2%
+      // width: 95%;
+    }
+
+    .general-text p {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+
+    .general-text h1 {
+      font-size: 26px;
+      padding-left: 20px;
+      margin-left: 0px;
+    }
+    .general-bg {
+      background-image: url(../../icons/Nebula1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 1000px;
+      width: 100%;
     }
   }
-  @media screen and (max-width: 852px) {
+  @media screen and (max-width: 1162px) {
+    h1 {
+      font-size: 48px;
+      margin-left: 72px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 13px;
+      color: $blue;
+      // margin-left: 72px;
+      // background-color: #343746;
+      // padding-left: 160px;
+    }
+
+    .heading {
+      margin-left: 72px;
+      margin-right: 72px;
+    }
+
+    .wrapper-left {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      // margin-top: 1%;
+      padding-left: 72px;
+    }
+
+    .left-container h3 {
+      font-size: 14px;
+    }
+
+    .left-container p {
+      font-size: 16px;
+    }
+    .generals {
+      // height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      // flex-direction: column;
+      // margin-top: 3%;
+      margin: 0px 100px;
+    }
+
+    .general {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      min-width: 28vw;
+      margin: 0px 5px;
+    }
+
+    .general-card {
+      height: 400px;
+      // width: 100%;
+    }
+
+    .video {
+      // display: flex;
+      // justify-content: center;
+      // // align-items: center;
+      margin-top: 40px;
+      margin-left: 72px;
+      margin-right: 72px;
+      margin-bottom: 4%;
+      height: 650px;
+    }
+
+    .container-4 {
+      // padding: 30px;
+      // width: 100%;
+      padding: 20px 0px;
+      margin-left: 72px;
+      margin-right: 72px;
+      margin-bottom: 3%;
+      margin-top: 1%;
+    }
+
+    .left-container {
+      max-width: 348px;
+      height: 234px;
+      margin-top: 30px;
+      position: absolute;
+    }
+
+    .Michael {
+      // width: 420px;
+      max-height: 504px;
+      margin: 0px;
+      margin-top: 3%;
+      margin-bottom: 25%;
+    }
+
+    .bg1v3 {
+      height: 648px;
+    }
+    .bg2 {
+      height: 700px;
+    }
+
+    .Title {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 450px) {
     .generals {
       margin-top: 800px;
       display: flex;
