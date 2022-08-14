@@ -64,11 +64,6 @@
   }
 
   .newsletter {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
-    // margin-right: 1  60px;
     order: -1;
   }
 
@@ -105,7 +100,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 60px;
+    padding: 10px 20px;
     gap: 12px;
     font-size: 20px;
     height: 60px;
@@ -132,20 +127,63 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .footer {
+    .fasContainer {
+      // margin-left: 125px;
+    }
+
+    .footerItem {
+      // margin-left: 125px;
+    }
+
+    form button {
+      // margin-right: 125px;
+    }
+  }
+}
+
+@media screen and (max-width: 1162px) {
+  .footer {
+    .fasContainer {
+      margin-left: 100px;
+    }
+
+    .footerItem {
+      margin-left: 100px;
+    }
+
+    form button {
+      margin-right: 100px;
+    }
+  }
+}
 @media screen and (max-width: 852px) {
   .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     height: auto;
     padding-bottom: 30px;
 
-    .fasContainer {
-      display: flex;
+    // .fasContainer {
+    //   display: flex;
 
-      justify-content: start;
-      order: -1;
-      grid-column: 1/2;
-      // margin-left: 25px;
+    //   justify-content: start;
+    //   order: -1;
+    //   grid-column: 1/2;
+    //   // margin-left: 25px;
+    // }
+
+    .fasContainer {
+      margin-left: 72px;
+    }
+
+    .footerItem {
+      margin-left: 72px;
+    }
+
+    form button {
+      margin-right: 72px;
     }
 
     .newsletter {
@@ -153,39 +191,13 @@
       grid-column: 1/2;
     }
 
-    .footerItem {
-      display: flex;
-    }
-
-    .fasContainer {
-      margin-left: 50px;
+    form {
+      margin-left: 72px;
     }
   }
 }
 
 @media screen and (max-width: 658px) {
   .footer {
-    .fasContainer {
-      margin-top: 50px;
-    }
-
-    .newsletter {
-      display: flex;
-      justify-content: start;
-
-      grid-column: 1/4;
-    }
-    .fasContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-    }
-
-    @media screen and (max-width: 358px) {
-    }
-    // .btn {
-    //   margin-left: 30px;
-    // }
   }
 }

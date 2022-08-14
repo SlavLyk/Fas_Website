@@ -36,16 +36,16 @@ function Footer(props) {
     );
   };
 
-  const resetFields = () => {
-    document.getElementById("newsLetterForm").reset();
-  };
+  // const resetFields = () => {
+  //   document.getElementById("newsLetterForm").reset();
+  // };
 
-  const handleSubmit2 = (e) => {
-    e.preventDefault();
-    console.log({ newsletterState });
-    alert("Thank you for subscribing to our newsletter!");
-    document.getElementById("newsLetterForm").reset();
-  };
+  // const handleSubmit2 = (e) => {
+  //   e.preventDefault();
+  //   console.log({ newsletterState });
+  //   alert("Thank you for subscribing to our newsletter!");
+  //   document.getElementById("newsLetterForm").reset();
+  // };
 
   return (
     <div className="footer">
@@ -90,7 +90,7 @@ function Footer(props) {
               value={newsletterState.email}
             />
           </p>
-          <button type="submit">Subscribe</button>
+          <button type="submit">S</button>
         </form>
       </div>
     </div>
