@@ -352,7 +352,7 @@ $blue: #b8c0c8;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    width: 40%;
+    width: 45%;
     height: 60px;
     margin: 0px 5px;
     border: 2px solid #3d4e71;
@@ -375,7 +375,7 @@ $blue: #b8c0c8;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    width: 40%;
+    width: 45%;
 
     height: 60px;
     -webkit-transform: scaleX(-1);
@@ -389,6 +389,10 @@ $blue: #b8c0c8;
 
   .next:hover {
     opacity: 100%;
+  }
+
+  .navButtons {
+    display: none;
   }
 
   // MACBOOK
@@ -490,7 +494,7 @@ $blue: #b8c0c8;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      min-width: 26vw;
+      min-width: 20vw;
       margin: 0px 5px;
     }
 
@@ -581,10 +585,13 @@ $blue: #b8c0c8;
       justify-content: start;
       flex-direction: column;
       align-items: center;
-      min-width: 28vw;
+      // min-width: 28vw;
+      width: 360px;
+
       margin: 0px 5px;
       // height: 300px;
       // margin-top: 20px;
+      margin-bottom: 50px;
     }
 
     .general-card {
@@ -638,12 +645,8 @@ $blue: #b8c0c8;
     .Title {
       width: 70%;
     }
-
-    .navButtons {
-      width: 100%;
-    }
   }
-  @media screen and (max-width: 658px) {
+  @media screen and (max-width: 851px) {
     h1 {
       font-size: 48px;
       margin-left: 72px;
@@ -726,7 +729,7 @@ $blue: #b8c0c8;
     }
 
     .general {
-      width: 100%;
+      width: 360px;
       // height: 600px;
       margin-bottom: 50px;
     }
@@ -734,8 +737,17 @@ $blue: #b8c0c8;
     .general-text {
       margin: 0px;
     }
+
+    .navButtons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 450px) {
+    .general-bg {
+      height: 1100px;
+    }
   }
 }

@@ -157,6 +157,7 @@ function Games() {
             // navigation={true}
             spaceBetween={0}
             slidesPerView={"auto"}
+            allowTouchMove={false}
             slidesPerGroup={1}
             slideToClickedSlide={true}
             centeredSlides={false}
@@ -173,14 +174,14 @@ function Games() {
             }}
             breakpoints={{
               // when window width is >= 670px
-              670: {
-                slidesPerView: 1,
-              },
-              900: {
+              600: {
                 slidesPerView: 2,
               },
-              1150: {
-                slidesPerView: 2,
+              851: {
+                slidesPerView: 3,
+              },
+              1162: {
+                slidesPerView: 3,
               },
               1350: {
                 slidesPerView: 3,
