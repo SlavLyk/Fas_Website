@@ -16,21 +16,21 @@ body {
 
 .swiper {
   width: 100%;
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-left: 100px; */
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
 }
 
 .swiper-slide {
-  background-size: 100%;
-  width: 1000px;
-  height: 400px;
+  /* background-size: 100%; */
+  /* width: 300px;
+  height: 400px; */
   display: flex;
   justify-content: center;
 }
 
 .swiper-slide img {
-  /* display: block; */
+  display: block;
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ body {
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   background: rgba(22, 22, 21, 0.5) !important;
   border: 1px solid #161615;
-  /* margin-bottom: 20%; */
+  margin-bottom: 100px;
 }
 
 .swiper-scrollbar-drag {

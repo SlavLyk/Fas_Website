@@ -166,7 +166,7 @@ $blue: #b8c0c8;
   }
 
   .general-card {
-    height: 623px;
+    // height: 500px;
     width: 100%;
   }
 
@@ -340,6 +340,55 @@ $blue: #b8c0c8;
     background-position: center;
     height: 1360px;
     width: 100%;
+  }
+
+  .prev {
+    background: #8dacfa;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 40%;
+    height: 60px;
+    margin: 0px 5px;
+    border: 2px solid #3d4e71;
+    border-radius: 6px;
+    opacity: 75%;
+    margin-bottom: 5%;
+  }
+
+  .prev:hover {
+    opacity: 100%;
+  }
+
+  .next {
+    background: #8dacfa;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 40%;
+
+    height: 60px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin: 0px 5px;
+    border: 2px solid #3d4e71;
+    border-radius: 6px;
+    opacity: 75%;
+    margin-bottom: 5%;
+  }
+
+  .next:hover {
+    opacity: 100%;
   }
 
   // MACBOOK
@@ -529,11 +578,13 @@ $blue: #b8c0c8;
 
     .general {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       flex-direction: column;
       align-items: center;
       min-width: 28vw;
       margin: 0px 5px;
+      // height: 300px;
+      // margin-top: 20px;
     }
 
     .general-card {
@@ -587,8 +638,34 @@ $blue: #b8c0c8;
     .Title {
       width: 70%;
     }
+
+    .navButtons {
+      width: 100%;
+    }
   }
   @media screen and (max-width: 658px) {
+    h1 {
+      font-size: 48px;
+      margin-left: 72px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 13px;
+      color: $blue;
+      // margin-left: 72px;
+      // background-color: #343746;
+      // padding-left: 160px;
+    }
+
     .generals {
       margin-top: 800px;
       display: flex;
@@ -645,16 +722,20 @@ $blue: #b8c0c8;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0px 72px;
+      margin: 0px 20px;
     }
 
     .general {
       width: 100%;
-      height: 600px;
+      // height: 600px;
+      margin-bottom: 50px;
     }
 
     .general-text {
       margin: 0px;
     }
+  }
+
+  @media screen and (max-width: 450px) {
   }
 }

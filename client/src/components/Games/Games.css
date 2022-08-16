@@ -188,7 +188,6 @@
 }
 
 .Games .general-card {
-  height: 623px;
   width: 100%;
 }
 
@@ -377,6 +376,52 @@
   width: 100%;
 }
 
+.Games .prev {
+  background: #8dacfa;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 40%;
+  height: 60px;
+  margin: 0px 5px;
+  border: 2px solid #3d4e71;
+  border-radius: 6px;
+  opacity: 75%;
+  margin-bottom: 5%;
+}
+
+.Games .prev:hover {
+  opacity: 100%;
+}
+
+.Games .next {
+  background: #8dacfa;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 40%;
+  height: 60px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 0px 5px;
+  border: 2px solid #3d4e71;
+  border-radius: 6px;
+  opacity: 75%;
+  margin-bottom: 5%;
+}
+
+.Games .next:hover {
+  opacity: 100%;
+}
+
 @media screen and (max-width: 1600px) {
   .Games h1 {
     font-size: 60px;
@@ -549,9 +594,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -600,9 +645,27 @@
   .Games .Title {
     width: 70%;
   }
+  .Games .navButtons {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 658px) {
+  .Games h1 {
+    font-size: 48px;
+    margin-left: 72px;
+  }
+  .Games h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .Games p {
+    font-size: 16px;
+  }
+  .Games h3 {
+    font-size: 13px;
+    color: #b8c0c8;
+  }
   .Games .generals {
     margin-top: 800px;
     display: -webkit-box;
@@ -659,11 +722,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0px 72px;
+    margin: 0px 20px;
   }
   .Games .general {
     width: 100%;
-    height: 600px;
+    margin-bottom: 50px;
   }
   .Games .general-text {
     margin: 0px;

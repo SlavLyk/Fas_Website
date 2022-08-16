@@ -1,4 +1,5 @@
 import React, { Suspense, useRef, useState } from "react";
+import { useSwiper } from "swiper/react";
 import { Link } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -12,6 +13,8 @@ import {
 import General from "../ThreeComponents/General";
 import "./Games.css";
 import Michael from "../../icons/Michael.png";
+import Arrow from "../../icons/SwipperButton2.svg";
+
 import Header from "../Header/Header.jsx";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
@@ -27,6 +30,16 @@ import Download from "../../icons/Download.svg";
 // import "swiper/css/effect-coverflow";
 // import "swiper/css/pagination";
 // import "./swiper.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Scrollbar, Navigation } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "./swiper.css";
+
+SwiperCore.use([Navigation, Scrollbar]);
 
 function GeneralText(props) {
   return (
@@ -49,6 +62,26 @@ function GeneralCard({ modelPath, title, text }) {
       </Suspense>
       <GeneralText title={title} text={text} />
     </div>
+  );
+}
+
+function SlideNextButton({ title }) {
+  const swiper = useSwiper();
+
+  return (
+    <button className={title} onClick={() => swiper.slideNext()}>
+      <img src={Arrow} alt="" />
+    </button>
+  );
+}
+
+function SlidePrevButton({ title }) {
+  const swiper = useSwiper();
+
+  return (
+    <button className={title} onClick={() => swiper.slidePrev()}>
+      <img src={Arrow} alt="" />
+    </button>
   );
 }
 
@@ -120,21 +153,75 @@ function Games() {
           </p>
         </div>
         <div className="generals">
-          <GeneralCard
-            title="QALIEL"
-            text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
-            modelPath="models/Qaliel/Qaliel.glb"
-          />
-          <GeneralCard
-            title="RED SHIELD"
-            text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
-            modelPath="models/RedShield/RedShield.glb"
-          />
-          <GeneralCard
-            title="GABRIEL"
-            text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
-            modelPath="models/Gabriel/Gabriel.glb"
-          />
+          <Swiper
+            // navigation={true}
+            spaceBetween={0}
+            slidesPerView={"auto"}
+            slidesPerGroup={1}
+            slideToClickedSlide={true}
+            centeredSlides={false}
+            modules={[Scrollbar, Navigation]}
+            // navigation={{
+            //   clickable: true,
+            //   nextEl: ".next1",
+            //   prevEl: ".prev1",
+            // }}
+            scrollbar={{
+              hide: false,
+              dragSize: 200,
+              draggable: true,
+            }}
+            breakpoints={{
+              // when window width is >= 670px
+              670: {
+                slidesPerView: 1,
+              },
+              900: {
+                slidesPerView: 2,
+              },
+              1150: {
+                slidesPerView: 2,
+              },
+              1350: {
+                slidesPerView: 3,
+              },
+              1650: {
+                slidesPerView: 3,
+              },
+              1750: {
+                slidesPerView: 3,
+              },
+              2000: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <GeneralCard
+                title="QALIEL"
+                text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+                modelPath="models/Qaliel/Qaliel.glb"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GeneralCard
+                title="RED SHIELD"
+                text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+                modelPath="models/RedShield/RedShield.glb"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GeneralCard
+                title="GABRIEL"
+                text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+                modelPath="models/Gabriel/Gabriel.glb"
+              />
+            </SwiperSlide>
+            <div className="navButtons">
+              <SlidePrevButton title="prev" />
+              <SlideNextButton title="next" />
+            </div>
+          </Swiper>
         </div>
       </div>
       <Footer />
