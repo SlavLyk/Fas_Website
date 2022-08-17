@@ -188,6 +188,7 @@
 }
 
 .Games .general-card {
+  height: 600px;
   width: 100%;
 }
 
@@ -213,9 +214,7 @@
   text-align: start;
   border: 1px solid rgba(127, 105, 48, 0.1);
   border-radius: 0px 0px 10px 10px;
-  background: rgba(0, 0, 0, 0.35);
-  -webkit-backdrop-filter: blur(55px);
-          backdrop-filter: blur(55px);
+  background: #000000;
 }
 
 .Games .general-text p {
@@ -224,15 +223,18 @@
   padding-left: 20px;
 }
 
-.Games .general-text h1 {
+.Games .general-text h2 {
   font-family: "Iceland", serif;
   padding: 10px 0px;
   font-size: 36px;
   font-weight: 400;
-  opacity: 50%;
-  color: white;
+  opacity: 100%;
+  background: #131313;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
   padding-left: 20px;
   margin-left: 0px;
+  margin-top: -2px;
 }
 
 .Games .video {
@@ -528,7 +530,7 @@
     font-size: 16px;
     padding-left: 20px;
   }
-  .Games .general-text h1 {
+  .Games .general-text h2 {
     font-size: 26px;
     padding-left: 20px;
     margin-left: 0px;
@@ -650,12 +652,15 @@
   .Games .Title {
     width: 70%;
   }
+  .Games .general-text p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 851px) {
   .Games h1 {
     font-size: 48px;
-    margin-left: 72px;
+    margin-left: 20px;
   }
   .Games h2 {
     font-size: 36px;
@@ -667,6 +672,17 @@
   .Games h3 {
     font-size: 13px;
     color: #b8c0c8;
+  }
+  .Games .heading {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .Games .wrapper-left {
+    padding-left: 20px;
+  }
+  .Games .container-4 {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .Games .generals {
     margin-top: 800px;
@@ -741,12 +757,25 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    margin-bottom: -5px;
+  }
+  .Games .video {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .Games .general-bg {
     height: 1100px;
+  }
+  .Games .Michael {
+    max-height: 340px;
+    margin-top: 3%;
+  }
+  .Games .video {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=Games.css.map */

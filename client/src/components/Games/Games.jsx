@@ -44,7 +44,7 @@ SwiperCore.use([Navigation, Scrollbar]);
 function GeneralText(props) {
   return (
     <div className="general-text">
-      <h1>{props.title}</h1>
+      <h2>{props.title}</h2>
       <p>{props.text}</p>
     </div>
   );
@@ -200,21 +200,21 @@ function Games() {
             <SwiperSlide>
               <GeneralCard
                 title="QALIEL"
-                text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+                text="Our team combines people from a diverse set of backgrounds and expertise. "
                 modelPath="models/Qaliel/Qaliel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
                 title="RED SHIELD"
-                text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+                text="Our team combines people from a diverse set of backgrounds and expertise. "
                 modelPath="models/RedShield/RedShield.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
                 title="GABRIEL"
-                text="Swift fighter, capable of striking decisive blows. Ultra-rational commander who is quick on the march."
+                text="Our team combines people from a diverse set of backgrounds and expertise. "
                 modelPath="models/Gabriel/Gabriel.glb"
               />
             </SwiperSlide>
