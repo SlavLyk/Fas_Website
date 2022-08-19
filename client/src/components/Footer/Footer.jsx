@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../icons/Logo.svg";
+import Checkmark from "../../icons/checkmark.svg";
+
 import Button from "../Button/Button";
 import "./Footer.css";
 
@@ -19,10 +21,15 @@ function Footer(props) {
   }
 
   const handleSubmit = async (e) => {
-    alert("Thank you for subscribing to our newsletter!");
+    if (newsletterState.email) {
+      alert("Thank you for subscribing to our Newsletter!");
+    } else {
+      alert("Please enter a valid email.");
+    }
     setNewsletterState({
       email: "",
     });
+    //prevents the page from refreshing upon submit
     e.preventDefault();
     const response = await fetch(
       "https://floating-axe-website.herokuapp.com/signup",
@@ -51,25 +58,25 @@ function Footer(props) {
     <div className="footer">
       <div className="fasContainer">
         <div className="fas">
-          <img height={40} src={Logo} alt="Logo" />
+          <img height={40} src={Logo} alt="Logo" className="checkmark" />
         </div>
         <div className="fasTextContainer">
           <p className="fasText">Floating Axe Studios</p>
         </div>
       </div>
       <div className="footerItem">
-        <Link to="/privacy">
-          Privacy <br /> & Policy
+        <Link className="a-link" to="/privacy">
+          Privacy & Policy
         </Link>
       </div>
       <div className="footerItem">
-        <Link to="/terms">
-          Terms <br /> & Conditions
+        <Link className="a-link" to="/terms">
+          Terms & Conditions
         </Link>
       </div>
       <div className="footerItem">
-        <Link to="/location">
-          Our <br /> Location
+        <Link className="a-link" to="/location">
+          Our Location
         </Link>
       </div>
       <div className="newsletter">
@@ -90,7 +97,14 @@ function Footer(props) {
               value={newsletterState.email}
             />
           </p>
-          <button type="submit">S</button>
+          <button type="submit">
+            <img
+              height={13}
+              src={Checkmark}
+              alt="Checkmark"
+              className="checkmark"
+            />
+          </button>
         </form>
       </div>
     </div>

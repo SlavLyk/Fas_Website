@@ -49,7 +49,7 @@
 
 .footer .fas img {
   padding: 7px;
-  border: 1px solid rgba(251, 235, 235, 0.18);
+  border: 1px solid rgba(251, 235, 235, 0.5);
   border-radius: 4px;
   opacity: 50%;
 }
@@ -67,10 +67,12 @@
 }
 
 .footer .fasText {
-  font-family: "Lexend Tera", sans-serif;
-  font-size: 14px;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
   margin: 0;
-  padding-left: 10px;
+  font-weight: 700;
+  color: white;
+  opacity: 70%;
 }
 
 .footer .footerItem {
@@ -85,12 +87,30 @@
       -ms-flex-pack: start;
           justify-content: start;
   -ms-grid-column: 1;
-  grid-column: 1/1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
   margin-left: 170px;
-  padding: 25px 20px;
+  margin-right: 170px;
   border-bottom: 1px solid rgba(80, 80, 80, 0.5);
   white-space: nowrap;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+.footer .a-link {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  width: 100%;
+  padding: 25px 20px;
+}
+
+.footer .a-link:hover {
+  background: rgba(80, 80, 80, 0.25);
+  border-radius: 8px;
+}
+
+.footer .a-link:focus {
+  background: #1a1a1a;
 }
 
 .footer .newsletter {
@@ -122,7 +142,8 @@
   background: #0a0a09;
   border: 1px solid rgba(255, 210, 90, 0.1);
   border-radius: 8px 0px 0px 8px;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
+  opacity: 100%;
 }
 
 .footer form button {
@@ -143,7 +164,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   gap: 12px;
   font-size: 20px;
   height: 60px;
@@ -169,19 +190,45 @@
   color: white;
 }
 
+@media screen and (max-width: 1600px) {
+  .footer .footerItem {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    margin-right: 160px;
+  }
+}
+
 @media screen and (max-width: 1162px) {
   .footer .fasContainer {
     margin-left: 100px;
   }
   .footer .footerItem {
     margin-left: 100px;
+    margin-right: 100px;
   }
   .footer form button {
     margin-right: 100px;
   }
+  .footer form input {
+    font-size: 14px;
+  }
+  .footer .fasText {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 852px) {
+@media screen and (max-width: 851px) {
   .footer {
     display: -ms-grid;
     display: grid;
@@ -191,13 +238,18 @@
     padding-bottom: 30px;
   }
   .footer .fasContainer {
-    margin-left: 72px;
+    margin-left: 50px;
+    padding-top: 10px;
   }
   .footer .footerItem {
-    margin-left: 72px;
+    margin-left: 50px;
+    margin-right: 60px;
   }
   .footer form button {
-    margin-right: 72px;
+    margin-right: 50px;
+  }
+  .footer form input {
+    font-size: 12px;
   }
   .footer .newsletter {
     -webkit-box-ordinal-group: 0;
@@ -208,7 +260,31 @@
     grid-column: 1/2;
   }
   .footer form {
-    margin-left: 72px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer .fasContainer {
+    margin-left: 20px;
+  }
+  .footer .footerItem {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  .footer form button {
+    margin-right: 20px;
+  }
+  .footer .newsletter {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .footer form {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=Footer.css.map */

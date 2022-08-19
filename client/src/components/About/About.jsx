@@ -42,7 +42,7 @@ function About() {
       <div className="blackBg">
         <div className="flex-container">
           <div className="text-img-1">
-            <h1>Historical Aethetic</h1>
+            <h1>Historical Aesthetic</h1>
             <p>
               We aim to deliver our best game yet. Space opera filled with
               political intrigue, military strategy and a rich cast of
