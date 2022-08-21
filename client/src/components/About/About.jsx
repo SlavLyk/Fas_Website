@@ -21,7 +21,7 @@ function About() {
   return (
     <div className="About">
       <Header active="About" />
-      <div className="bg2">
+      <div className="nebula-3">
         <div className="flex-container-main">
           <div className="container-1">
             <h1>Our Story</h1>
@@ -120,7 +120,7 @@ function About() {
           <button className="prev"></button>
           <Swiper
             spaceBetween={0}
-            slidesPerView={1}
+            slidesPerView={10}
             modules={[Scrollbar, Navigation]}
             navigation={{
               clickable: true,
@@ -134,6 +134,12 @@ function About() {
             }}
             breakpoints={{
               // when window width is >= 670px
+              450: {
+                slidesPerView: 8,
+              },
+              500: {
+                slidesPerView: 2,
+              },
               670: {
                 slidesPerView: 2,
               },

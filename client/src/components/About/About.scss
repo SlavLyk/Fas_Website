@@ -32,6 +32,7 @@ $blue: #93a0c0;
     font-family: "Jura", sans-serif;
     // font-size: 24px;
     font-size: 1.25vw;
+    opacity: 100%;
   }
 
   .bg2 p {
@@ -97,7 +98,7 @@ $blue: #93a0c0;
     // padding: 30px;
     width: 50%;
     min-width: 30%;
-
+    color: white;
     // margin-left: 160px;
     // margin-right: 157px;
 
@@ -169,6 +170,15 @@ $blue: #93a0c0;
   }
   .bg1v2 {
     background-image: url("../../icons/BG1v2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px; // 763px
+    width: 100%;
+  }
+
+  .nebula-3 {
+    background-image: url("../../icons/Nebula3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -577,20 +587,45 @@ $blue: #93a0c0;
       margin-right: 10px;
     }
     //phones small
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 500px) {
+      .swiper-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        grid-gap: 20px;
+        // grid-column-start: 2;
+        // grid-column-end: 4;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide .swiper-slide-next {
+        // width: 100%;
+      }
+
+      .team {
+        height: 2200px;
+      }
+      .card-spacing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // grid-template-columns: 2fr;
+      }
       .card-container {
         display: flex;
         justify-content: center;
         margin-left: 0%;
         margin-right: 0%;
+        width: 100%;
       }
 
       .prev {
-        margin: 130px 0px;
+        margin: 0px 0px;
       }
 
       .next {
-        margin: 130px 0px;
+        margin: 0px 0px;
       }
 
       p {

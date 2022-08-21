@@ -24,6 +24,7 @@
 .About p {
   font-family: "Jura", sans-serif;
   font-size: 1.25vw;
+  opacity: 100%;
 }
 
 .About .bg2 p {
@@ -93,6 +94,7 @@
 .About .container-1 {
   width: 50%;
   min-width: 30%;
+  color: white;
   margin-left: 8%;
   margin-right: 7%;
 }
@@ -171,6 +173,15 @@
 
 .About .bg1v2 {
   background-image: url("../../icons/BG1v2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+  width: 100%;
+}
+
+.About .nebula-3 {
+  background-image: url("../../icons/Nebula3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -534,7 +545,36 @@
   }
 }
 
-@media screen and (max-width: 736px) and (max-width: 450px) {
+@media screen and (max-width: 736px) and (max-width: 500px) {
+  .About .swiper-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 90%;
+    grid-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .About .team {
+    height: 2200px;
+  }
+  .About .card-spacing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .About .card-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,12 +584,13 @@
             justify-content: center;
     margin-left: 0%;
     margin-right: 0%;
+    width: 100%;
   }
   .About .prev {
-    margin: 130px 0px;
+    margin: 0px 0px;
   }
   .About .next {
-    margin: 130px 0px;
+    margin: 0px 0px;
   }
   .About p {
     font-size: 14px;
