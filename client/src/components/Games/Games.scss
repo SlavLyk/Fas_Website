@@ -397,6 +397,21 @@ $blue: #b8c0c8;
     display: none;
   }
 
+  .coming-soon-activated h4 {
+    font-size: 12px;
+    padding: 20px;
+    color: pink;
+    background: rgb(20, 20, 20);
+    // border-radius: 15px;
+  }
+
+  .coming-soon {
+    display: none;
+  }
+
+  .coming-soon-activated {
+    display: block;
+  }
   // MACBOOK
   @media screen and (max-width: 1600px) {
     h1 {

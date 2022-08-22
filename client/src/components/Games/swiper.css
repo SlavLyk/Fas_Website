@@ -1,0 +1,106 @@
+/* #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  /* padding-left: 100px; */
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+}
+
+.swiper-slide {
+  /* background-size: 100%; */
+  /* width: 300px;
+  height: 400px; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-button-next {
+  background-image: url(../../icons/SwipperButton.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72px !important;
+  height: 72px !important;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 10;
+  padding: 10;
+  background-size: cover;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(../../icons/SwipperButton.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 72px !important;
+  height: 72px !important;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgba(22, 22, 21, 0.5) !important;
+  border: 1px solid #161615;
+  margin-bottom: 100px;
+  /* display: flex;
+  justify-content: start; */
+  /* margin-left: 3%; */
+  /* margin-right: 3%; */
+  /* width: 70%; */
+}
+
+/* .swiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: flex;
+  ;
+  width: 90%;
+} */
+
+.swiper-scrollbar-drag {
+  background: rgba(141, 172, 250, 1) !important;
+  /* margin-left: 3%; */
+}
+
+.swiper
+  swiper-initialized
+  swiper-horizontal
+  swiper-pointer-events
+  mySwiper
+  swiper-backface-hidden {
+  color: red;
+}
+
+/* @media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+} */

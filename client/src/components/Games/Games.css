@@ -429,6 +429,21 @@
   display: none;
 }
 
+.Games .coming-soon-activated h4 {
+  font-size: 12px;
+  padding: 20px;
+  color: pink;
+  background: #141414;
+}
+
+.Games .coming-soon {
+  display: none;
+}
+
+.Games .coming-soon-activated {
+  display: block;
+}
+
 @media screen and (max-width: 1600px) {
   .Games h1 {
     font-size: 60px;
