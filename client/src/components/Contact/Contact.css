@@ -144,6 +144,7 @@
 .Contact .form-container form textarea:focus {
   border: 1px solid rgba(255, 210, 90, 0.5);
   outline-width: 0;
+  outline: none;
 }
 
 .Contact .form-container form button:focus {

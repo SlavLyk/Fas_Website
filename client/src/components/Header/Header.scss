@@ -1,15 +1,18 @@
 .header {
-  width: 100%;
-
   background-color: black;
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  stroke: green;
-  stroke-width: 200px;
-  position: relative;
-  z-index: 5;
+
+  top: 0;
+  width: 100%;
+  // margin-bottom: 80px;
+  position: sticky;
+
+  // overflow: hidden;
+
+  z-index: 10;
 }
 
 .headerMid {

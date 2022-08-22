@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLoader } from "@react-three/fiber";
+import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
 
@@ -8,6 +8,12 @@ export function QalielRedshield() {
     GLTFLoader,
     process.env.PUBLIC_URL + "models/FightScene/FightScene.glb"
   );
+
+  useFrame(() => {
+    gltf.scene.rotation.y += 0.002;
+    // gltf.scene.rotation.z -= 0.001;
+    // gltf.scene.rotation.z += 0.001;
+  });
 
   useEffect(() => {
     gltf.scene.position.set(0, -0.035, 0);

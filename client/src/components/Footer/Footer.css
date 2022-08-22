@@ -188,6 +188,7 @@
   outline-width: 0;
   opacity: 100%;
   color: white;
+  outline: none;
 }
 
 @media screen and (max-width: 1600px) {
