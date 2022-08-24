@@ -67,13 +67,16 @@ function FightScene() {
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
       <Html fullscreen>
         <div className="container">
+          <h1>COME AND SEE</h1>
           <p>
-            Gate of Golgotha is an RTS with elements of third-person hack n
-            slash, built in Unreal engine 4. The RTS battles emphasize scale and
-            take inspiration from many eras of history.
+            In 2018, the game production studio Floating Axe Studios was
+            established. Our workforce is dispersed across the globe in places
+            including Canada, Colombia, Mexico, the United States, and Ukraine.
+            Our first and ongoing project is an Unreal Engine 4-based
+            third-person hack and slash game with a narrative focus.
           </p>
           <Button
-            onClick={() => history.push("/games")}
+            onClick={() => history.push("/about")}
             buttonStyle="btn--primary"
           >
             Continue Reading...

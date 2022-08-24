@@ -1,3 +1,15 @@
+.container h1 {
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  background: linear-gradient(87.21deg, #c0d2ff 0.66%, #ffffff 94.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .bg1 {
   background-image: url("../../icons/BG.png");
   background-position: center;
@@ -51,9 +63,6 @@
   padding: 1%;
   width: 30%;
   margin-left: 5%;
-  background: linear-gradient(73.05deg, rgba(5, 5, 5, 0.2) 0%, rgba(5, 5, 5, 0) 53.53%);
-  -webkit-backdrop-filter: blur(55px);
-          backdrop-filter: blur(55px);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -69,6 +78,10 @@ p {
   font-family: "Podkova", serif;
   opacity: 50%;
   margin-bottom: 5%;
+}
+
+.container p {
+  font-family: "Podkova", serif;
 }
 
 .bg2-container {
