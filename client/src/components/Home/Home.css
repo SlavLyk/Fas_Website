@@ -8,10 +8,29 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  margin-bottom: 2%;
+}
+
+.gameText h1 {
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  background: linear-gradient(87.21deg, #c0d2ff 0.66%, #ffffff 94.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 5%;
+}
+
+.heading h2 {
+  color: #b8c0c8;
+  white-space: nowrap;
 }
 
 .bg1 {
-  background-image: url("../../icons/BG.png");
+  background-image: url("../../icons/HomeBG.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,20 +54,175 @@
   padding-top: 10%;
 }
 
+canvas {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .wrapperCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
-  height: 1000px;
-  width: 75%;
+  height: 100%;
+  width: 100%;
+}
+
+.gameBG {
+  background-image: url("../../icons/GameBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 480px;
+  width: 770px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(124, 101, 50, 0.7);
+  margin-left: 160px;
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
 }
 
 .gameName {
-  background-image: url("../../icons/GameName.png");
+  background-image: url("../../icons/Title.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 76%;
-  height: 30%;
+  height: 40%;
   width: 100%;
+  margin-top: 150px;
+}
+
+.gameText {
+  width: 50%;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-right: 80px;
+}
+
+.tagline {
+  background-image: url("../../icons/Tagline.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 5%;
+  mix-blend-mode: color-dodge;
+  width: 100%;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+  background: rgba(23, 10, 32, 0.2);
+  border: 1px solid rgba(80, 80, 80, 0.5);
+  margin-left: 10px;
+}
+
+.btnCanvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 240px;
+  background: none;
+  border: none;
+  margin: 0;
+  margin-top: -15px;
+  color: #ffd361;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1.5px solid #7b652f;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.btnCanvas .btnText {
+  padding: 17px;
+  padding-right: 35px;
+  text-align: center;
+  margin: 0px;
+  font-size: 16px;
+  border-right: 1.5px solid #7b652f;
+  background: linear-gradient(87.18deg, #ffd361 -53.05%, #ffffff 47.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.btnCanvas .btnArrow {
+  margin: 0px;
+  padding: 20px;
+}
+
+.btnCanvas:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#b29444), to(#ffd361));
+  background: linear-gradient(270deg, #b29444 0%, #ffd361 100%);
+  border: 1.5px solid #ffd361;
+}
+
+.btnCanvas:hover .btnText {
+  border-right: 1.5px solid #ffd361;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.btnCanvas:hover .btnArrow {
+  -webkit-filter: brightness(0) saturate(100%);
+          filter: brightness(0) saturate(100%);
+}
+
+.btnCanvas:focus {
+  background: -webkit-gradient(linear, right top, left top, from(#ffefb6), color-stop(72.61%, #ffd361));
+  background: linear-gradient(270deg, #ffefb6 0%, #ffd361 72.61%);
+  border: 1.5px solid #ffd361;
+}
+
+.btnCanvas:focus .btnText {
+  border-right: 1.5px solid #ffd361;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.btnCanvas:focus .btnArrow {
+  -webkit-filter: brightness(0) saturate(100%);
+          filter: brightness(0) saturate(100%);
+}
+
+.gameText button {
+  width: 325px;
+}
+
+.gameText button .btnText {
+  padding-right: 20px;
+  margin: 0px;
+  letter-spacing: -2px;
 }
 
 .arrow {
@@ -60,9 +234,9 @@
 }
 
 .container {
-  padding: 1%;
-  width: 30%;
-  margin-left: 5%;
+  width: 40%;
+  margin-left: 160px;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -81,7 +255,8 @@ p {
 }
 
 .container p {
-  font-family: "Podkova", serif;
+  font-family: "Jura", serif;
+  opacity: 100%;
 }
 
 .bg2-container {
@@ -102,6 +277,17 @@ p {
     background-size: 525px;
     height: 35vh;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container h1 {
+    font-size: 75px;
+    margin-bottom: 2%;
+  }
+  .gameText h1 {
+    font-size: 60px;
+    margin-bottom: 5%;
   }
 }
 /*# sourceMappingURL=Home.css.map */

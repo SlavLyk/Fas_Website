@@ -4,6 +4,7 @@ import { useFrame, Canvas } from "@react-three/fiber";
 import Header from "../Header/Header.jsx";
 import { history } from "../../history.js";
 import { Loader } from "@react-three/drei";
+import btnArrow from "../../icons/btnArrow.svg";
 
 // import { Loader } from "./Loader.jsx";
 
@@ -65,8 +66,12 @@ function FightScene() {
         color="#419ED5"
       />
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
-      <Html fullscreen>
+      <Html zIndexRange={[1, 0]} fullscreen>
         <div className="container">
+          <div className="heading">
+            <h2>Our Story</h2>
+            <div className="line"></div>
+          </div>
           <h1>COME AND SEE</h1>
           <p>
             In 2018, the game production studio Floating Axe Studios was
@@ -75,12 +80,10 @@ function FightScene() {
             Our first and ongoing project is an Unreal Engine 4-based
             third-person hack and slash game with a narrative focus.
           </p>
-          <Button
-            onClick={() => history.push("/about")}
-            buttonStyle="btn--primary"
-          >
-            Continue Reading...
-          </Button>
+          <button onClick={() => history.push("/about")} className="btnCanvas">
+            <div className="btnText">Read More</div>
+            <img src={btnArrow} alt="" className="btnArrow" />
+          </button>
         </div>
       </Html>
       {/* <OrbitControls 
@@ -130,14 +133,7 @@ function Home() {
   return (
     <div>
       <Header active="Home" />
-      <div className="bg1">
-        <div className="home">
-          <div className="wrapperCenter">
-            <div className="gameName"></div>
-            <div className="arrow"></div>
-          </div>
-        </div>
-      </div>
+
       <div className="bg2">
         <div className="Experience1">
           {/* <Loader /> */}
@@ -146,11 +142,37 @@ function Home() {
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
                 <FightScene />
               </Canvas>
-              <Footer />
             </div>
           </Suspense>
         </div>
       </div>
+      <div className="bg1">
+        <div className="wrapperCenter">
+          <div className="gameBG">
+            <div className="gameName"></div>
+            <div className="tagline"></div>
+          </div>
+          <div className="gameText">
+            <div className="heading">
+              <h2>Games</h2>
+              <div className="line"></div>
+            </div>
+            <h1>
+              Unless The Lord
+              <br />
+              Builds The House,The Builders Labor In Vain
+            </h1>
+            <button
+              onClick={() => history.push("/games")}
+              className="btnCanvas"
+            >
+              <div className="btnText">Explore Our First Title</div>
+              <img src={btnArrow} alt="" className="btnArrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
