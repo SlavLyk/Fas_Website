@@ -8,7 +8,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin-bottom: 2%;
+  margin-bottom: 40px;
+  line-height: 0.5;
+  text-align: start;
 }
 
 .gameText h1 {
@@ -22,6 +24,8 @@
   background-clip: text;
   text-fill-color: transparent;
   margin-bottom: 5%;
+  line-height: 0.7;
+  margin: 0px;
 }
 
 .heading h2 {
@@ -55,8 +59,8 @@
 }
 
 canvas {
-  cursor: -webkit-grab;
-  cursor: grab;
+  height: 100%;
+  width: 100%;
 }
 
 .wrapperCenter {
@@ -119,13 +123,10 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2%;
+  margin-bottom: 40px;
 }
 
 .line {
@@ -148,7 +149,6 @@ canvas {
   background: none;
   border: none;
   margin: 0;
-  margin-top: -15px;
   color: #ffd361;
   font-weight: 600;
   font-size: 20px;
@@ -236,6 +236,7 @@ canvas {
 .container {
   width: 40%;
   margin-left: 160px;
+  margin-top: 500px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -264,20 +265,6 @@ p {
   display: grid;
   -ms-grid-columns: 200px;
       grid-template-columns: 200px;
-}
-
-@media screen and (max-width: 1100px) {
-  .container {
-    width: 40%;
-  }
-  .gameName {
-    background-image: url("../../icons/GameName.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 525px;
-    height: 35vh;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1600px) {

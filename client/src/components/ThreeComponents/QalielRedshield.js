@@ -16,8 +16,10 @@ export function QalielRedshield() {
   });
 
   useEffect(() => {
-    gltf.scene.position.set(0, -0.035, 0);
-    gltf.scene.rotation.set(0, 1, 0);
+    gltf.scene.position.set(1.5, 0, 6.5);
+    gltf.scene.rotation.set(0.1, -2, 0);
+    // gltf.scene.position.set(0.7, -0.035, 0);
+    // gltf.scene.rotation.set(0, 1, 0);
     gltf.scene.traverse((object) => {
       if (object instanceof Mesh) {
         object.castShadow = true;
