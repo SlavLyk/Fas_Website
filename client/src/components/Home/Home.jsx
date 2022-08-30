@@ -66,7 +66,7 @@ function FightScene() {
         color="#419ED5"
       />
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
-      <Html zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
+      <Html center zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
         <div className="html-div">
           <div className="container">
             <div className="heading">
@@ -82,11 +82,13 @@ function FightScene() {
               third-person hack and slash game with a narrative focus.
             </p>
             <button
-              onClick={() => history.push("/about")}
+              onClick={() => history.push("/games")}
               className="btnCanvas"
             >
-              <div className="btnText">Read More</div>
-              <img src={btnArrow} alt="" className="btnArrow" />
+              <div className="btnText">Go to Demo</div>
+              <div className="btnArrowContainer">
+                <img src={btnArrow} alt="" className="btnArrow" />
+              </div>
             </button>
           </div>
         </div>
@@ -143,10 +145,7 @@ function Home() {
         <div className="Experience1">
           {/* <Loader /> */}
           <Suspense fallback={null}>
-            <div
-              className="canvas-div"
-              style={{ width: "100%", height: "1080px" }}
-            >
+            <div className="canvas-div" style={{ width: "100%", height: "10" }}>
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
                 <FightScene />
               </Canvas>
@@ -171,11 +170,13 @@ function Home() {
               Builds The House,The Builders Labor In Vain
             </h1>
             <button
-              onClick={() => history.push("/games")}
+              onClick={() => history.push("/about")}
               className="btnCanvas"
             >
-              <div className="btnText">Explore Our First Title</div>
-              <img src={btnArrow} alt="" className="btnArrow" />
+              <div className="btnText">Our Story</div>
+              <div className="btnArrowContainer">
+                <img src={btnArrow} alt="" className="btnArrow" />
+              </div>
             </button>
           </div>
         </div>

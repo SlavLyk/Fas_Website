@@ -1,6 +1,21 @@
 .canvas-div {
 }
 
+.brown {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  padding-top: 500px;
+  position: "absolute";
+  top: "500px";
+  left: "50%";
+  zindex: "1000000";
+  width: 500px;
+  height: 500px;
+  // margin-top: 500px;
+  background: #7b652f;
+}
+
 .container h1 {
   font-family: "Iceland";
   font-style: normal;
@@ -28,12 +43,13 @@
   text-fill-color: transparent;
   margin-bottom: 5%;
   line-height: 0.7;
-  margin: 0px;
+  margin-bottom: 45px;
 }
 
 .heading h2 {
   color: #b8c0c8;
   white-space: nowrap;
+  font-size: 20px;
 }
 
 .bg1 {
@@ -62,6 +78,7 @@ canvas {
   // cursor: grab;
   height: 100%;
   width: 100%;
+  z-index: 100;
 }
 
 .wrapperCenter {
@@ -123,6 +140,7 @@ canvas {
   // justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  line-height: 0.5;
 }
 
 .line {
@@ -138,7 +156,7 @@ canvas {
   display: flex;
   justify-content: space-between;
 
-  width: 240px;
+  // width: 100%;
 
   background: none;
   border: none;
@@ -148,6 +166,7 @@ canvas {
   font-size: 20px;
   border: 1.5px solid #7b652f;
   border-radius: 10px 10px 10px 10px;
+  // white-space: nowrap;
 
   .btnText {
     padding: 17px;
@@ -155,7 +174,6 @@ canvas {
     text-align: center;
     margin: 0px;
     font-size: 16px;
-    border-right: 1.5px solid #7b652f;
 
     background: linear-gradient(87.18deg, #ffd361 -53.05%, #ffffff 47.66%);
     -webkit-background-clip: text;
@@ -168,6 +186,11 @@ canvas {
     margin: 0px;
     padding: 20px;
   }
+
+  .btnArrowContainer {
+    height: 54px;
+    border-left: 1.5px solid #7b652f;
+  }
 }
 
 .btnCanvas:hover {
@@ -176,8 +199,6 @@ canvas {
   border: 1.5px solid #ffd361;
 
   .btnText {
-    border-right: 1.5px solid #ffd361;
-
     background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -187,6 +208,10 @@ canvas {
 
   .btnArrow {
     filter: brightness(0) saturate(100%);
+  }
+
+  .btnArrowContainer {
+    border-left: 1.5px solid rgba(255, 211, 97, 1);
   }
 }
 
@@ -196,7 +221,7 @@ canvas {
   border: 1.5px solid #ffd361;
 
   .btnText {
-    border-right: 1.5px solid #ffd361;
+    // border-right: 1.5px solid #ffd361;
 
     background: black;
     -webkit-background-clip: text;
@@ -208,17 +233,9 @@ canvas {
   .btnArrow {
     filter: brightness(0) saturate(100%);
   }
-}
 
-.gameText button {
-  width: 325px;
-
-  .btnText {
-    padding-right: 20px;
-    // padding-left: 0px;
-    margin: 0px;
-    letter-spacing: -2px;
-    // white-space: nowrap;
+  .btnArrowContainer {
+    border-left: 1.5px solid #ffd361;
   }
 }
 
@@ -230,15 +247,15 @@ canvas {
   height: 72px;
 }
 .html-div {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .container {
   width: 40%;
-  margin-left: 160px;
-  margin-top: 500px;
+  // margin-left: 160px;
+  margin-top: 83vh;
   // top: 90%;
   // margin-bottom: 160px;
   cursor: pointer;
@@ -291,7 +308,7 @@ p {
 
   .gameText h1 {
     font-size: 60px;
-    margin-bottom: 5%;
+    margin-bottom: 40px;
   }
 
   .container {

@@ -1,3 +1,14 @@
+.brown {
+  padding-top: 500px;
+  position: "absolute";
+  top: "500px";
+  left: "50%";
+  zindex: "1000000";
+  width: 500px;
+  height: 500px;
+  background: #7b652f;
+}
+
 .container h1 {
   font-family: "Iceland";
   font-style: normal;
@@ -25,12 +36,13 @@
   text-fill-color: transparent;
   margin-bottom: 5%;
   line-height: 0.7;
-  margin: 0px;
+  margin-bottom: 45px;
 }
 
 .heading h2 {
   color: #b8c0c8;
   white-space: nowrap;
+  font-size: 20px;
 }
 
 .bg1 {
@@ -61,6 +73,7 @@
 canvas {
   height: 100%;
   width: 100%;
+  z-index: 100;
 }
 
 .wrapperCenter {
@@ -127,6 +140,7 @@ canvas {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
+  line-height: 0.5;
 }
 
 .line {
@@ -145,7 +159,6 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 240px;
   background: none;
   border: none;
   margin: 0;
@@ -162,7 +175,6 @@ canvas {
   text-align: center;
   margin: 0px;
   font-size: 16px;
-  border-right: 1.5px solid #7b652f;
   background: linear-gradient(87.18deg, #ffd361 -53.05%, #ffffff 47.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -175,6 +187,11 @@ canvas {
   padding: 20px;
 }
 
+.btnCanvas .btnArrowContainer {
+  height: 54px;
+  border-left: 1.5px solid #7b652f;
+}
+
 .btnCanvas:hover {
   background: -webkit-gradient(linear, right top, left top, from(#b29444), to(#ffd361));
   background: linear-gradient(270deg, #b29444 0%, #ffd361 100%);
@@ -182,7 +199,6 @@ canvas {
 }
 
 .btnCanvas:hover .btnText {
-  border-right: 1.5px solid #ffd361;
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -195,6 +211,10 @@ canvas {
           filter: brightness(0) saturate(100%);
 }
 
+.btnCanvas:hover .btnArrowContainer {
+  border-left: 1.5px solid #ffd361;
+}
+
 .btnCanvas:focus {
   background: -webkit-gradient(linear, right top, left top, from(#ffefb6), color-stop(72.61%, #ffd361));
   background: linear-gradient(270deg, #ffefb6 0%, #ffd361 72.61%);
@@ -202,7 +222,6 @@ canvas {
 }
 
 .btnCanvas:focus .btnText {
-  border-right: 1.5px solid #ffd361;
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -215,14 +234,8 @@ canvas {
           filter: brightness(0) saturate(100%);
 }
 
-.gameText button {
-  width: 325px;
-}
-
-.gameText button .btnText {
-  padding-right: 20px;
-  margin: 0px;
-  letter-spacing: -2px;
+.btnCanvas:focus .btnArrowContainer {
+  border-left: 1.5px solid #ffd361;
 }
 
 .arrow {
@@ -233,10 +246,22 @@ canvas {
   height: 72px;
 }
 
+.html-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .container {
   width: 40%;
-  margin-left: 160px;
-  margin-top: 500px;
+  margin-top: 83vh;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -274,7 +299,7 @@ p {
   }
   .gameText h1 {
     font-size: 60px;
-    margin-bottom: 5%;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=Home.css.map */
