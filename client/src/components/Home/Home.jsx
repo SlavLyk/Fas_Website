@@ -65,7 +65,9 @@ function FightScene() {
         segments={20} // Number of particles
         color="#419ED5"
       />
+
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
+
       <Html center zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
         <div className="html-div">
           <div className="container">
@@ -85,7 +87,7 @@ function FightScene() {
               onClick={() => history.push("/games")}
               className="btnCanvas"
             >
-              <div className="btnText">Go to Demo</div>
+              <div className="btnText">See the Demo</div>
               <div className="btnArrowContainer">
                 <img src={btnArrow} alt="" className="btnArrow" />
               </div>

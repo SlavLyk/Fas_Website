@@ -174,7 +174,6 @@ canvas {
     text-align: center;
     margin: 0px;
     font-size: 16px;
-
     background: linear-gradient(87.18deg, #ffd361 -53.05%, #ffffff 47.66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -217,12 +216,9 @@ canvas {
 
 .btnCanvas:focus {
   background: linear-gradient(270deg, #ffefb6 0%, #ffd361 72.61%);
-  // color: black;
   border: 1.5px solid #ffd361;
 
   .btnText {
-    // border-right: 1.5px solid #ffd361;
-
     background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -246,6 +242,7 @@ canvas {
   background-repeat: no-repeat;
   height: 72px;
 }
+
 .html-div {
   display: flex;
   flex-direction: column;

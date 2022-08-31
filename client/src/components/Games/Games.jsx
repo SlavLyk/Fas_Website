@@ -87,6 +87,7 @@ function SlidePrevButton({ title }) {
 
 function Games() {
   const [isActive, setIsActive] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const displayText = () => {
     setIsActive((current) => !current);
@@ -117,10 +118,20 @@ function Games() {
                   back...
                 </p>
               </div>
-              <button className="download-btn" onClick={displayText}>
-                Download Demo
-                <img src={Download} alt="" className="Download" />
-              </button>
+              {!isClicked ? (
+                <button
+                  className="download-btn"
+                  onClick={() => setIsClicked(true)}
+                >
+                  Download Demo
+                  <img src={Download} alt="" className="Download" />
+                </button>
+              ) : (
+                <button className="download-btn">
+                  Coming soon...
+                  <img src={Download} alt="" className="Download" />
+                </button>
+              )}
               <div
                 className={isActive ? "coming-soon-activated" : "coming-soon"}
               >
