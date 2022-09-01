@@ -15,13 +15,13 @@ function App() {
   return (
     <ScrollToTop>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="games" element={<Games />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Privacy />} />
         <Route path="terms" element={<Terms />} />
         <Route path="location" element={<Location />} />
+        <Route path="/*" element={<Home />} />
       </Routes>
     </ScrollToTop>
   );

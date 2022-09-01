@@ -70,6 +70,11 @@
   padding-top: 10%;
 }
 
+.canvas-div {
+  width: 100%;
+  height: 1080px;
+}
+
 canvas {
   height: 100%;
   width: 100%;
@@ -261,7 +266,8 @@ canvas {
 
 .container {
   width: 40%;
-  margin-top: 83vh;
+  padding-left: 100px;
+  margin-top: 1080px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -293,13 +299,41 @@ p {
 }
 
 @media screen and (max-width: 1600px) {
+  .canvas-div {
+    width: 100%;
+    height: 700px;
+  }
   .container h1 {
-    font-size: 75px;
-    margin-bottom: 2%;
+    font-size: 70px;
+  }
+  .heading h2 {
+    font-size: 16px;
+  }
+  .container p {
+    font-size: 18px;
   }
   .gameText h1 {
     font-size: 60px;
     margin-bottom: 40px;
+  }
+  .container {
+    margin-top: 550px;
+  }
+  .btnCanvas .btnText {
+    padding-top: 20px;
+    padding-right: 35px;
+    font-size: 13px;
+  }
+  .btnCanvas .btnArrow {
+    margin: 0px;
+    padding: 20px;
+  }
+  .btnCanvas .btnArrowContainer {
+    height: 54px;
+    border-left: 1.5px solid #7b652f;
+  }
+  .gameBG {
+    margin-left: 100px;
   }
 }
 /*# sourceMappingURL=Home.css.map */

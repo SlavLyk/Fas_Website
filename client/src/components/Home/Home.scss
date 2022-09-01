@@ -1,6 +1,3 @@
-.canvas-div {
-}
-
 .brown {
   // display: flex;
   // justify-content: center;
@@ -74,6 +71,12 @@
   align-items: center;
   padding-top: 10%;
 }
+
+.canvas-div {
+  width: 100%;
+  height: 1080px; // try chanign to px 1080 or 750
+}
+
 canvas {
   // cursor: grab;
   height: 100%;
@@ -95,12 +98,8 @@ canvas {
   background-image: url("../../icons/GameBG.png");
   background-position: center;
   background-repeat: no-repeat;
-  // background-size: 100%;
   height: 480px;
   width: 770px;
-  // opacity: 30%;
-  // padding: 0%;
-  // margin: 0%;
   border-radius: 10px;
   border: 0.5px solid rgba(124, 101, 50, 0.7);
   margin-left: 160px;
@@ -251,8 +250,9 @@ canvas {
 
 .container {
   width: 40%;
-  // margin-left: 160px;
-  margin-top: 83vh;
+  // margin-top: 83vh;
+  padding-left: 100px;
+  margin-top: 1080px;
   // top: 90%;
   // margin-bottom: 160px;
   cursor: pointer;
@@ -298,9 +298,23 @@ p {
 
 //MACBOOK
 @media screen and (max-width: 1600px) {
+  .canvas-div {
+    width: 100%;
+    height: 700px;
+  }
+
   .container h1 {
-    font-size: 75px;
-    margin-bottom: 2%;
+    font-size: 70px;
+    // margin-bottom: 2%;
+  }
+
+  .heading h2 {
+    font-size: 16px;
+    // margin-bottom: 2%;
+  }
+
+  .container p {
+    font-size: 18px;
   }
 
   .gameText h1 {
@@ -309,6 +323,28 @@ p {
   }
 
   .container {
-    // margin-top: 450px;
+    margin-top: 550px;
+  }
+
+  .btnCanvas {
+    .btnText {
+      padding-top: 20px;
+      padding-right: 35px;
+      font-size: 13px;
+    }
+
+    .btnArrow {
+      margin: 0px;
+      padding: 20px;
+    }
+
+    .btnArrowContainer {
+      height: 54px;
+      border-left: 1.5px solid #7b652f;
+    }
+  }
+
+  .gameBG {
+    margin-left: 100px;
   }
 }

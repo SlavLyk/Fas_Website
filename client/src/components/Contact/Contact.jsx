@@ -16,7 +16,7 @@ function Contact(props) {
   const [isLoading, setIsLoading] = useState(false);
 
   const ERROR = {
-    email: "Please enter valid email address.",
+    email: "Please enter a valid email address.",
     emptyFields: "This field is required...",
   };
 

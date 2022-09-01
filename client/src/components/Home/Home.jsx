@@ -147,7 +147,7 @@ function Home() {
         <div className="Experience1">
           {/* <Loader /> */}
           <Suspense fallback={null}>
-            <div className="canvas-div" style={{ width: "100%", height: "10" }}>
+            <div className="canvas-div">
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
                 <FightScene />
               </Canvas>
