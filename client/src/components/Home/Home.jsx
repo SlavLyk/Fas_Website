@@ -102,7 +102,7 @@ function FightScene() {
       <PerspectiveCamera
         makeDefault
         fov={35}
-        position={[0, 1, 3]}
+        position={[0, 1, 3.85]}
         rotation-y={10}
       />
 

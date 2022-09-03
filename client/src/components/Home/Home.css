@@ -266,7 +266,7 @@ canvas {
 
 .container {
   width: 40%;
-  padding-left: 100px;
+  padding-left: 160px;
   margin-top: 1080px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -318,6 +318,7 @@ p {
   }
   .container {
     margin-top: 550px;
+    padding-left: 100px;
   }
   .btnCanvas .btnText {
     padding-top: 20px;
@@ -334,6 +335,28 @@ p {
   }
   .gameBG {
     margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1162px) {
+  .container {
+    width: 100%;
+    padding-left: 700px;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px 10px 10px 30px;
+  }
+  .container h1 {
+    font-size: 70px;
+  }
+  .heading h2 {
+    font-size: 14px;
+  }
+  .container p {
+    font-size: 18px;
+  }
+  .gameText h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=Home.css.map */

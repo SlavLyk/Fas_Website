@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
+import { Hooks, useMediaQuery } from "./Hooks.jsx";
 
 export function QalielRedshield() {
   const gltf = useLoader(
@@ -11,12 +12,17 @@ export function QalielRedshield() {
 
   useFrame(() => {
     gltf.scene.rotation.y += 0.002;
-    // gltf.scene.rotation.z -= 0.001;
-    // gltf.scene.rotation.z += 0.001;
   });
 
+  const largeWindow = useMediaQuery("(min-width: 1162px)");
+
   useEffect(() => {
-    gltf.scene.position.set(1.5, 0, 6.5);
+    if (largeWindow) {
+      gltf.scene.position.set(1.2, 0, 7);
+    } else {
+      console.log("small screen");
+      gltf.scene.position.set(5, 0, 6);
+    }
     gltf.scene.rotation.set(0.1, -2, 0);
     // gltf.scene.position.set(0.7, -0.035, 0);
     // gltf.scene.rotation.set(0, 1, 0);
@@ -30,7 +36,7 @@ export function QalielRedshield() {
         object.frustumCulled = false;
       }
     });
-  }, [gltf]);
+  }, [gltf, largeWindow]);
 
   return <primitive object={gltf.scene} />;
 }
