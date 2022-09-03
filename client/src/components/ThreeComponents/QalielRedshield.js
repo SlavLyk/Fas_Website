@@ -18,10 +18,11 @@ export function QalielRedshield() {
 
   useEffect(() => {
     if (largeWindow) {
+      //larger than 1162px
       gltf.scene.position.set(1.2, 0, 7);
     } else {
-      console.log("small screen");
-      gltf.scene.position.set(5, 0, 6);
+      //smaller than 1162px
+      gltf.scene.position.set(1.5, 0, 6);
     }
     gltf.scene.rotation.set(0.1, -2, 0);
     // gltf.scene.position.set(0.7, -0.035, 0);

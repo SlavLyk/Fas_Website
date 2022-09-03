@@ -245,6 +245,7 @@ canvas {
 .html-div {
   display: flex;
   flex-direction: column;
+
   align-items: flex-end;
 }
 
@@ -349,22 +350,26 @@ p {
     margin-left: 100px;
   }
 }
-@media screen and (max-width: 1162px) {
+@media screen and (max-width: 1161px) {
+  .canvas-div {
+    width: 100%;
+    // height: 700px;
+  }
+
+  .html-div {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
   .container {
     width: 100%;
-    // margin-top: 83vh;
-    padding-left: 700px;
-    // margin-top: 0px;
-    // top: 90%;
-    // margin-bottom: 160px;
-    // cursor: pointer;
-    // margin-bottom: 15%;
-    // user-select: none;
-    // height: 200px;
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 10px 10px 10px 30px;
+    // min-width: 1160px;
+    // width: ;
+    margin-top: 650px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
+
   .container h1 {
     font-size: 70px;
     // margin-bottom: 2%;

@@ -22,6 +22,7 @@ import "./Home.css";
 import Footer from "../Footer/Footer.jsx";
 import Button from "../Button/Button.jsx";
 import * as THREE from "three";
+import { Hooks, useMediaQuery } from "../ThreeComponents/Hooks.jsx";
 
 function FightScene() {
   useFrame(({ mouse, camera }) => {
@@ -46,6 +47,9 @@ function FightScene() {
     //   0.001
     // );
   });
+
+  const largeTextWindow = useMediaQuery("(min-width: 1162px)");
+
   return (
     <>
       <Stars
@@ -65,10 +69,13 @@ function FightScene() {
         segments={20} // Number of particles
         color="#419ED5"
       />
-
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
-
-      <Html center zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
+      <Html
+        center
+        zIndexRange={[1, 0]}
+        fullscreen
+        position={largeTextWindow ? [2.6, 1, 7] : [0.3, 1, 7]}
+      >
         <div className="html-div">
           <div className="container">
             <div className="heading">
@@ -142,7 +149,6 @@ function Home() {
   return (
     <div>
       <Header active="Home" />
-
       <div className="bg2">
         <div className="Experience1">
           {/* <Loader /> */}
