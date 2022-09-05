@@ -13,7 +13,7 @@
   font-family: "Iceland";
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 75px;
   background: linear-gradient(87.21deg, #c0d2ff 0.66%, #ffffff 94.12%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -273,7 +273,6 @@ canvas {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  height: 200px;
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 10px 10px 10px 30px;
 }
@@ -304,7 +303,8 @@ p {
     height: 700px;
   }
   .container h1 {
-    font-size: 70px;
+    font-size: 60px;
+    white-space: normal;
   }
   .heading h2 {
     font-size: 16px;
@@ -342,15 +342,13 @@ p {
   .canvas-div {
     width: 100%;
   }
-  .html-div {
-    padding-left: 7%;
-    padding-right: 7%;
-  }
   .container {
+    position: absolute;
     width: 100%;
     margin-top: 650px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 72px;
+    padding-right: 72px;
+    left: 63%;
   }
   .container h1 {
     font-size: 70px;

@@ -17,7 +17,7 @@
   font-family: "Iceland";
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 75px;
   background: linear-gradient(87.21deg, #c0d2ff 0.66%, #ffffff 94.12%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -245,7 +245,6 @@ canvas {
 .html-div {
   display: flex;
   flex-direction: column;
-
   align-items: flex-end;
 }
 
@@ -259,7 +258,7 @@ canvas {
   cursor: pointer;
   // margin-bottom: 15%;
   user-select: none;
-  height: 200px;
+  // height: 200px;
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 10px 10px 10px 30px;
@@ -305,7 +304,9 @@ p {
   }
 
   .container h1 {
-    font-size: 70px;
+    font-size: 60px;
+    white-space: normal;
+
     // margin-bottom: 2%;
   }
 
@@ -356,18 +357,27 @@ p {
     // height: 700px;
   }
 
-  .html-div {
-    padding-left: 7%;
-    padding-right: 7%;
-  }
+  // .html-div {
+  //   position: absolute;
+
+  //   padding-left: 7%;
+  //   // padding-right: 14%;
+  //   margin-right: 15%;
+  //   right: 200px;
+  //   // left: -50px;
+  // }
 
   .container {
+    position: absolute;
     width: 100%;
-    // min-width: 1160px;
-    // width: ;
+
     margin-top: 650px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 72px;
+    padding-right: 72px;
+
+    left: 63%;
+
+    // padding-right: 0px;
   }
 
   .container h1 {
@@ -388,4 +398,16 @@ p {
     font-size: 60px;
     margin-bottom: 40px;
   }
+}
+
+@media screen and (max-width: 942px) {
+  // .html-div {
+  //   position: absolute;
+
+  //   padding-left: 0%;
+  //   padding-right: 20%;
+  //   margin-right: 0%;
+  //   right: 0px;
+  //   // left: -15vw;
+  // }
 }
