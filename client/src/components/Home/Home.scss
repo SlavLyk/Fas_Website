@@ -190,7 +190,6 @@ canvas {
     border-left: 1.5px solid #7b652f;
   }
 }
-
 .btnCanvas:hover {
   background: linear-gradient(270deg, #b29444 0%, #ffd361 100%);
   // color: black;
@@ -248,11 +247,19 @@ canvas {
   align-items: flex-end;
 }
 
+// .gradient-bg {
+//   width: 100%;
+//   height: 100%;
+//   background: red;
+//   background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 70.5%);
+// }
+
 .container {
   width: 40%;
   // margin-top: 83vh;
   padding-left: 160px;
   margin-top: 1080px;
+
   // top: 90%;
   // margin-bottom: 160px;
   cursor: pointer;
@@ -260,8 +267,6 @@ canvas {
   user-select: none;
   // height: 200px;
   /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 10px 10px 10px 30px;
 }
 // it's not a class so no need for '.'
 p {
@@ -357,27 +362,30 @@ p {
     // height: 700px;
   }
 
-  // .html-div {
-  //   position: absolute;
-
-  //   padding-left: 7%;
-  //   // padding-right: 14%;
-  //   margin-right: 15%;
-  //   right: 200px;
-  //   // left: -50px;
-  // }
+  .html-div {
+    // width: 100%;
+    background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 70.5%);
+  }
 
   .container {
     position: absolute;
-    width: 100%;
-
+    width: 105%;
+    background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 100%);
+    // margin-left: 0px;
     margin-top: 650px;
     padding-left: 72px;
     padding-right: 72px;
-
-    left: 63%;
+    padding-bottom: 150px;
+    // background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 100%);
+    left: 61%;
 
     // padding-right: 0px;
+  }
+
+  .bg-grad {
+    width: 1500px;
+    height: 800px;
+    background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 100%);
   }
 
   .container h1 {
@@ -398,16 +406,115 @@ p {
     font-size: 60px;
     margin-bottom: 40px;
   }
+
+  // bottom half of page
+  .bg1 {
+    height: 1044px;
+  }
+
+  .wrapperCenter {
+    flex-direction: column;
+  }
+
+  .gameBG {
+    background-image: url("../../icons/GameBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 441px;
+    width: 708px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(124, 101, 50, 0.7);
+    margin-left: 0px;
+  }
+
+  .gameName {
+    background-image: url("../../icons/Title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 76%;
+    height: 40%;
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .gameText {
+    width: 50%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: 80px;
+  }
+  .tagline {
+    background-image: url("../../icons/Tagline.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 5%;
+    // margin-bottom: 20px;
+    mix-blend-mode: color-dodge;
+    width: 100%;
+  }
+
+  .heading {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    line-height: 0.5;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+    background: rgba(23, 10, 32, 0.2);
+    border: 1px solid rgba(80, 80, 80, 0.5);
+    margin-left: 10px;
+  }
 }
 
-@media screen and (max-width: 942px) {
-  // .html-div {
-  //   position: absolute;
+@media screen and (max-width: 851px) {
+  .container h1 {
+    font-size: 50px;
+    // margin-bottom: 2%;
+  }
 
-  //   padding-left: 0%;
-  //   padding-right: 20%;
-  //   margin-right: 0%;
-  //   right: 0px;
-  //   // left: -15vw;
-  // }
+  .heading h2 {
+    font-size: 16px;
+    // margin-bottom: 2%;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .gameText h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .html-div {
+    // width: 100%;
+    background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 70.5%);
+  }
+
+  .container {
+    position: absolute;
+    width: 110%;
+    background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 100%);
+    // margin-left: 0px;
+    margin-top: 650px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 150px;
+    // background: linear-gradient(0deg, #00223e 38.67%, rgba(0, 31, 58, 0) 100%);
+    left: 65%;
+
+    // padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .container {
+    left: 75%;
+  }
 }
