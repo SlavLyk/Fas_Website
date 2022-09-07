@@ -6,6 +6,8 @@ import { history } from "../../history.js";
 import { Loader } from "@react-three/drei";
 import btnArrow from "../../icons/btnArrow.svg";
 
+import gameBG from "../../icons/GameBG.png";
+
 // import { Loader } from "./Loader.jsx";
 
 // import '../../style.css';
@@ -155,9 +157,8 @@ function Home() {
       </div>
       <div className="bg1">
         <div className="wrapperCenter">
-          <div className="gameBG">
-            <div className="gameName"></div>
-            <div className="tagline"></div>
+          <div className="imgContainer">
+            <img src={gameBG} className="gameBG" alt="game background" />
           </div>
           <div className="gameText">
             <div className="heading">
