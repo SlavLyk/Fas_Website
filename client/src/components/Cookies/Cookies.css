@@ -1,4 +1,4 @@
-.Terms h1 {
+.Cookies h1 {
   font-family: "Lexend-Tera", sans-serif;
   margin-bottom: 7%;
   color: white;
@@ -7,28 +7,33 @@
   margin-top: 5%;
 }
 
-.Terms p {
+.Cookies p {
   font-family: "Jura", sans-serif;
 }
 
-.Terms li {
+.Cookies li {
   color: white;
   opacity: 25%;
   margin-bottom: 20px;
 }
 
-.Terms h2 {
+.Cookies ul {
+  margin-bottom: 5%;
+}
+
+.Cookies h2 {
   font-family: "Lexend-Tera", sans-serif;
-  margin-bottom: 1%;
+  opacity: 50%;
+  margin-bottom: 7%;
   color: white;
 }
 
-.Terms p {
+.Cookies p {
   margin-bottom: 7%;
   font-size: 16px;
 }
 
-.Terms .flex-container-main {
+.Cookies .flex-container-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +46,7 @@
   height: 100vh;
 }
 
-.Terms .flex-container {
+.Cookies .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,7 +58,7 @@
           align-items: center;
 }
 
-.Terms .blur-container-1 {
+.Cookies .blur-container-1 {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +70,7 @@
   margin-top: auto;
 }
 
-.Terms .blur-container-2 {
+.Cookies .blur-container-2 {
   background: linear-gradient(73.05deg, rgba(5, 5, 5, 0.2) 0%, rgba(5, 5, 5, 0) 53.53%);
   -webkit-backdrop-filter: blur(55px);
           backdrop-filter: blur(55px);
@@ -81,12 +86,11 @@
           align-items: flex-start;
 }
 
-.Terms h3 {
-  color: #93a0c0;
+.Cookies h3 {
   padding-left: 7%;
 }
 
-.Terms .bg2 {
+.Cookies .bg2 {
   background-image: url("../../icons/BG2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -95,36 +99,36 @@
   width: 100vw;
 }
 
-.Terms .img1 {
+.Cookies .img1 {
   height: 300px;
   width: 50%;
   background-color: blue;
   margin: 3%;
 }
 
-.Terms .bg-black {
+.Cookies .bg-black {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 2100px;
+  height: 1600px;
   background-color: #0e0d0d;
 }
 
 @media screen and (max-width: 1161px) {
-  .Terms .blur-container-1 {
+  .Cookies .blur-container-1 {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .Terms .blur-container-1 {
+  .Cookies .blur-container-1 {
     width: 90%;
   }
-  .Terms .bg-black {
-    height: 2700px;
+  .Cookies .bg-black {
+    height: 1700px;
   }
 }
-/*# sourceMappingURL=Terms.css.map */
+/*# sourceMappingURL=Cookies.css.map */

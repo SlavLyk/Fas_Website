@@ -75,8 +75,8 @@ function Footer(props) {
         </Link>
       </div>
       <div className="footerItem">
-        <Link className="a-link" to="/location">
-          Our Location
+        <Link className="a-link" to="/cookies">
+          Cookies
         </Link>
       </div>
       <div className="newsletter">

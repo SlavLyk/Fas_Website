@@ -3,7 +3,7 @@ import About from "./components/About/About";
 import Games from "./components/Games/Games";
 import Contact from "./components/Contact/Contact";
 import Privacy from "./components/Privacy/Privacy";
-import Location from "./components/Location/Location";
+import Cookies from "./components/Cookies/Cookies";
 import Terms from "./components/Terms/Terms";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Privacy />} />
         <Route path="terms" element={<Terms />} />
-        <Route path="location" element={<Location />} />
+        <Route path="cookies" element={<Cookies />} />
         <Route path="/*" element={<Home />} />
       </Routes>
     </ScrollToTop>
