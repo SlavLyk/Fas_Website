@@ -31,7 +31,7 @@ export function QalielRedshield() {
       if (object instanceof Mesh) {
         object.castShadow = true;
         object.receiveShadow = true;
-        object.material.envMapIntensity = 3;
+        object.material.envMapIntensity = 3.2;
         object.material.aoMapIntensity = 10;
         object.material.emissiveIntensity = 3;
         object.frustumCulled = false;

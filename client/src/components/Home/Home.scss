@@ -556,4 +556,48 @@ p {
       left: 75%;
     }
   }
+
+  @media screen and (max-width: 409px) {
+    .container h1 {
+      font-size: 40px;
+      // margin-bottom: 2%;
+    }
+
+    .heading h2 {
+      font-size: 12px;
+      // margin-bottom: 2%;
+    }
+
+    .container p {
+      font-size: 16px;
+    }
+
+    .gameText h1 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .gameText {
+      width: 100%;
+      padding-right: 0px;
+    }
+
+    .logoActive .selector {
+      margin-bottom: 15px;
+    }
+
+    .gameBG {
+      height: 90%;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      border: 0.5px solid rgba(124, 101, 50, 0.7);
+      width: 400px;
+      // margin-left: 72px;
+      // margin-right: 72px;
+      object-fit: cover;
+      width: 100%;
+      height: 250px;
+      object-position: center 40%;
+    }
+  }
 }

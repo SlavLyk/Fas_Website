@@ -127,4 +127,17 @@
     height: 2700px;
   }
 }
+
+@media screen and (max-width: 409px) {
+  .Terms .bg-black {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 3000px;
+    background-color: #0e0d0d;
+  }
+}
 /*# sourceMappingURL=Terms.css.map */

@@ -493,4 +493,40 @@ p {
     left: 75%;
   }
 }
+
+@media screen and (max-width: 851px) and (max-width: 409px) {
+  .container h1 {
+    font-size: 40px;
+  }
+  .heading h2 {
+    font-size: 12px;
+  }
+  .container p {
+    font-size: 16px;
+  }
+  .gameText h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .gameText {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .logoActive .selector {
+    margin-bottom: 15px;
+  }
+  .gameBG {
+    height: 90%;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(124, 101, 50, 0.7);
+    width: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 250px;
+    -o-object-position: center 40%;
+       object-position: center 40%;
+  }
+}
 /*# sourceMappingURL=Home.css.map */

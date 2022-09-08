@@ -134,4 +134,13 @@ $blue: #93a0c0;
       height: 3500px;
     }
   }
+
+  @media screen and (max-width: 409px) {
+    .bg-black {
+      display: flex;
+      align-items: flex-start;
+      height: 3800px;
+      background-color: rgb(14, 13, 13);
+    }
+  }
 }

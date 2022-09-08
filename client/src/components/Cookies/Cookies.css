@@ -131,4 +131,17 @@
     height: 1700px;
   }
 }
+
+@media screen and (max-width: 409px) {
+  .Cookies .bg-black {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 2000px;
+    background-color: #0e0d0d;
+  }
+}
 /*# sourceMappingURL=Cookies.css.map */

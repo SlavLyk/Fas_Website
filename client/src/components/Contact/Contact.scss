@@ -24,6 +24,7 @@ $blue: #93a0c0;
 
   p {
     margin-bottom: 7%;
+    opacity: 100%;
   }
 
   .contactUs {
@@ -85,7 +86,7 @@ $blue: #93a0c0;
     width: 100%;
     padding: 1.5em;
     background: #0a0a09;
-    border: 1px solid rgba(255, 210, 90, 0.1);
+    border: 1px solid rgba(255, 210, 90, 0.2);
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.5);
   }
@@ -102,11 +103,12 @@ $blue: #93a0c0;
     color: #ffd361;
     background: #000000;
     font-weight: 600;
+    border: 1px solid rgba(255, 210, 90, 0.5);
   }
   //HOVER
   .form-container form input:hover,
   .form-container form textarea:hover {
-    border: 1px solid rgba(255, 210, 90, 0.25);
+    border: 1px solid rgba(255, 210, 90, 0.4);
   }
 
   .form-container form button:hover {

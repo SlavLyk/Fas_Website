@@ -18,6 +18,7 @@
 
 .Contact p {
   margin-bottom: 7%;
+  opacity: 100%;
 }
 
 .Contact .contactUs {
@@ -109,7 +110,7 @@
   width: 100%;
   padding: 1.5em;
   background: #0a0a09;
-  border: 1px solid rgba(255, 210, 90, 0.1);
+  border: 1px solid rgba(255, 210, 90, 0.2);
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -126,11 +127,12 @@
   color: #ffd361;
   background: #000000;
   font-weight: 600;
+  border: 1px solid rgba(255, 210, 90, 0.5);
 }
 
 .Contact .form-container form input:hover,
 .Contact .form-container form textarea:hover {
-  border: 1px solid rgba(255, 210, 90, 0.25);
+  border: 1px solid rgba(255, 210, 90, 0.4);
 }
 
 .Contact .form-container form button:hover {

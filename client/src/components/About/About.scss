@@ -140,7 +140,7 @@ $blue: #93a0c0;
     justify-content: center;
     margin-left: 160px; //100
     margin-right: 50%;
-    margin-top: 20%;
+    margin-top: 610px;
   }
 
   .container-4 {
@@ -333,6 +333,7 @@ $blue: #93a0c0;
     .container-5 {
       width: 600px;
       margin-left: 100px;
+      margin-top: 510px;
     }
 
     .container-4 {
@@ -350,6 +351,10 @@ $blue: #93a0c0;
 
     .bg2 {
       height: 700px;
+    }
+
+    .bg1v2 {
+      height: 790px;
     }
 
     .bg3v2 {
@@ -415,12 +420,13 @@ $blue: #93a0c0;
     }
 
     .container-5 {
-      man-width: 600px;
+      // man-width: 600px;
       margin-right: 0%;
       margin-top: 25%;
       margin-left: 7%;
       padding: 0%;
       width: 50%;
+      margin-top: 510px;
     }
 
     .spaceship {
@@ -462,7 +468,7 @@ $blue: #93a0c0;
   }
 
   //phone large
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 851px) {
     .spaceship {
       margin: 0;
       // height: 30%;
@@ -511,7 +517,9 @@ $blue: #93a0c0;
 
     .container-5 {
       margin: 0;
-      margin-top: 70%;
+      // margin-top: 70%;
+      margin-top: 400px;
+
       width: 90%;
       // margin-right: 10%;
     }

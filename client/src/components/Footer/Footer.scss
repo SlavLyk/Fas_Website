@@ -15,10 +15,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   justify-content: center;
+  padding-bottom: 30px;
 
   p {
     white-space: nowrap;
-    opacity: 50%;
+    opacity: 100%;
   }
 
   .fasContainer {
@@ -130,7 +131,7 @@
     font-size: 16px;
     padding: 1.5em;
     background: #0a0a09;
-    border: 1px solid rgba(255, 210, 90, 0.1);
+    border: 1px solid #6a5421;
     border-radius: 8px 0px 0px 8px;
     color: white;
     opacity: 100%;
@@ -149,7 +150,7 @@
     gap: 12px;
     font-size: 20px;
     height: 60px;
-    background: #1b160a;
+    background: #6a5421;
     border: 1px solid rgba(255, 210, 90, 0.25);
     border-radius: 0px 8px 8px 0px;
     margin-right: 160px;
@@ -215,6 +216,7 @@
 
     .fasText {
       font-size: 16px;
+      margin-left: 20px;
     }
   }
 }
