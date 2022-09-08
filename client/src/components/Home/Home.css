@@ -448,7 +448,7 @@ p {
     font-size: 16px;
   }
   .gameText h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 40px;
   }
   .gameText {
@@ -488,7 +488,7 @@ p {
   }
 }
 
-@media screen and (max-width: 514px) {
+@media screen and (max-width: 851px) and (max-width: 514px) {
   .container {
     left: 75%;
   }
