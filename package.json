@@ -137,7 +137,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "postinstall": "ng build --aot --prod",
-    "postbuild": "cd client && npm install && npm run build",
+    "build": "cd client && npm install && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "engines": {
