@@ -51,7 +51,7 @@ function FightScene() {
 
   return (
     <>
-      <Stars
+      {/* <Stars
         radius={100}
         depth={50}
         count={7000}
@@ -63,11 +63,11 @@ function FightScene() {
       <Cloud
         opacity={0.2}
         speed={0.4} // Rotation speed
-        width={10} // Width of the full cloud
+        width={3} // Width of the full cloud
         depth={1.5} // Z-dir depth
         segments={20} // Number of particles
         color="#419ED5"
-      />
+      /> */}
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
       <Html center zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
         <div className="html-div">
@@ -129,7 +129,7 @@ function FightScene() {
       <spotLight
         color={[0.14, 0.5, 1]}
         intensity={1}
-        angle={0.6}
+        angle={1}
         penumbra={0.5}
         position={[-7, 5, 3]}
         castShadow
