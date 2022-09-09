@@ -361,7 +361,7 @@
 }
 
 .Games .general-bg {
-  background-image: url(../../icons/Nebula1.png);
+  background-image: url(../../icons/BG1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -545,7 +545,6 @@
     margin-left: 0px;
   }
   .Games .general-bg {
-    background-image: url(../../icons/Nebula1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

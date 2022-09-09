@@ -228,16 +228,16 @@ function Games() {
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
-                title="RED SHIELD"
+                title="GABRIEL"
                 text="Our team combines people from a diverse set of backgrounds and expertise. "
-                modelPath="models/RedShield/RedShield.glb"
+                modelPath="models/Gabriel/Gabriel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
-                title="GABRIEL"
+                title="RED SHIELD"
                 text="Our team combines people from a diverse set of backgrounds and expertise. "
-                modelPath="models/Gabriel/Gabriel.glb"
+                modelPath="models/RedShield/RedShield.glb"
               />
             </SwiperSlide>
             <div className="navButtons">
