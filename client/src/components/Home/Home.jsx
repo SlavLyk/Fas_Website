@@ -1,10 +1,11 @@
-import React, { Suspense } from "react";
+import React, { useEffect, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { useFrame, Canvas } from "@react-three/fiber";
 import Header from "../Header/Header.jsx";
 import { history } from "../../history.js";
 import { Loader } from "@react-three/drei";
 import btnArrow from "../../icons/btnArrow.svg";
+import { Hooks, useMediaQuery } from "../ThreeComponents/Hooks.jsx";
 
 import gameBG from "../../icons/GameBG.png";
 
@@ -26,25 +27,27 @@ import Button from "../Button/Button.jsx";
 import * as THREE from "three";
 
 function FightScene() {
+  const largeWindow = useMediaQuery("(min-width: 1162px)");
+
   return (
     <>
       <Stars
         radius={100}
         depth={50}
-        count={7000}
+        count={largeWindow ? 7000 : 0}
         factor={6}
         saturation={0}
         fade
         speed={3}
       />
-      {/* <Cloud
+      <Cloud
         opacity={0.2}
         speed={0.4} // Rotation speed
         width={6} // Width of the full cloud
         depth={1.5} // Z-dir depth
-        segments={20} // Number of particles
+        segments={largeWindow ? 20 : 0} // Number of particles
         color="#419ED5"
-      /> */}
+      />
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
       <Html center zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
         <div className="html-div">
@@ -129,7 +132,7 @@ function Home() {
               </Canvas>
             </div>
           </Suspense>
-          {/* <Loader /> */}
+          <Loader />
         </div>
       </div>
       <div className="bg1">

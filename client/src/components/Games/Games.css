@@ -278,16 +278,6 @@
   background-color: black;
 }
 
-.Games .bg3 {
-  background-image: url("../../icons/BG3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1080px;
-  width: 100%;
-  color: white;
-}
-
 .Games .download-btn img {
   width: 7%;
 }
