@@ -26,28 +26,59 @@ import Footer from "../Footer/Footer.jsx";
 import Button from "../Button/Button.jsx";
 import * as THREE from "three";
 
-function FightScene() {
+function Mobile() {
   const largeWindow = useMediaQuery("(min-width: 1162px)");
 
+  if (largeWindow) {
+    return (
+      <>
+        <Stars
+          radius={100}
+          depth={50}
+          count={largeWindow ? 7000 : 0}
+          factor={6}
+          saturation={0}
+          fade
+          speed={3}
+        />
+        <Cloud
+          opacity={0.2}
+          speed={0.4} // Rotation speed
+          width={6} // Width of the full cloud
+          depth={1.5} // Z-dir depth
+          segments={20} // Number of particles
+          color="#419ED5"
+        />
+
+        <spotLight
+          color={[1, 0.25, 0.7]}
+          intensity={0.5}
+          angle={0.9}
+          penumbra={0.5}
+          position={[7, 5, -3]}
+          castShadow
+          shadow-bias={-0.0001}
+        />
+        <spotLight
+          color={[0.14, 0.5, 1]}
+          intensity={1}
+          angle={1}
+          penumbra={0.5}
+          position={[-7, 5, 3]}
+          castShadow
+          shadow-bias={-0.0001}
+        />
+      </>
+    );
+  } else {
+    return;
+  }
+}
+
+function FightScene() {
   return (
     <>
-      <Stars
-        radius={100}
-        depth={50}
-        count={largeWindow ? 7000 : 0}
-        factor={6}
-        saturation={0}
-        fade
-        speed={3}
-      />
-      <Cloud
-        opacity={0.2}
-        speed={0.4} // Rotation speed
-        width={6} // Width of the full cloud
-        depth={1.5} // Z-dir depth
-        segments={largeWindow ? 20 : 0} // Number of particles
-        color="#419ED5"
-      />
+      <Mobile />
       <Environment files="kloppenheim_02_1k.hdr" path="/" />
       <Html center zIndexRange={[1, 0]} fullscreen position={[2.6, 1, 7]}>
         <div className="html-div">
@@ -97,24 +128,6 @@ function FightScene() {
         castShadow
         shadow-bias={-0.0001}
       />
-      {/* <spotLight
-        color={[1, 0.25, 0.7]}
-        intensity={0.5}
-        angle={0.9}
-        penumbra={0.5}
-        position={[7, 5, -3]}
-        castShadow
-        shadow-bias={-0.0001}
-      />
-      <spotLight
-        color={[0.14, 0.5, 1]}
-        intensity={1}
-        angle={1}
-        penumbra={0.5}
-        position={[-7, 5, 3]}
-        castShadow
-        shadow-bias={-0.0001}
-      /> */}
     </>
   );
 }
