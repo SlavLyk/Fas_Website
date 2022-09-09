@@ -28,19 +28,19 @@ import * as THREE from "three";
 function FightScene() {
   return (
     <>
-      {/* <Stars
+      <Stars
         radius={100}
         depth={50}
         count={7000}
         factor={6}
         saturation={0}
         fade
-        speed={1}
+        speed={3}
       />
-      <Cloud
+      {/* <Cloud
         opacity={0.2}
         speed={0.4} // Rotation speed
-        width={3} // Width of the full cloud
+        width={6} // Width of the full cloud
         depth={1.5} // Z-dir depth
         segments={20} // Number of particles
         color="#419ED5"
