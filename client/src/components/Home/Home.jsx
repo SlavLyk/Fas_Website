@@ -122,7 +122,6 @@ function Home() {
       <Header active="Home" />
       <div className="bg2">
         <div className="Experience1">
-          {/* <Loader /> */}
           <Suspense fallback={null}>
             <div className="canvas-div">
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
@@ -130,7 +129,7 @@ function Home() {
               </Canvas>
             </div>
           </Suspense>
-          <Loader />
+          {/* <Loader /> */}
         </div>
       </div>
       <div className="bg1">
