@@ -612,4 +612,16 @@
     font-size: 44px;
   }
 }
+
+@media screen and (max-width: 851px) and (max-width: 409px) {
+  .About .team {
+    height: 1520px;
+  }
+}
+
+@media screen and (max-width: 851px) and (max-width: 360px) {
+  .About .team {
+    height: 1450px;
+  }
+}
 /*# sourceMappingURL=About.css.map */

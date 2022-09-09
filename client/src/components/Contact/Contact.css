@@ -196,4 +196,13 @@
     height: 850px;
   }
 }
+
+@media screen and (max-width: 409px) {
+  .Contact h2 {
+    font-size: 18px;
+  }
+  .Contact .contactUs {
+    height: 870px;
+  }
+}
 /*# sourceMappingURL=Contact.css.map */

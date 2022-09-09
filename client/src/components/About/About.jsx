@@ -206,7 +206,7 @@ function About() {
               </SwiperSlide>
               <SwiperSlide>
                 <Card
-                  title="3d Animator"
+                  title="Lead 3d Animator"
                   img={Avatar}
                   name="Dima"
                   experience="Since 2019"
@@ -214,17 +214,17 @@ function About() {
               </SwiperSlide>
               <SwiperSlide>
                 <Card
-                  title="3d Animator"
+                  title="Tech Artist"
                   img={Avatar}
-                  name="Dima"
+                  name="Max Fedorin"
                   experience="Since 2019"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Card
-                  title="3d Animator"
+                  title="Level Artist"
                   img={Avatar}
-                  name="Dima"
+                  name="Ian Chen"
                   experience="Since 2019"
                 />
               </SwiperSlide>

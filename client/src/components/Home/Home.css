@@ -492,6 +492,9 @@ p {
   .container {
     left: 75%;
   }
+  .bg1 {
+    height: 720px;
+  }
 }
 
 @media screen and (max-width: 851px) and (max-width: 409px) {
@@ -506,14 +509,14 @@ p {
   }
   .gameText h1 {
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .gameText {
     width: 100%;
     padding-right: 0px;
   }
-  .logoActive .selector {
-    margin-bottom: 15px;
+  .bg1 {
+    height: 530px;
   }
   .gameBG {
     height: 90%;
@@ -527,6 +530,21 @@ p {
     height: 250px;
     -o-object-position: center 40%;
        object-position: center 40%;
+  }
+  .imgContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: -50px;
+  }
+  .heading {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=Home.css.map */

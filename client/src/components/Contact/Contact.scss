@@ -171,4 +171,14 @@ $blue: #93a0c0;
       height: 850px;
     }
   }
+
+  @media screen and (max-width: 409px) {
+    h2 {
+      font-size: 18px;
+    }
+
+    .contactUs {
+      height: 870px;
+    }
+  }
 }

@@ -248,5 +248,8 @@ a:hover {
   .headerMidActive {
     top: 60px;
   }
+  .logoActive .selector {
+    margin-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

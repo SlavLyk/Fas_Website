@@ -872,4 +872,12 @@ $blue: #b8c0c8;
       height: 950px;
     }
   }
+
+  @media screen and (max-width: 409px) {
+    .iframe {
+      width: 100%;
+      height: 70%;
+      // padding-bottom: 4%;
+    }
+  }
 }
