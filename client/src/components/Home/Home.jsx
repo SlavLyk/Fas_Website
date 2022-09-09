@@ -128,7 +128,6 @@ function Home() {
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
                 <FightScene />
               </Canvas>
-              <Loader />
             </div>
           </Suspense>
           <Loader />
