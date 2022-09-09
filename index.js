@@ -42,6 +42,7 @@ const whitelist = [
   "http://localhost:3000",
   "http://localhost:5000",
   "https://floating-axe-website.herokuapp.com",
+  "https://web-production-0a95.up.railway.app/",
 ];
 
 const corsOptions = {
