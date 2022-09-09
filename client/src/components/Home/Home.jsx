@@ -26,29 +26,6 @@ import Button from "../Button/Button.jsx";
 import * as THREE from "three";
 
 function FightScene() {
-  useFrame(({ mouse, camera }) => {
-    // camera.position.x = THREE.MathUtils.lerp(
-    //   camera.position.x,
-    //   mouse.x * 0.9,
-    //   0.03
-    // );
-    // camera.position.y = THREE.MathUtils.lerp(
-    //   camera.position.y,
-    //   mouse.y * 0.8,
-    //   0.01
-    // );
-    // camera.position.z = THREE.MathUtils.lerp(
-    //   camera.position.z,
-    //   Math.max(4, Math.abs(mouse.x * mouse.y * 8)),
-    //   0.001
-    // );
-    // camera.rotation.y = THREE.MathUtils.lerp(
-    //   camera.rotation.y,
-    //   mouse.x * -Math.PI * 0.025,
-    //   0.001
-    // );
-  });
-
   return (
     <>
       {/* <Stars
@@ -117,7 +94,7 @@ function FightScene() {
         castShadow
         shadow-bias={-0.0001}
       />
-      <spotLight
+      {/* <spotLight
         color={[1, 0.25, 0.7]}
         intensity={0.5}
         angle={0.9}
@@ -134,7 +111,7 @@ function FightScene() {
         position={[-7, 5, 3]}
         castShadow
         shadow-bias={-0.0001}
-      />
+      /> */}
     </>
   );
 }
@@ -151,8 +128,10 @@ function Home() {
               <Canvas mode="concurrent" gl={{ toneMappingExposure: 0.3 }}>
                 <FightScene />
               </Canvas>
+              <Loader />
             </div>
           </Suspense>
+          <Loader />
         </div>
       </div>
       <div className="bg1">
