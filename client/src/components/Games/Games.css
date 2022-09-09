@@ -258,7 +258,7 @@
 }
 
 .Games .bg1v3 {
-  background-image: url("../../icons/BG1v3.png");
+  background-image: url("../../icons/BG1v3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -268,7 +268,7 @@
 }
 
 .Games .bg2 {
-  background-image: url("../../icons/BG2.png");
+  background-image: url("../../icons/BG2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,7 +361,7 @@
 }
 
 .Games .general-bg {
-  background-image: url(../../icons/BG1.png);
+  background-image: url(../../icons/BG1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

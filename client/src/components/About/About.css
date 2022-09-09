@@ -164,14 +164,14 @@
   background-color: black;
   height: 920px;
   width: 100%;
-  background-image: url(../../icons/BG_TEAM.png);
+  background-image: url(../../icons/BG2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
 .About .bg1v2 {
-  background-image: url("../../icons/BG1v2.png");
+  background-image: url("../../icons/BG1v2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +180,7 @@
 }
 
 .About .nebula-3 {
-  background-image: url("../../icons/Nebula3.png");
+  background-image: url("../../icons/Nebula3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,7 +189,7 @@
 }
 
 .About .bg2 {
-  background-image: url("../../icons/BG2.png");
+  background-image: url("../../icons/BG2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,7 +198,7 @@
 }
 
 .About .bg3v2 {
-  background-image: url("../../icons/BG3v2.png");
+  background-image: url("../../icons/BG3v2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
