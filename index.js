@@ -11,10 +11,10 @@ require("dotenv").config();
 // middleware
 app.use(express.json());
 app.use(cors());
-app.use((req, res, next) => {
-  res.header({ "Access-Control-Allow-Origin": "*" });
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header({ "Access-Control-Allow-Origin": "*" });
+//   next();
+// });
 app.use(bodyParser.urlencoded({ extended: true }));
 
 let transporter = nodemailer.createTransport({
@@ -33,32 +33,31 @@ if (process.env.NODE_ENV === "production") {
   // Serve any static files
   app.use(express.static(path.join(__dirname, "client/build")));
   // Handle React routing, return all requests to React app
-  app.get("/*", function (_, res) {
+  app.get("/", function (_, res) {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
 
-const whitelist = [
-  "http://localhost:3000",
-  "http://localhost:5000",
-  "https://floating-axe-website.herokuapp.com",
-  "https://web-production-0a95.up.railway.app/",
-];
+// const whitelist = [
+//   "http://localhost:3000",
+//   "http://localhost:5000",
+//   "https://floating-axe-website.herokuapp.com/signup",
+// ];
 
-const corsOptions = {
-  origin: function (origin, callback) {
-    console.log("** Origin of request " + origin);
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      console.log("Origin acceptable");
-      callback(null, true);
-    } else {
-      console.log("Origin rejected");
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     console.log("** Origin of request " + origin);
+//     if (whitelist.indexOf(origin) !== -1 || !origin) {
+//       console.log("Origin acceptable");
+//       callback(null, true);
+//     } else {
+//       console.log("Origin rejected");
+//       callback(new Error("Not allowed by CORS"));
+//     }
+//   },
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 transporter.verify((err, success) => {
   err
@@ -115,7 +114,7 @@ app.post("/signup", (req, res) => {
     members: [
       {
         // : email was before I changed it just now
-        email_address: email,
+        email_address: req.body.newsletterState.email,
         status: "subscribed",
       },
     ],
