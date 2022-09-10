@@ -31,13 +31,16 @@ function Footer(props) {
     });
     //prevents the page from refreshing upon submit
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/signup", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({ newsletterState }),
-    });
+    const response = await fetch(
+      "https://floating-axe-website.herokuapp.com/signup",
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ newsletterState }),
+      }
+    );
   };
 
   // const resetFields = () => {
