@@ -13,6 +13,30 @@ function Footer(props) {
     email: "",
   });
 
+  const [error, setError] = useState("");
+  const [success, setSucess] = useState("");
+
+  const ERROR = {
+    email: "Please enter a valid email address.",
+  };
+
+  const SUCCESS = {
+    email: "Thank you for subscribing to our Newsletter!",
+  };
+
+  const formValidator = () => {
+    //regex for email (checks that email name is any word with a . and 2-4 letter domain following it. )
+    const validEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    // 2. Check correct email
+    if (newsletterState.email.match(validEmail) == null) {
+      setError(ERROR.email);
+      return false;
+    }
+    //3. Pass if no errors
+    setSucess(SUCCESS.email);
+    return true;
+  };
+
   function handleStateChange(e) {
     setNewsletterState((prevState) => ({
       ...prevState,
@@ -21,38 +45,58 @@ function Footer(props) {
   }
 
   const handleSubmit = async (e) => {
-    if (newsletterState.email) {
-      alert("Thank you for subscribing to our Newsletter!");
-    } else {
-      alert("Please enter a valid email.");
-    }
-    setNewsletterState({
-      email: "",
-    });
     //prevents the page from refreshing upon submit
+
     e.preventDefault();
-    const response = await fetch(
-      "https://floating-axe-website.herokuapp.com/signup",
-      {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({ newsletterState }),
-      }
-    );
+    if (formValidator() === true) {
+      alert("Thank you for subscribing to our Newsletter!");
+      setNewsletterState({
+        email: "",
+      });
+      // clearing from previous error
+      setError("");
+      const response = await fetch(
+        "https://floating-axe-website.herokuapp.com/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({ newsletterState }),
+        }
+      ).then(() => {
+        setNewsletterState({
+          email: "",
+        });
+      });
+    } else {
+      setNewsletterState({
+        email: "",
+      });
+    }
   };
 
-  // const resetFields = () => {
-  //   document.getElementById("newsLetterForm").reset();
-  // };
+  const setPlaceholder = (value) => {
+    if (
+      error === ERROR.email &&
+      value === "Enter email to Join our Newsletter"
+    ) {
+      return error;
+    } else {
+      return "Enter email to Join our Newsletter";
+    }
+  };
 
-  // const handleSubmit2 = (e) => {
-  //   e.preventDefault();
-  //   console.log({ newsletterState });
-  //   alert("Thank you for subscribing to our newsletter!");
-  //   document.getElementById("newsLetterForm").reset();
-  // };
+  const setInputStyle = (value) => {
+    if (
+      error === ERROR.email &&
+      value === "Enter email to Join our Newsletter"
+    ) {
+      return { borderColor: "#cd3838" };
+    } else {
+      return {};
+    }
+  };
 
   return (
     <div className="footer">
@@ -90,11 +134,12 @@ function Footer(props) {
           <p>
             <input
               type="text"
-              placeholder="Enter email to Join our Newsletter"
+              placeholder={setPlaceholder("Enter email to Join our Newsletter")}
               onChange={handleStateChange}
               name="email"
               id="email"
               value={newsletterState.email}
+              style={setInputStyle("Enter email to Join our Newsletter")}
             />
           </p>
           <button type="submit">

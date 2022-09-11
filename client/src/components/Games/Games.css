@@ -796,15 +796,6 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-  .Games .general-bg {
-    height: 1100px;
-  }
-  .Games .generals {
-    margin: 0px 20px;
-  }
-  .Games .general {
-    margin-bottom: 20px;
-  }
   .Games .Michael {
     max-height: 340px;
     margin-top: 10%;
@@ -827,12 +818,26 @@
   .Games .general-bg {
     height: 950px;
   }
+  .Games .generals {
+    margin: 30px;
+  }
 }
 
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 402px) {
   .Games .iframe {
     width: 100%;
     height: 70%;
+  }
+  .Games .general-text {
+    width: 90%;
+    margin-right: auto;
+  }
+  .Games .general-card {
+    width: 90%;
+    margin-right: auto;
+  }
+  .Games .general {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=Games.css.map */

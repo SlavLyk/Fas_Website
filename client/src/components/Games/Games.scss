@@ -825,17 +825,13 @@ $blue: #b8c0c8;
       margin-right: 20px;
     }
 
-    .general-bg {
-      height: 1100px;
-    }
+    // .generals {
+    //   margin: 0px 0px;
+    // }
 
-    .generals {
-      margin: 0px 20px;
-    }
-
-    .general {
-      margin-bottom: 20px;
-    }
+    // .general {
+    //   margin-bottom: 20px;
+    // }
 
     .Michael {
       max-height: 340px;
@@ -858,13 +854,31 @@ $blue: #b8c0c8;
     .general-bg {
       height: 950px;
     }
+
+    .generals {
+      margin: 30px;
+    }
   }
 
-  @media screen and (max-width: 409px) {
+  @media screen and (max-width: 402px) {
     .iframe {
       width: 100%;
       height: 70%;
       // padding-bottom: 4%;
+    }
+
+    .general-text {
+      width: 90%;
+      margin-right: auto;
+    }
+
+    .general-card {
+      width: 90%;
+      margin-right: auto;
+    }
+
+    .general {
+      margin-bottom: 20px;
     }
   }
 }
