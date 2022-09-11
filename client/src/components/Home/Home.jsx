@@ -68,7 +68,6 @@ function Mobile() {
           castShadow
           shadow-bias={-0.0001}
         />
-        <Loader />
       </>
     );
   } else {
@@ -146,6 +145,7 @@ function Home() {
               </Canvas>
             </div>
           </Suspense>
+          <Loader />
         </div>
       </div>
       <div className="bg1">
