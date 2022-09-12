@@ -86,15 +86,6 @@
   padding-left: 7%;
 }
 
-.Terms .bg2 {
-  background-image: url("../../icons/BG2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
-
 .Terms .img1 {
   height: 300px;
   width: 50%;
@@ -109,7 +100,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 2100px;
+  height: 2200px;
   background-color: #0e0d0d;
 }
 

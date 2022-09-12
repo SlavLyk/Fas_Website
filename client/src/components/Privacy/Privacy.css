@@ -73,34 +73,9 @@
   margin-top: auto;
 }
 
-.Privacy .blur-container-2 {
-  background: linear-gradient(73.05deg, rgba(5, 5, 5, 0.2) 0%, rgba(5, 5, 5, 0) 53.53%);
-  -webkit-backdrop-filter: blur(55px);
-          backdrop-filter: blur(55px);
-  border-radius: 10px 10px 10px 64px;
-  padding: 30px;
-  width: 50%;
-  margin: 3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
 .Privacy h3 {
   color: #93a0c0;
   padding-left: 7%;
-}
-
-.Privacy .bg2 {
-  background-image: url("../../icons/BG2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
 }
 
 .Privacy .img1 {
@@ -117,7 +92,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 3200px;
+  height: 3300px;
   background-color: #0e0d0d;
 }
 

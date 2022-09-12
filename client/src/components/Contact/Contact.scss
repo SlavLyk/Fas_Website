@@ -32,7 +32,7 @@ $blue: #93a0c0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 763px;
+    min-height: 800px;
     width: 100%;
   }
 
@@ -135,7 +135,7 @@ $blue: #93a0c0;
   }
   @media screen and (min-width: 1600px) {
     .contactUs {
-      height: 1080px;
+      min-height: 1080px;
     }
     .form-container form {
       margin-top: 100px;

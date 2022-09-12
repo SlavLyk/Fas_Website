@@ -26,7 +26,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 763px;
+  min-height: 800px;
   width: 100%;
 }
 
@@ -160,7 +160,7 @@
 
 @media screen and (min-width: 1600px) {
   .Contact .contactUs {
-    height: 1080px;
+    min-height: 1080px;
   }
   .Contact .form-container form {
     margin-top: 100px;
