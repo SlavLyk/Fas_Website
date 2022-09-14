@@ -222,21 +222,21 @@ function Games() {
             <SwiperSlide>
               <GeneralCard
                 title="QALIEL"
-                text="Our team combines people from a diverse set of backgrounds and expertise. "
+                text="Swift fighter Qaliel is equipped with cutting-edge weaponry, She has the speed and support know-how of a highly trained warrior. "
                 modelPath="models/Qaliel/Qaliel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
                 title="GABRIEL"
-                text="Our team combines people from a diverse set of backgrounds and expertise. "
+                text="Gabriel specializes in armor. He can throw Repair Packs to heal teammates, or automatically heal nearby allies when he damages foes with his Axe. "
                 modelPath="models/Gabriel/Gabriel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
                 title="RED SHIELD"
-                text="Our team combines people from a diverse set of backgrounds and expertise. "
+                text="Covered in gothic armor and swinging her hammer, Red Shield leads a sudden charge across the battleground to subdue her rivals with power and justice. "
                 modelPath="models/RedShield/RedShield.glb"
               />
             </SwiperSlide>

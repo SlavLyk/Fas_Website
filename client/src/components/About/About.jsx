@@ -44,10 +44,9 @@ function About() {
           <div className="text-img-1">
             <h1>Historical Aesthetic</h1>
             <p>
-              We aim to deliver our best game yet. Space opera filled with
-              political intrigue, military strategy and a rich cast of
-              characters, hero and villain alike, immersed in a complex web of
-              conflicting motivations.
+              The game focuses on having historical accuracy as a priority in
+              aspects such as armor, weapons and enivronments. See the
+              historical artifacts crafted into a unique story.
             </p>
           </div>
           <img
@@ -62,10 +61,9 @@ function About() {
           <div className="container-5">
             <h1>Epic Scale</h1>
             <p>
-              We aim to deliver our best game yet. Space opera filled with
-              political intrigue, military strategy and a rich cast of
-              characters, hero and villain alike, immersed in a complex web of
-              conflicting motivations.
+              In Gate of Golgotha the player is immersed with the help of epic
+              scale. Experience the game's open worlds by exploring the cosmic
+              realms.
             </p>
           </div>
         </div>
@@ -80,10 +78,9 @@ function About() {
           <div className="text-img-2">
             <h1>Immersive AI</h1>
             <p>
-              We aim to deliver our best game yet. Space opera filled with
-              political intrigue, military strategy and a rich cast of
-              characters, hero and villain alike, immersed in a complex web of
-              conflicting motivations.
+              Enemies will be strategizing with each other and utilizing the
+              environment to try and get the upper hand.Pay close attention and
+              you can take advantage of their tactics.
             </p>
           </div>
         </div>
@@ -93,10 +90,10 @@ function About() {
           <div className="container-3">
             <h1>Gripping Narative - Byzantine Space Opera</h1>
             <p>
-              We aim to deliver our best game yet. Space opera filled with
-              political intrigue, military strategy and a rich cast of
-              characters, hero and villain alike, immersed in a complex web of
-              conflicting motivations.
+              Experience the Space opera filled with political intrigue,
+              military strategy and a rich cast of characters, hero and villain
+              alike. Immersion is guaranteed in a complex web of conflicting
+              motivations.
             </p>
           </div>
         </div>
@@ -192,7 +189,7 @@ function About() {
                 <Card
                   title="Lead Programmer"
                   img={Avatar}
-                  name="Navneeth"
+                  name="Navneeth Nair"
                   experience="Since 2020"
                 />
               </SwiperSlide>
