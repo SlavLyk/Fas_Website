@@ -21,6 +21,7 @@ import Footer from "../Footer/Footer";
 import Nebula from "../../icons/Nebula.png";
 import Title from "../../icons/Title.png";
 import Download from "../../icons/Download.svg";
+import Clock from "../../icons/Clock.svg";
 
 //Swiper.js carousel
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -119,18 +120,11 @@ function Games() {
                 </p>
               </div>
               {!isClicked ? (
-                <button
-                  className="download-btn"
-                  onClick={() => setIsClicked(true)}
-                >
+                <Button btnImg={Download} onClick={() => setIsClicked(true)}>
                   Download Demo
-                  <img src={Download} alt="" className="Download" />
-                </button>
+                </Button>
               ) : (
-                <button className="download-btn">
-                  Coming soon...
-                  <img src={Download} alt="" className="Download" />
-                </button>
+                <Button btnImg={Clock}>Coming Soon...</Button>
               )}
               <div
                 className={isActive ? "coming-soon-activated" : "coming-soon"}
@@ -168,10 +162,10 @@ function Games() {
         </div>
         <div className="container-4">
           <p>
-            Our team combines people from a diverse set of backgrounds and
-            expertise. By interacting in a respectful and honest manner we build
-            goodwill among our team members and stakeholders and achieve our
-            company objectives.
+            Generals are commanding units that can easily turn the tide of the
+            battle thanks to their unique abilities and skills. They all have
+            different utility to support their troops. Choose your general and
+            devastate your enemies.
           </p>
         </div>
         <div className="generals">

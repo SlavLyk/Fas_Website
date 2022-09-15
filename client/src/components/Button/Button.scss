@@ -1,54 +1,110 @@
 $btnColor: rgba(255, 211, 97, 1);
 
-.btn {
-  // background-color: Transparent;
-  border: none;
-  color: $btnColor;
-  // padding: 15px 0px;
-  font-size: 20px;
-  font-weight: 600;
-  // text-align:left;
-  opacity: 50%;
-}
-
-.btn:hover {
-  opacity: 100%;
-}
-
 .btn--primary {
-  background-color: Transparent;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  background: black;
+
   border: none;
-  text-align: left;
-}
-
-.btn--secondary {
-  background-color: Transparent;
-  padding: 30px 70px;
-  color: $btnColor;
-  font-size: 15px;
+  margin: 0;
+  color: #ffd361;
   font-weight: 600;
-  align-items: center;
-  text-align: center;
-  opacity: 50%;
-  letter-spacing: 0.1px;
-  border: 1px solid rgba(127, 105, 48, 0);
-}
+  font-size: 20px;
+  border: 1.5px solid #7b652f;
+  border-radius: 0px 0px 10px 10px;
+  // white-space: nowrap;
 
-.btn--secondary:hover {
-  background: rgba(127, 105, 48, 0.25);
-  border: 1px solid rgba(127, 105, 48, 0.25);
-  opacity: 50%;
-}
+  .btnText {
+    padding: 17px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
-.btn--secondary:focus {
-  background: rgba(127, 105, 48, 0.5);
-}
+    text-align: center;
+    margin: 0px;
+    font-size: 18px;
+    background: linear-gradient(87.18deg, #ffd361 -53.05%, #ffffff 47.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    // padding: 5px;
+  }
 
-@media screen and (max-width: 658px) {
-  .btn--secondary {
-    // padding: 30px 10px;
+  .btnImg {
+    margin: 0px;
+    font-size: 5px;
+    padding: 20px;
+  }
+
+  .btnArrowContainer {
+    height: 73px;
+    border-left: 1.5px solid #7b652f;
   }
 }
-//   .btn--callToAction {
 
-//   }
+.btn--primary:hover {
+  background: linear-gradient(270deg, #b29444 0%, #ffd361 100%);
+  // color: black;
+  border: 1.5px solid #ffd361;
+
+  .btnText {
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .btnImg {
+    filter: brightness(0) saturate(100%);
+  }
+
+  .btnArrowContainer {
+    border-left: 1.5px solid rgba(255, 211, 97, 1);
+  }
+}
+
+.btn--primary:focus {
+  background: linear-gradient(270deg, #ffefb6 0%, #ffd361 72.61%);
+  border: 1.5px solid #ffd361;
+
+  .btnText {
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .btnImg {
+    filter: brightness(0) saturate(100%);
+  }
+
+  .btnArrowContainer {
+    border-left: 1.5px solid #ffd361;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .btnCanvas {
+    .btnText {
+      padding-top: 20px;
+      padding-right: 35px;
+      font-size: 13px;
+    }
+
+    .btnImg {
+      margin: 0px;
+      padding: 20px;
+    }
+
+    .btnArrowContainer {
+      height: 54px;
+      border-left: 1.5px solid #7b652f;
+    }
+  }
+}
