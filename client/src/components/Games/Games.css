@@ -821,6 +821,9 @@
   .Games .generals {
     margin: 30px;
   }
+  .Games .general-bg {
+    height: 1100px;
+  }
 }
 
 @media screen and (max-width: 402px) {

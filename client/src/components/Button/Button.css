@@ -18,7 +18,7 @@
 
 .btn--primary .btnText {
   padding: 17px;
-  padding-right: 35px;
+  padding-right: 0px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
@@ -89,18 +89,11 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .btnCanvas .btnText {
-    padding-top: 20px;
-    padding-right: 35px;
-    font-size: 13px;
+  .btn--primary .btnText {
+    font-size: 16px;
   }
-  .btnCanvas .btnImg {
-    margin: 0px;
-    padding: 20px;
-  }
-  .btnCanvas .btnArrowContainer {
-    height: 54px;
-    border-left: 1.5px solid #7b652f;
+  .btn--primary .btnImg {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=Button.css.map */

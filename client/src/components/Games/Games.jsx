@@ -162,10 +162,9 @@ function Games() {
         </div>
         <div className="container-4">
           <p>
-            Generals are commanding units that can easily turn the tide of the
-            battle thanks to their unique abilities and skills. They all have
-            different utility to support their troops. Choose your general and
-            devastate your enemies.
+            Generals can easily turn the tide of battle thanks to their unique
+            abilities and skills. Some offer indirect support, while others join
+            the fray of battle. Choose your generals to devastate your enemies!
           </p>
         </div>
         <div className="generals">
