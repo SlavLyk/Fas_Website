@@ -824,6 +824,11 @@
   .Games .general-bg {
     height: 1100px;
   }
+  .Games .general-text p {
+    position: relative;
+    font-size: 16px;
+    padding-right: 32px;
+  }
 }
 
 @media screen and (max-width: 402px) {

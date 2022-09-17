@@ -95,15 +95,13 @@ function FightScene() {
               Ukraine. Our first and ongoing project is an Unreal Engine 4-based
               third-person hack and slash game with a narrative focus.
             </p>
-            <button
+            <Button
+              buttonStyle={"btn--secondary"}
+              btnImg={btnArrow}
               onClick={() => history.push("/games")}
-              className="btnCanvas"
             >
-              <div className="btnText">See the Demo</div>
-              <div className="btnArrowContainer">
-                <img src={btnArrow} alt="" className="btnArrow" />
-              </div>
-            </button>
+              See the Demo
+            </Button>
           </div>
         </div>
       </Html>
@@ -163,15 +161,13 @@ function Home() {
               <br />
               Builds The House,The Builders Labor In Vain
             </h1>
-            <button
-              onClick={() => history.push("/about")}
-              className="btnCanvas"
+            <Button
+              buttonStyle={"btn--secondary"}
+              btnImg={btnArrow}
+              onClick={() => history.push("/games")}
             >
-              <div className="btnText">Our Story</div>
-              <div className="btnArrowContainer">
-                <img src={btnArrow} alt="" className="btnArrow" />
-              </div>
-            </button>
+              See the Demo
+            </Button>
           </div>
         </div>
       </div>

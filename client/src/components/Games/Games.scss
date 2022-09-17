@@ -176,8 +176,6 @@ $blue: #b8c0c8;
   }
 
   .general-text {
-    // padding-top: 2%
-    // width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +184,6 @@ $blue: #b8c0c8;
     border: 1px solid rgba(127, 105, 48, 0.1);
     border-radius: 0px 0px 10px 10px;
     background: #000000;
-    // backdrop-filter: blur(55px);
   }
 
   .general-text p {
@@ -861,6 +858,13 @@ $blue: #b8c0c8;
 
     .general-bg {
       height: 1100px;
+    }
+
+    .general-text p {
+      position: relative;
+      font-size: 16px;
+      // padding-left: 10px;
+      padding-right: 32px;
     }
   }
 

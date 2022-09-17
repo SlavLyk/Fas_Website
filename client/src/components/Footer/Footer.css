@@ -11,6 +11,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .footer p {
@@ -90,8 +91,8 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  margin-left: 170px;
-  margin-right: 170px;
+  margin-left: 160px;
+  margin-right: 160px;
   border-bottom: 1px solid rgba(80, 80, 80, 0.5);
   white-space: nowrap;
   font-size: 14px;
@@ -148,10 +149,10 @@
 }
 
 .footer form button {
-  margin: 10px 0px;
+  margin: 0px 0px;
   color: #ffd25a;
   font-family: "Jura", sans-serif;
-  padding: 50px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,19 +166,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
+  padding: 0px 0px;
   gap: 12px;
-  font-size: 20px;
   height: 60px;
-  background: #6a5421;
+  background: rgba(255, 239, 196, 0.1);
   border: 1px solid rgba(255, 210, 90, 0.25);
   border-radius: 0px 8px 8px 0px;
   margin-right: 160px;
-  opacity: 50%;
+  opacity: 100%;
+}
+
+.footer .checkmark {
+  opacity: 100%;
 }
 
 .footer form button:hover {
   opacity: 100%;
+  background: #6a5421;
+}
+
+.footer form button:focus {
+  opacity: 100%;
+  background: #e2b753;
 }
 
 .footer form input:hover {
@@ -229,6 +239,9 @@
     font-size: 16px;
     margin-left: 20px;
   }
+  .footer .fasContainer {
+    margin-left: 110px;
+  }
 }
 
 @media screen and (max-width: 851px) {
@@ -243,6 +256,7 @@
   .footer .fasContainer {
     margin-left: 50px;
     padding-top: 10px;
+    padding-bottom: 20px;
   }
   .footer .footerItem {
     margin-left: 50px;
@@ -263,13 +277,13 @@
     grid-column: 1/2;
   }
   .footer form {
-    margin-left: 50px;
+    margin-left: 65px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .footer .fasContainer {
-    margin-left: 20px;
+    margin-left: 35px;
   }
   .footer .footerItem {
     margin-left: 20px;
@@ -287,7 +301,7 @@
     grid-column: 1/2;
   }
   .footer form {
-    margin-left: 20px;
+    margin-left: 35px;
   }
 }
 /*# sourceMappingURL=Footer.css.map */

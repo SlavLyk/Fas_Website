@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../icons/Logo.svg";
 import Checkmark from "../../icons/checkmark.svg";
-
+import Mail from "../../icons/mail.svg";
 import Button from "../Button/Button";
 import "./Footer.css";
 
@@ -143,12 +143,7 @@ function Footer(props) {
             />
           </p>
           <button type="submit">
-            <img
-              height={13}
-              src={Checkmark}
-              alt="Checkmark"
-              className="checkmark"
-            />
+            <img height={25} src={Mail} alt="Mail" className="checkmark" />
           </button>
         </form>
       </div>

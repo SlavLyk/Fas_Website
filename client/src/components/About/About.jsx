@@ -106,10 +106,10 @@ function About() {
         <div className="container-4">
           <h2>Meet the amazing people working at Floating Axe Studios</h2>
           <p>
-            Our team combines people from a diverse set of backgrounds and
-            expertise. By interacting in a respectful and honest manner we build
-            goodwill among our team members and stakeholders and achieve our
-            company objectives.
+            We have brought together a group of people from diverse backgrounds
+            and areas of expertise. By interacting in a respectful and honest
+            manner, we build goodwill among our team members and external
+            stakeholders, achieving our company.
           </p>
         </div>
 
