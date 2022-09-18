@@ -79,7 +79,7 @@ function About() {
             <h1>Immersive AI</h1>
             <p>
               Enemies will be strategizing with each other and utilizing the
-              environment to try and get the upper hand.Pay close attention and
+              environment to try and get the upper hand. Pay close attention and
               you can take advantage of their tactics.
             </p>
           </div>
