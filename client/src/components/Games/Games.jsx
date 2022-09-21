@@ -215,21 +215,22 @@ function Games() {
             <SwiperSlide>
               <GeneralCard
                 title="QALIEL"
-                text="Swift fighter Qaliel is equipped with cutting-edge weaponry, She has the speed and support know-how of a highly trained warrior. "
+                text="A swift fighter who is the Commander of the Blue Falchion unit. With unparalleled marching speed, the Blue Falchions can reach any objective in a nick of time: the ideal assault element for any operation. Here is one hawkish zealot, convinced of her adamantine convictions. But the war will change her…
+                "
                 modelPath="models/Qaliel/Qaliel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
                 title="GABRIEL"
-                text="Gabriel specializes in armor. He can throw Repair Packs to heal teammates, or automatically heal nearby allies when he damages foes with his Axe. "
+                text="The famous bearer of good news, Gabriel is one of the seven Archangels. He specialises in scouting and reconnaissance and can spot the enemy from a great distance away. Though lightly armoured, his shield can soak many a mighty blow, and he damages his foes with a flurry of attacks from his axe. "
                 modelPath="models/Gabriel/Gabriel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
-                title="RED SHIELD"
-                text="Covered in gothic armor and swinging her hammer, Red Shield leads a sudden charge across the battleground to subdue her rivals with power and justice. "
+                title="BATYA"
+                text="The diminutive commander of the Red Shield unit. Her troops will hold the line. She is engaged in a one-sided rivalry with the commander of the Blue Falchions. Though she tries to present herself as poised and cultivated, the epitome of shrewdness, she is prone to… outbursts in the heat of battle, among other things."
                 modelPath="models/RedShield/RedShield.glb"
               />
             </SwiperSlide>

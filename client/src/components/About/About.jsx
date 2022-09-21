@@ -26,14 +26,14 @@ function About() {
           <div className="container-1">
             <h1>Our Story</h1>
             <p>
-              Floating Axe Studios is a game development studio founded in 2018.
-              Our team is scattered all around the world in countries like:
-              Canada, Columbia, Mexico, Ukraine, the United States.
+              Floating Axe Studios is an independent game developer founded in
+              2018. Its team is scattered all around the world in countries
+              like: Canada, Columbia, Mexico, Ukraine and the United States.
               <br />
               <br />
-              Our first and current project is a narrative driven, real time
-              strategy and third-person hack-and slash game made using the
-              Unreal Engine 4.
+              We are happy to present our first and current project: a
+              narrative-driven RTS with hack-n-slash elements, made in Unreal
+              Engine 4™.
             </p>
           </div>
           <img className="spaceship" src={SpaceShip} alt="Logo" />
@@ -44,9 +44,10 @@ function About() {
           <div className="text-img-1">
             <h1>Historical Aesthetic</h1>
             <p>
-              The game focuses on having historical accuracy as a priority in
-              aspects such as armor, weapons and enivronments. See the
-              historical artifacts crafted into a unique story.
+              History is a treasure trove filled with so many practical and
+              beautiful designs. We could not help by appreciate them by paying
+              homage and incorporating them into our own in-game armour, weapons
+              and environments
             </p>
           </div>
           <img
@@ -59,11 +60,12 @@ function About() {
       <div className="bg1v2">
         <div className="flex-container">
           <div className="container-5">
-            <h1>Epic Scale</h1>
+            <h1>Sense of Scale</h1>
             <p>
-              In Gate of Golgotha the player is immersed with the help of epic
-              scale. Experience the game's open worlds by exploring the cosmic
-              realms.
+              Across the multiverse, a cosmic war is waged across the span of
+              Creation’s history. Manage the battle operations of your myriad
+              hosts and the supply trains that feed them, or get lost in the
+              midst of a battle in the void that dwarfs you.
             </p>
           </div>
         </div>
@@ -78,9 +80,9 @@ function About() {
           <div className="text-img-2">
             <h1>Immersive AI</h1>
             <p>
-              Enemies will be strategizing with each other and utilizing the
-              environment to try and get the upper hand. Pay close attention and
-              you can take advantage of their tactics.
+              Test your mettle against generals who deploy an array of tactics,
+              strategy and doctrines from real world history, from modernity to
+              antiquity, both simple and complex.
             </p>
           </div>
         </div>
@@ -88,12 +90,13 @@ function About() {
       <div className="bg3v2">
         <div className="flex-container">
           <div className="container-3">
-            <h1>Gripping Narative - Byzantine Space Opera</h1>
+            <h1>Gripping Narrative – Byzantine Space Opera</h1>
             <p>
-              Experience the Space opera filled with political intrigue,
-              military strategy and a rich cast of characters, hero and villain
-              alike. Immersion is guaranteed in a complex web of conflicting
-              motivations.
+              Experience a story filled with political intrigue, military
+              manoeuvrings, and aristocratic scheming -a complex web of
+              conflicting motivations from a rich cast of characters, hero and
+              villain alike. We've sought to give the neglected idea of the
+              single player compaign the care and attention that it deserves.
             </p>
           </div>
         </div>
@@ -205,7 +208,7 @@ function About() {
                 <Card
                   title="Lead 3d Animator"
                   img={Avatar}
-                  name="Dima"
+                  name="Dmitry Tunik"
                   experience="Since 2019"
                 />
               </SwiperSlide>
@@ -221,7 +224,7 @@ function About() {
                 <Card
                   title="Level Artist"
                   img={Avatar}
-                  name="Ian Chen"
+                  name="Ian Chan"
                   experience="Since 2019"
                 />
               </SwiperSlide>

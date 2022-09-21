@@ -89,11 +89,12 @@ function FightScene() {
             </div>
             <h1>COME AND SEE</h1>
             <p>
-              In 2018, the game production studio Floating Axe Studios was
-              established. Our workforce is dispersed across the globe in places
-              including Canada, Colombia, Mexico, the United States, and
-              Ukraine. Our first and ongoing project is an Unreal Engine 4-based
-              third-person hack and slash game with a narrative focus.
+              Floating Axe Studios is an independent game developer founded in
+              2018. Its team is scattered all around the world in countries
+              like: Canada, Columbia, Mexico, Ukraine and the United States. We
+              are happy to present our first and current project: a
+              narrative-driven RTS with hack-n-slash elements, made in Unreal
+              Engine 4™
             </p>
             <Button
               buttonStyle={"btn--secondary"}
@@ -159,8 +160,9 @@ function Home() {
             <h1>
               Unless The Lord
               <br />
-              Builds The House,The Builders Labor In Vain
+              Builds The House, The Builders Labor In Vain
             </h1>
+            <h2>-The Psalterium, 127th Chapter</h2>
             <Button
               buttonStyle={"btn--secondary"}
               btnImg={btnArrow}
