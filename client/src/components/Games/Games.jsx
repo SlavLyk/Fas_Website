@@ -215,7 +215,7 @@ function Games() {
             <SwiperSlide>
               <GeneralCard
                 title="QALIEL"
-                text="A swift fighter who is the Commander of the Blue Falchion unit. With unparalleled marching speed, the Blue Falchions can reach any objective in a nick of time: the ideal assault element for any operation. Here is one hawkish zealot, convinced of her adamantine convictions. But the war will change her…
+                text="A swift fighter who is the Commander of the Blue Falchion unit. With unparalleled marching speed. Here is one hawkish zealot, convinced of her adamantine convictions. But the war will change her…
                 "
                 modelPath="models/Qaliel/Qaliel.glb"
               />
@@ -223,14 +223,14 @@ function Games() {
             <SwiperSlide>
               <GeneralCard
                 title="GABRIEL"
-                text="The famous bearer of good news, Gabriel is one of the seven Archangels. He specialises in scouting and reconnaissance and can spot the enemy from a great distance away. Though lightly armoured, his shield can soak many a mighty blow, and he damages his foes with a flurry of attacks from his axe. "
+                text="The famous bearer of good news, Gabriel specialises in scouting and reconnaissance. Though lightly armoured, his shield can soak many a mighty blow, and he damages his foes with his axe. "
                 modelPath="models/Gabriel/Gabriel.glb"
               />
             </SwiperSlide>
             <SwiperSlide>
               <GeneralCard
                 title="BATYA"
-                text="The diminutive commander of the Red Shield unit. Her troops will hold the line. She is engaged in a one-sided rivalry with the commander of the Blue Falchions. Though she tries to present herself as poised and cultivated, the epitome of shrewdness, she is prone to… outbursts in the heat of battle, among other things."
+                text="The diminutive commander of the Red Shield unit. Though she tries to present herself as poised and cultivated, the epitome of shrewdness, she is prone to… outbursts in the heat of battle, among other things."
                 modelPath="models/RedShield/RedShield.glb"
               />
             </SwiperSlide>

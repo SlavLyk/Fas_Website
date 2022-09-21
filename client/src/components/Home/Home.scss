@@ -42,12 +42,14 @@
   line-height: 0.7;
   margin-bottom: 45px;
 }
-
-.gameText h2 {
+.quote-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-.heading h2 {
+h2 {
   color: #b8c0c8;
   white-space: nowrap;
   font-size: 20px;
@@ -320,7 +322,7 @@ p {
     // margin-bottom: 2%;
   }
 
-  .heading h2 {
+  h2 {
     font-size: 16px;
     // margin-bottom: 2%;
   }
@@ -387,7 +389,7 @@ p {
     // margin-bottom: 2%;
   }
 
-  .heading h2 {
+  h2 {
     font-size: 14px;
     // margin-bottom: 2%;
   }
@@ -484,7 +486,7 @@ p {
     // margin-bottom: 2%;
   }
 
-  .heading h2 {
+  h2 {
     font-size: 16px;
     // margin-bottom: 2%;
   }
@@ -514,7 +516,7 @@ p {
     margin-right: 72px;
     object-fit: cover;
     width: 100%;
-    height: 350px;
+    // height: 350px;
     object-position: center 40%;
   }
 
@@ -551,7 +553,7 @@ p {
       // margin-bottom: 2%;
     }
 
-    .heading h2 {
+    h2 {
       font-size: 12px;
       // margin-bottom: 2%;
     }

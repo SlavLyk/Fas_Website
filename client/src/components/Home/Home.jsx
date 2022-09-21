@@ -144,7 +144,7 @@ function Home() {
               </Canvas>
             </div>
           </Suspense>
-          <Loader />
+          {/* <Loader /> */}
         </div>
       </div>
       <div className="bg1">
@@ -162,7 +162,10 @@ function Home() {
               <br />
               Builds The House, The Builders Labor In Vain
             </h1>
-            <h2>-The Psalterium, 127th Chapter</h2>
+            <div className="quote-container">
+              <div className="line"></div>
+              <h2> The Psalterium, 127th Chapter</h2>
+            </div>
             <Button
               buttonStyle={"btn--secondary"}
               btnImg={btnArrow}
