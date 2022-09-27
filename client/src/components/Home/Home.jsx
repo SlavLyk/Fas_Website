@@ -169,9 +169,9 @@ function Home() {
             <Button
               buttonStyle={"btn--secondary"}
               btnImg={btnArrow}
-              onClick={() => history.push("/games")}
+              onClick={() => history.push("/about")}
             >
-              See the Demo
+              Our Story
             </Button>
           </div>
         </div>
