@@ -26,3 +26,4 @@ customizable format.
 - Customized existing Swiper.js library for specific 3D card carousel effect and navigation buttons.
 
 ### <a href="https://floating-axe-website.herokuapp.com/">https://floating-axe-website.herokuapp.com/</a>
+![](GIF.gif)
