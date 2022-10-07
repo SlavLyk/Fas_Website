@@ -25,5 +25,10 @@ customizable format.
 - Added form validation logic for contact form and newsletter to decrease spam messages.
 - Customized existing Swiper.js library for specific 3D card carousel effect and navigation buttons.
 
+### Technologies
+- Languages: JavaScript, HTML, CSS
+- Technologies: React, Node.js, Express.js, NPM, Sass, Grid, Flexbox, Fetch API, NodeMailer, Three.js, Swiper.js
+- Developer Tools: Git, VS Code, Terminal, Heroku, Figma.
+
 ### <a href="https://floating-axe-website.herokuapp.com/">https://floating-axe-website.herokuapp.com/</a>
 ![](GIF.gif)
