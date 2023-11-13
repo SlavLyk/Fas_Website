@@ -72,9 +72,18 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
 };
 
 const PaypalCheckout = () => {
+  const [isScriptLoaded, setScriptLoaded] = React.useState(false);
+
   useEffect(() => {
-    // This will trigger the initialization of the PayPal buttons
-    // after the component is mounted.
+    const scriptDelay = 200;
+
+    // This will trigger the initialization of the PayPal script after a delay
+    const scriptTimeout = setTimeout(() => {
+      setScriptLoaded(true);
+    }, scriptDelay);
+
+    // Clear the timeout to avoid potential issues
+    return () => clearTimeout(scriptTimeout);
   }, []);
 
   return (
@@ -98,7 +107,7 @@ const PaypalCheckout = () => {
               currency: "USD",
             }}
           >
-            <ButtonWrapper currency={currency} />
+            {isScriptLoaded && <ButtonWrapper currency={currency} />}
           </PayPalScriptProvider>
         </div>
       </div>

@@ -278,6 +278,10 @@
   background-color: black;
 }
 
+.Games #play-now-btn {
+  cursor: pointer;
+}
+
 .Games .download-btn img {
   width: 7%;
 }

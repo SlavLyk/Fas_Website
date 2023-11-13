@@ -120,13 +120,13 @@ function Games() {
                   back...
                 </p>
               </div>
-              {!isClicked ? (
-                <Button btnImg={Download}>
-                  <Link to="/PaypalCheckout">Play Now</Link>
-                </Button>
-              ) : (
-                <Button btnImg={Clock}>Coming Soon...</Button>
-              )}
+              {
+                <Link to="/PaypalCheckout">
+                  <Button id="play-now-btn" btnImg={Download}>
+                    Play Now
+                  </Button>
+                </Link>
+              }
               {/* <script
                 src="https://www.paypal.com/sdk/js?client-id=AU8JUtxLPN4aXVVFpEw5910rpSwPtrnHx6dDkeOA
 QrWeFEKRtcPINeAx9Q2KiXmtyMzl0IrdyQf_vzo-&components=buttons"
