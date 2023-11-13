@@ -9,9 +9,18 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-const amount = "50";
+const amount = "9.99";
 const currency = "USD";
 const style = { layout: "vertical" };
+
+const downloadImage = () => {
+  const link = document.createElement("a");
+  link.href = Nebula; // Replace with the actual image URL or blob
+  link.download = "downloaded_image.png";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 const ButtonWrapper = ({ currency, showSpinner }) => {
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
@@ -54,6 +63,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
         onApprove={function (data, actions) {
           return actions.order.capture().then(function () {
             // Your code here after capture the order
+            downloadImage();
           });
         }}
       />
@@ -73,7 +83,7 @@ const PaypalCheckout = () => {
       <div className="bg2">
         <div className="card-container">
           <h1 className="price-text">Gate of Golgotha</h1>
-          <h2 className="price-text">Price: $49.99</h2>
+          <h2 className="price-text">Price: $9.99</h2>
           <img src={Nebula} alt="Card" className="card-image" />
         </div>
 
