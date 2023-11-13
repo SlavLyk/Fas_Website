@@ -13,6 +13,15 @@
   // overflow: hidden;
 
   z-index: 10;
+
+  a {
+    color: #ffffff;
+    opacity: 50%;
+  }
+
+  a:hover {
+    opacity: 100%;
+  }
 }
 
 .headerMid {
@@ -97,15 +106,6 @@ img {
 
 .logoActive .selector {
   margin-bottom: 20px;
-}
-
-a {
-  color: #ffffff;
-  opacity: 50%;
-}
-
-a:hover {
-  opacity: 100%;
 }
 
 .headerItem a {

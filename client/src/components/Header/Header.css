@@ -18,6 +18,15 @@
   z-index: 10;
 }
 
+.header a {
+  color: #ffffff;
+  opacity: 50%;
+}
+
+.header a:hover {
+  opacity: 100%;
+}
+
 .headerMid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,15 +160,6 @@ img {
 
 .logoActive .selector {
   margin-bottom: 20px;
-}
-
-a {
-  color: #ffffff;
-  opacity: 50%;
-}
-
-a:hover {
-  opacity: 100%;
 }
 
 .headerItem a {

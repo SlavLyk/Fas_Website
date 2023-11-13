@@ -18,6 +18,15 @@
   padding-bottom: 30px;
   padding-top: 20px;
 
+  a {
+    color: #ffffff;
+    opacity: 50%;
+  }
+
+  a:hover {
+    opacity: 100%;
+  }
+
   p {
     white-space: nowrap;
     opacity: 100%;

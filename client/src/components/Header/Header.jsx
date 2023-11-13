@@ -19,7 +19,7 @@ function Header({ active = "" }) {
             }}
           ></div>
           <Link to="/">
-            <img height={35} src={Logo} alt="Logo" />
+            <img height={35} src={Logo} alt="Logo" className="fas-logo" />
           </Link>
         </div>
       </div>

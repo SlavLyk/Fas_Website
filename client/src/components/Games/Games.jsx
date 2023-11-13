@@ -22,6 +22,7 @@ import Nebula from "../../icons/Nebula.png";
 import Title from "../../icons/Title.png";
 import Download from "../../icons/Download.svg";
 import Clock from "../../icons/Clock.svg";
+import PaypalCheckout from "../PaypalCheckout/PayPalCheckout";
 
 //Swiper.js carousel
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -120,12 +121,18 @@ function Games() {
                 </p>
               </div>
               {!isClicked ? (
-                <Button btnImg={Download} onClick={() => setIsClicked(true)}>
-                  Download Demo
+                <Button btnImg={Download}>
+                  <Link to="/PaypalCheckout">Play Now</Link>
                 </Button>
               ) : (
                 <Button btnImg={Clock}>Coming Soon...</Button>
               )}
+              {/* <script
+                src="https://www.paypal.com/sdk/js?client-id=AU8JUtxLPN4aXVVFpEw5910rpSwPtrnHx6dDkeOA
+QrWeFEKRtcPINeAx9Q2KiXmtyMzl0IrdyQf_vzo-&components=buttons"
+              ></script> */}
+
+              {/* secret = ED_g6scEBFhDcPBOm9GS-MEtqRj4ClLBZk8NkRQvG7zHvjsBtCS0Z7TpU7RwytOM-JG2zuyuOWqh4-OQ */}
               <div
                 className={isActive ? "coming-soon-activated" : "coming-soon"}
               >

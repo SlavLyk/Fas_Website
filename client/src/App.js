@@ -8,6 +8,7 @@ import Terms from "./components/Terms/Terms";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
+import PaypalCheckout from "./components/PaypalCheckout/PayPalCheckout";
 
 // import Footer from './components/Footer/Footer'
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="privacy" element={<Privacy />} />
         <Route path="terms" element={<Terms />} />
         <Route path="cookies" element={<Cookies />} />
+        <Route path="paypalCheckout" element={<PaypalCheckout />} />
         <Route path="/*" element={<Home />} />
       </Routes>
     </ScrollToTop>
