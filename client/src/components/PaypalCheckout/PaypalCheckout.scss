@@ -40,4 +40,41 @@
   img {
     width: 100%;
   }
+
+   .contactUs {
+    background-image: url("../../icons/ContactUs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    width: 100%;
+
+    .flex-container-text {
+      display: flex;
+      justify-content: center;
+    }
+  
+  
+    .container-main {
+      margin-top: 5%;
+      margin-bottom: 90px;
+    }
+
+    h1 {
+      font-family: "Iceland", serif;
+      font-size: 50px;
+      background: linear-gradient(270deg, #ffefb6 0%, #ffd361 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 3%;
+      font-size: 56px;
+      font-weight: 400;
+    }
+  
+    h2 {
+      font-family: "Jura", sans-serif;
+      opacity: 100%;
+      color: white;
+    }
+  }
 }

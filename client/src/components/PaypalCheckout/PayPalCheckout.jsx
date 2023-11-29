@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./PaypalCheckout.css";
 import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer";
@@ -22,7 +22,7 @@ const downloadImage = () => {
   document.body.removeChild(link);
 };
 
-const ButtonWrapper = ({ currency, showSpinner }) => {
+const ButtonWrapper = ({ currency, showSpinner, onComplete }) => {
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
   useEffect(() => {
@@ -63,6 +63,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
         onApprove={function (data, actions) {
           return actions.order.capture().then(function () {
             // Your code here after capture the order
+            onComplete(); // Notify the parent component that the purchase is complete
             downloadImage();
           });
         }}
@@ -73,6 +74,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
 
 const PaypalCheckout = () => {
   const [isScriptLoaded, setScriptLoaded] = React.useState(false);
+  const [purchaseComplete, setPurchaseComplete] = useState(false);
 
   useEffect(() => {
     const scriptDelay = 200;
@@ -86,30 +88,53 @@ const PaypalCheckout = () => {
     return () => clearTimeout(scriptTimeout);
   }, []);
 
+  const handlePurchaseComplete = () => {
+    setPurchaseComplete(true);
+  };
+
   return (
     <div className="PaypalCheckout">
       <Header />
-      <div className="bg2">
-        <div className="card-container">
-          <h1 className="price-text">Gate of Golgotha</h1>
-          <h2 className="price-text">Price: $9.99</h2>
-          <img src={Nebula} alt="Card" className="card-image" />
-        </div>
+      <div className={`bg2 ${purchaseComplete ? "purchase-complete" : ""}`}>
+        {purchaseComplete ? (
+          <div className="contactUs">
+            <div className="flex-container-text">
+              <div className="container-main">
+                <h1>Thank you for your purchase!</h1>
+                <h2>Check your downloads folder to find the game files.</h2>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="card-container">
+              <h1 className="price-text">Gate of Golgotha</h1>
+              <h2 className="price-text">Price: $9.99</h2>
+              <img src={Nebula} alt="Card" className="card-image" />
+            </div>
 
-        <div
-          style={{ maxWidth: "750px", minHeight: "200px" }}
-          className="buttons"
-        >
-          <PayPalScriptProvider
-            options={{
-              clientId: "test",
-              components: "buttons",
-              currency: "USD",
-            }}
-          >
-            {isScriptLoaded && <ButtonWrapper currency={currency} />}
-          </PayPalScriptProvider>
-        </div>
+            <div
+              style={{ maxWidth: "750px", minHeight: "200px" }}
+              className={`buttons ${purchaseComplete ? "hidden" : ""}`}
+            >
+              <PayPalScriptProvider
+                options={{
+                  clientId: "test",
+                  components: "buttons",
+                  currency: "USD",
+                }}
+              >
+                {isScriptLoaded && (
+                  <ButtonWrapper
+                    currency={currency}
+                    showSpinner={!purchaseComplete}
+                    onComplete={handlePurchaseComplete}
+                  />
+                )}
+              </PayPalScriptProvider>
+            </div>
+          </>
+        )}
       </div>
       <Footer />
     </div>
