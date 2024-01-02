@@ -127,12 +127,6 @@ function Games() {
                   </Button>
                 </Link>
               }
-              {/* <script
-                src="https://www.paypal.com/sdk/js?client-id=AU8JUtxLPN4aXVVFpEw5910rpSwPtrnHx6dDkeOA
-QrWeFEKRtcPINeAx9Q2KiXmtyMzl0IrdyQf_vzo-&components=buttons"
-              ></script> */}
-
-              {/* secret = ED_g6scEBFhDcPBOm9GS-MEtqRj4ClLBZk8NkRQvG7zHvjsBtCS0Z7TpU7RwytOM-JG2zuyuOWqh4-OQ */}
               <div
                 className={isActive ? "coming-soon-activated" : "coming-soon"}
               >

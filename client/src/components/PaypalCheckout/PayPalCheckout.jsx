@@ -9,7 +9,7 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-const amount = "9.99";
+const amount = "99.99";
 const currency = "USD";
 const style = { layout: "vertical" };
 
@@ -109,7 +109,7 @@ const PaypalCheckout = () => {
           <>
             <div className="card-container">
               <h1 className="price-text">Gate of Golgotha</h1>
-              <h2 className="price-text">Price: $9.99</h2>
+              <h2 className="price-text">Price: $99.99</h2>
               <img src={Nebula} alt="Card" className="card-image" />
             </div>
 
@@ -119,7 +119,8 @@ const PaypalCheckout = () => {
             >
               <PayPalScriptProvider
                 options={{
-                  clientId: "test",
+                  clientId:
+                    "AU8JUtxLPN4aXVVFpEw5910rpSwPtrnHx6dDkeOAQrWeFEKRtcPINeAx9Q2KiXmtyMzl0IrdyQf_vzo-",
                   components: "buttons",
                   currency: "USD",
                 }}
