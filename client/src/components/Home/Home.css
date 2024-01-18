@@ -54,8 +54,11 @@
 
 h2 {
   color: #b8c0c8;
-  white-space: nowrap;
   font-size: 20px;
+}
+
+.Home h2 {
+  white-space: nowrap;
 }
 
 .bg1 {

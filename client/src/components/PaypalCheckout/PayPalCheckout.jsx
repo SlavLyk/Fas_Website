@@ -9,20 +9,24 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-const amount = "99.99";
+const amount = "0.1";
 const currency = "USD";
 const style = { layout: "vertical" };
+const date = new Date();
 
-const downloadImage = () => {
-  const link = document.createElement("a");
-  link.href = Nebula; // Replace with the actual image URL or blob
-  link.download = "downloaded_image.png";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+// Format the date as needed (e.g., "January 6, 2024")
+const formattedDate = date.toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
 
-const ButtonWrapper = ({ currency, showSpinner, onComplete }) => {
+const ButtonWrapper = ({
+  currency,
+  showSpinner,
+  onComplete,
+  setDownloadLink,
+}) => {
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
   useEffect(() => {
@@ -64,7 +68,6 @@ const ButtonWrapper = ({ currency, showSpinner, onComplete }) => {
           return actions.order.capture().then(function () {
             // Your code here after capture the order
             onComplete(); // Notify the parent component that the purchase is complete
-            downloadImage();
           });
         }}
       />
@@ -75,6 +78,8 @@ const ButtonWrapper = ({ currency, showSpinner, onComplete }) => {
 const PaypalCheckout = () => {
   const [isScriptLoaded, setScriptLoaded] = React.useState(false);
   const [purchaseComplete, setPurchaseComplete] = useState(false);
+  const [downloadLink, setDownloadLink] = useState(null);
+  const [serverResponse, setServerResponse] = useState("");
 
   useEffect(() => {
     const scriptDelay = 200;
@@ -88,7 +93,36 @@ const PaypalCheckout = () => {
     return () => clearTimeout(scriptTimeout);
   }, []);
 
-  const handlePurchaseComplete = () => {
+  const handlePurchaseComplete = async () => {
+    // Direct link to the file
+    // const directDownloadLink =
+    //   "https://storage.googleapis.com/gogwebsite-d4f67.appspot.com/GateOfGolgotha.ico.zip";
+
+    // Request to your Node.js Express server
+    try {
+      // Make a request to the server to get the download link
+      const response = await fetch(
+        // change to localhost:3000 to test on local
+        "https://floating-axe-website.herokuapp.com/getDownloadLink"
+      );
+      const data = await response.json();
+
+      // Use the download link from the server response
+      const directDownloadLink = data.downloadLink;
+
+      // Open the download link in a new tab
+      window.location.href = directDownloadLink;
+      window.open(directDownloadLink, "_blank");
+
+      setPurchaseComplete(true);
+    } catch (error) {
+      console.error("Error fetching download link:", error);
+    }
+
+    // Redirect the user to the download link
+    // window.location.href = directDownloadLink;
+    // window.open(directDownloadLink, "_blank");
+
     setPurchaseComplete(true);
   };
 
@@ -101,7 +135,71 @@ const PaypalCheckout = () => {
             <div className="flex-container-text">
               <div className="container-main">
                 <h1>Thank you for your purchase!</h1>
-                <h2>Check your downloads folder to find the game files.</h2>
+                <h2 className="insturctions">
+                  Please inspect your downloads folder to find the game files.
+                </h2>
+                <h2>
+                  In case the download hasn't initiated, feel free to reach out
+                  to us at floatingaxestudios@gmail.com for assistance.
+                </h2>
+                <br />
+                <br />
+                <div className="invoice-box">
+                  <table>
+                    <tr className="top">
+                      <td colSpan="2">
+                        <table>
+                          <tr className="logo-row">
+                            <td>{formattedDate}</td>
+                            <br />
+                            <br />
+                            <br />
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <div id="bot">
+                      <div id="table">
+                        <table>
+                          <tr className="tabletitle">
+                            <td className="item">
+                              <h2>Item</h2>
+                            </td>
+                            <td className="Hours">
+                              <h2>Qty</h2>
+                            </td>
+                            <td className="Rate">
+                              <h2>Sub Total</h2>
+                            </td>
+                          </tr>
+
+                          <tr className="service">
+                            <td className="tableitem">
+                              <h2 className="itemtext">Gate of Golgotha</h2>
+                            </td>
+                            <td className="tableitem">
+                              <h2 className="itemtext">1</h2>
+                            </td>
+                            <td className="tableitem">
+                              <h2 className="itemtext">${amount}</h2>
+                            </td>
+                          </tr>
+
+                          <tr className="tabletitle">
+                            <td></td>
+                            <td className="Rate">
+                              <h2>Total</h2>
+                            </td>
+                            <td className="payment">
+                              <h2>${amount}</h2>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +207,23 @@ const PaypalCheckout = () => {
           <>
             <div className="card-container">
               <h1 className="price-text">Gate of Golgotha</h1>
-              <h2 className="price-text">Price: $99.99</h2>
+              <br />
+              <h2 className="price-text">Price: ${amount}</h2>
+              <br />
+              {/* <button onClick={handleButtonClick}>Fetch Data</button>
+              <p>Server Response: {serverResponse}</p> */}
+              <h2 className="price-text">
+                1. Please sign in with Paypal and go through the payment
+                process.
+                <br />
+                <br />
+                2. The .exe file will be automatically downloaded to your
+                downloads folder.
+                <br />
+                <br />
+                3. See your browser's settings to change the default download
+                location.
+              </h2>
               <img src={Nebula} alt="Card" className="card-image" />
             </div>
 

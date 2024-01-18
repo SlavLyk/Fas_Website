@@ -5,6 +5,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require("path");
 const fetch = require("node-fetch");
+const { Storage } = require("@google-cloud/storage");
+const storage = new Storage();
 
 require("dotenv").config();
 
@@ -63,6 +65,17 @@ transporter.verify((err, success) => {
   err
     ? console.log(err)
     : console.log(`=== Server is ready to take messages: ${success} ===`);
+});
+
+app.get("/test", (req, res) => {
+  res.json({ message: "test worked" });
+});
+
+// Google Cloud Storage
+app.get("/getDownloadLink", (req, res) => {
+  const downloadLink =
+    "https://storage.googleapis.com/gogwebsite-d4f67.appspot.com/GateOfGolgotha.rar";
+  res.json({ downloadLink });
 });
 
 app.post("/send", function (req, res) {

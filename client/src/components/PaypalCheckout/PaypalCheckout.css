@@ -14,8 +14,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,19 +50,23 @@
 
 .PaypalCheckout h1 {
   color: #b8c0c8;
-  white-space: nowrap;
 }
 
 .PaypalCheckout img {
+  width: 95%;
+}
+
+.PaypalCheckout .instructions {
   width: 100%;
 }
 
 .PaypalCheckout .contactUs {
+  padding: 0% 5%;
   background-image: url("../../icons/ContactUs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px;
+  min-height: 150%;
   width: 100%;
 }
 
@@ -80,6 +82,22 @@
 .PaypalCheckout .contactUs .container-main {
   margin-top: 5%;
   margin-bottom: 90px;
+}
+
+.PaypalCheckout .contactUs .logo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 19%;
+}
+
+.PaypalCheckout .contactUs .fas-logo-payment {
+  opacity: 50%;
+  width: unset;
+  margin: 0;
 }
 
 .PaypalCheckout .contactUs h1 {
@@ -98,5 +116,17 @@
   font-family: "Jura", sans-serif;
   opacity: 100%;
   color: white;
+  white-space: break-spaces;
+}
+
+.PaypalCheckout .contactUs table {
+  color: white;
+  width: 100%;
+}
+
+@media screen and (max-width: 851px) {
+  .PaypalCheckout .contactUs h2 {
+    white-space: no-wrap;
+  }
 }
 /*# sourceMappingURL=PaypalCheckout.css.map */

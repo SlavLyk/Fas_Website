@@ -133,7 +133,7 @@ function FightScene() {
 
 function Home() {
   return (
-    <div>
+    <div className="Home">
       <Header active="Home" />
       <div className="bg2">
         <div className="Experience1">
