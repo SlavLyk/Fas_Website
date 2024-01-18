@@ -95,33 +95,34 @@ const PaypalCheckout = () => {
 
   const handlePurchaseComplete = async () => {
     // Direct link to the file
-    // const directDownloadLink =
-    //   "https://storage.googleapis.com/gogwebsite-d4f67.appspot.com/GateOfGolgotha.ico.zip";
+    const directDownloadLink =
+      "https://storage.googleapis.com/gogwebsite-d4f67.appspot.com/GateOfGolgotha.rar";
 
-    // Request to your Node.js Express server
-    try {
-      // Make a request to the server to get the download link
-      const response = await fetch(
-        // change to localhost:3000 to test on local
-        "https://floating-axe-website.herokuapp.com/getDownloadLink"
-      );
-      const data = await response.json();
+    // Later remove all of this as well as in index.js
 
-      // Use the download link from the server response
-      const directDownloadLink = data.downloadLink;
+    // // Request to your Node.js Express server
+    // try {
+    //   // Make a request to the server to get the download link
+    //   const response = await fetch(
+    //     // change to localhost:3000 to test on local
+    //     "https://floating-axe-website.herokuapp.com/getDownloadLink"
+    //   );
+    //   const data = await response.json();
 
-      // Open the download link in a new tab
-      window.location.href = directDownloadLink;
-      window.open(directDownloadLink, "_blank");
+    //   // Use the download link from the server response
 
-      setPurchaseComplete(true);
-    } catch (error) {
-      console.error("Error fetching download link:", error);
-    }
+    //   // Open the download link in a new tab
+    //   window.location.href = directDownloadLink;
+    //   window.open(directDownloadLink, "_blank");
+
+    //   setPurchaseComplete(true);
+    // } catch (error) {
+    //   console.error("Error fetching download link:", error);
+    // }
 
     // Redirect the user to the download link
-    // window.location.href = directDownloadLink;
-    // window.open(directDownloadLink, "_blank");
+    window.location.href = directDownloadLink;
+    window.open(directDownloadLink, "_blank");
 
     setPurchaseComplete(true);
   };
