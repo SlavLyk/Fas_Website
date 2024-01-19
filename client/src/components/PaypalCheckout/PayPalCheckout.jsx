@@ -9,7 +9,7 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-const amount = "0.1";
+const amount = "0.01";
 const currency = "USD";
 const style = { layout: "vertical" };
 const date = new Date();
@@ -235,7 +235,7 @@ const PaypalCheckout = () => {
               <PayPalScriptProvider
                 options={{
                   clientId:
-                    "AU8JUtxLPN4aXVVFpEw5910rpSwPtrnHx6dDkeOAQrWeFEKRtcPINeAx9Q2KiXmtyMzl0IrdyQf_vzo-",
+                    "AaGqF2lyLeEm5bFKNFaSKGOrgAJxYqtm3KRg8DgAChN5unRTxl_hme3j-GlFLJ8eJjT58Oga1aR49HAD",
                   components: "buttons",
                   currency: "USD",
                 }}
