@@ -9,7 +9,7 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-const amount = "0.01";
+const amount = "10.00";
 const currency = "USD";
 const style = { layout: "vertical" };
 const date = new Date();
