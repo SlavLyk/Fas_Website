@@ -56,6 +56,8 @@ const ButtonWrapper = ({
                     currency_code: currency,
                     value: amount,
                   },
+                  description:
+                    "Gate of Golgotha: War Enters the Heavenly Realms v1.0",
                 },
               ],
             })
